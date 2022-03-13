@@ -2210,7 +2210,7 @@
             "classifier_6"
         ],
         "output_nodes": [
-            "AddmmBackward0"
+            "AddmmBackward00"
         ],
         "input_types": [
             "torch.float32"
@@ -2232,15 +2232,15 @@
         ]
     },
     {
-        "name": "AddmmBackward0",
-        "op": "AddmmBackward",
+        "name": "AddmmBackward00",
+        "op": "AddmmBackward0",
         "input_nodes": [
             "output"
         ],
         "output_nodes": [
             "AccumulateGrad0",
-            "FusedDropoutBackward0",
-            "TBackward0"
+            "NativeDropoutBackward00",
+            "TBackward00"
         ],
         "input_types": [
             "torch.float32"
@@ -2278,7 +2278,7 @@
         "name": "AccumulateGrad0",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "AddmmBackward0"
+            "AddmmBackward00"
         ],
         "output_nodes": [
             "ddp_pre_0"
@@ -2295,10 +2295,10 @@
         "output_shapes": []
     },
     {
-        "name": "TBackward0",
-        "op": "TBackward",
+        "name": "TBackward00",
+        "op": "TBackward0",
         "input_nodes": [
-            "AddmmBackward0"
+            "AddmmBackward00"
         ],
         "output_nodes": [
             "AccumulateGrad1"
@@ -2326,7 +2326,7 @@
         "name": "AccumulateGrad1",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "TBackward0"
+            "TBackward00"
         ],
         "output_nodes": [
             "ddp_pre_0"
@@ -2344,13 +2344,13 @@
         "output_shapes": []
     },
     {
-        "name": "FusedDropoutBackward0",
-        "op": "FusedDropoutBackward",
+        "name": "NativeDropoutBackward00",
+        "op": "NativeDropoutBackward0",
         "input_nodes": [
-            "AddmmBackward0"
+            "AddmmBackward00"
         ],
         "output_nodes": [
-            "ReluBackward10"
+            "ReluBackward00"
         ],
         "input_types": [
             "torch.float32"
@@ -2376,13 +2376,13 @@
         }
     },
     {
-        "name": "ReluBackward10",
-        "op": "ReluBackward1",
+        "name": "ReluBackward00",
+        "op": "ReluBackward0",
         "input_nodes": [
-            "FusedDropoutBackward0"
+            "NativeDropoutBackward00"
         ],
         "output_nodes": [
-            "AddmmBackward1"
+            "AddmmBackward01"
         ],
         "input_types": [
             "torch.float32"
@@ -2407,15 +2407,15 @@
         }
     },
     {
-        "name": "AddmmBackward1",
-        "op": "AddmmBackward",
+        "name": "AddmmBackward01",
+        "op": "AddmmBackward0",
         "input_nodes": [
-            "ReluBackward10"
+            "ReluBackward00"
         ],
         "output_nodes": [
             "AccumulateGrad2",
-            "FusedDropoutBackward1",
-            "TBackward1"
+            "NativeDropoutBackward01",
+            "TBackward01"
         ],
         "input_types": [
             "torch.float32"
@@ -2453,7 +2453,7 @@
         "name": "AccumulateGrad2",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "AddmmBackward1"
+            "AddmmBackward01"
         ],
         "output_nodes": [
             "ddp_pre_0"
@@ -2470,10 +2470,10 @@
         "output_shapes": []
     },
     {
-        "name": "TBackward1",
-        "op": "TBackward",
+        "name": "TBackward01",
+        "op": "TBackward0",
         "input_nodes": [
-            "AddmmBackward1"
+            "AddmmBackward01"
         ],
         "output_nodes": [
             "AccumulateGrad3"
@@ -2501,7 +2501,7 @@
         "name": "AccumulateGrad3",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "TBackward1"
+            "TBackward01"
         ],
         "output_nodes": [
             "ddp_pre_1"
@@ -2519,13 +2519,13 @@
         "output_shapes": []
     },
     {
-        "name": "FusedDropoutBackward1",
-        "op": "FusedDropoutBackward",
+        "name": "NativeDropoutBackward01",
+        "op": "NativeDropoutBackward0",
         "input_nodes": [
-            "AddmmBackward1"
+            "AddmmBackward01"
         ],
         "output_nodes": [
-            "ReluBackward11"
+            "ReluBackward01"
         ],
         "input_types": [
             "torch.float32"
@@ -2551,13 +2551,13 @@
         }
     },
     {
-        "name": "ReluBackward11",
-        "op": "ReluBackward1",
+        "name": "ReluBackward01",
+        "op": "ReluBackward0",
         "input_nodes": [
-            "FusedDropoutBackward1"
+            "NativeDropoutBackward01"
         ],
         "output_nodes": [
-            "AddmmBackward2"
+            "AddmmBackward02"
         ],
         "input_types": [
             "torch.float32"
@@ -2582,15 +2582,15 @@
         }
     },
     {
-        "name": "AddmmBackward2",
-        "op": "AddmmBackward",
+        "name": "AddmmBackward02",
+        "op": "AddmmBackward0",
         "input_nodes": [
-            "ReluBackward11"
+            "ReluBackward01"
         ],
         "output_nodes": [
             "AccumulateGrad4",
-            "ViewBackward0",
-            "TBackward2"
+            "ReshapeAliasBackward00",
+            "TBackward02"
         ],
         "input_types": [
             "torch.float32"
@@ -2628,7 +2628,7 @@
         "name": "AccumulateGrad4",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "AddmmBackward2"
+            "AddmmBackward02"
         ],
         "output_nodes": [
             "ddp_pre_1"
@@ -2645,10 +2645,10 @@
         "output_shapes": []
     },
     {
-        "name": "TBackward2",
-        "op": "TBackward",
+        "name": "TBackward02",
+        "op": "TBackward0",
         "input_nodes": [
-            "AddmmBackward2"
+            "AddmmBackward02"
         ],
         "output_nodes": [
             "AccumulateGrad5"
@@ -2676,7 +2676,7 @@
         "name": "AccumulateGrad5",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "TBackward2"
+            "TBackward02"
         ],
         "output_nodes": [
             "ddp_pre_2"
@@ -2694,13 +2694,13 @@
         "output_shapes": []
     },
     {
-        "name": "ViewBackward0",
-        "op": "ViewBackward",
+        "name": "ReshapeAliasBackward00",
+        "op": "ReshapeAliasBackward0",
         "input_nodes": [
-            "AddmmBackward2"
+            "AddmmBackward02"
         ],
         "output_nodes": [
-            "AdaptiveAvgPool2DBackward0"
+            "AdaptiveAvgPool2DBackward00"
         ],
         "input_types": [
             "torch.float32"
@@ -2724,13 +2724,13 @@
         ]
     },
     {
-        "name": "AdaptiveAvgPool2DBackward0",
-        "op": "AdaptiveAvgPool2DBackward",
+        "name": "AdaptiveAvgPool2DBackward00",
+        "op": "AdaptiveAvgPool2DBackward0",
         "input_nodes": [
-            "ViewBackward0"
+            "ReshapeAliasBackward00"
         ],
         "output_nodes": [
-            "MaxPool2DWithIndicesBackward0"
+            "MaxPool2DWithIndicesBackward00"
         ],
         "input_types": [
             "torch.float32"
@@ -2762,13 +2762,13 @@
         }
     },
     {
-        "name": "MaxPool2DWithIndicesBackward0",
-        "op": "MaxPool2DWithIndicesBackward",
+        "name": "MaxPool2DWithIndicesBackward00",
+        "op": "MaxPool2DWithIndicesBackward0",
         "input_nodes": [
-            "AdaptiveAvgPool2DBackward0"
+            "AdaptiveAvgPool2DBackward00"
         ],
         "output_nodes": [
-            "ReluBackward12"
+            "ReluBackward02"
         ],
         "input_types": [
             "torch.float32"
@@ -2802,13 +2802,13 @@
         }
     },
     {
-        "name": "ReluBackward12",
-        "op": "ReluBackward1",
+        "name": "ReluBackward02",
+        "op": "ReluBackward0",
         "input_nodes": [
-            "MaxPool2DWithIndicesBackward0"
+            "MaxPool2DWithIndicesBackward00"
         ],
         "output_nodes": [
-            "AddBackward00"
+            "ConvolutionBackward00"
         ],
         "input_types": [
             "torch.float32"
@@ -2837,128 +2837,14 @@
         }
     },
     {
-        "name": "AddBackward00",
-        "op": "AddBackward0",
+        "name": "ConvolutionBackward00",
+        "op": "ConvolutionBackward0",
         "input_nodes": [
-            "ReluBackward12"
+            "ReluBackward02"
         ],
         "output_nodes": [
-            "CudnnConvolutionBackward0",
-            "ViewBackward1"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                512,
-                14,
-                14
-            ]
-        ],
-        "output_types": [
-            "torch.float32",
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                512,
-                14,
-                14
-            ],
-            [
-                1,
-                512,
-                1,
-                1
-            ]
-        ],
-        "attrs": {
-            "stride": [
-                1,
-                1
-            ],
-            "padding": [
-                1,
-                1
-            ],
-            "dilation": [
-                1,
-                1
-            ],
-            "groups": 1,
-            "padding_mode": "zeros",
-            "output_padding": [
-                0,
-                0
-            ],
-            "in_channels": 512,
-            "out_channels": 512,
-            "kernel_size": [
-                3,
-                3
-            ]
-        }
-    },
-    {
-        "name": "ViewBackward1",
-        "op": "ViewBackward",
-        "input_nodes": [
-            "AddBackward00"
-        ],
-        "output_nodes": [
-            "AccumulateGrad6"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                1,
-                512,
-                1,
-                1
-            ]
-        ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                512
-            ]
-        ]
-    },
-    {
-        "name": "AccumulateGrad6",
-        "op": "AccumulateGrad",
-        "input_nodes": [
-            "ViewBackward1"
-        ],
-        "output_nodes": [
-            "ddp_pre_2"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                512
-            ]
-        ],
-        "output_types": [],
-        "output_shapes": []
-    },
-    {
-        "name": "CudnnConvolutionBackward0",
-        "op": "CudnnConvolutionBackward",
-        "input_nodes": [
-            "AddBackward00"
-        ],
-        "output_nodes": [
-            "ReluBackward13",
+            "ReluBackward03",
+            "AccumulateGrad6",
             "AccumulateGrad7"
         ],
         "input_types": [
@@ -2974,103 +2860,6 @@
         ],
         "output_types": [
             "torch.float32",
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                512,
-                14,
-                14
-            ],
-            [
-                512,
-                512,
-                3,
-                3
-            ]
-        ]
-    },
-    {
-        "name": "AccumulateGrad7",
-        "op": "AccumulateGrad",
-        "input_nodes": [
-            "CudnnConvolutionBackward0"
-        ],
-        "output_nodes": [
-            "ddp_pre_2"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                512,
-                512,
-                3,
-                3
-            ]
-        ],
-        "output_types": [],
-        "output_shapes": []
-    },
-    {
-        "name": "ReluBackward13",
-        "op": "ReluBackward1",
-        "input_nodes": [
-            "CudnnConvolutionBackward0"
-        ],
-        "output_nodes": [
-            "AddBackward01"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                512,
-                14,
-                14
-            ]
-        ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                512,
-                14,
-                14
-            ]
-        ],
-        "attrs": {
-            "inplace": true
-        }
-    },
-    {
-        "name": "AddBackward01",
-        "op": "AddBackward0",
-        "input_nodes": [
-            "ReluBackward13"
-        ],
-        "output_nodes": [
-            "CudnnConvolutionBackward1",
-            "ViewBackward2"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                512,
-                14,
-                14
-            ]
-        ],
-        "output_types": [
             "torch.float32",
             "torch.float32"
         ],
@@ -3082,10 +2871,13 @@
                 14
             ],
             [
-                1,
                 512,
-                1,
-                1
+                512,
+                3,
+                3
+            ],
+            [
+                512
             ]
         ],
         "attrs": {
@@ -3116,39 +2908,33 @@
         }
     },
     {
-        "name": "ViewBackward2",
-        "op": "ViewBackward",
+        "name": "AccumulateGrad6",
+        "op": "AccumulateGrad",
         "input_nodes": [
-            "AddBackward01"
+            "ConvolutionBackward00"
         ],
         "output_nodes": [
-            "AccumulateGrad8"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
         ],
         "input_shapes": [
             [
-                1,
                 512,
-                1,
-                1
+                512,
+                3,
+                3
             ]
         ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                512
-            ]
-        ]
+        "output_types": [],
+        "output_shapes": []
     },
     {
-        "name": "AccumulateGrad8",
+        "name": "AccumulateGrad7",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "ViewBackward2"
+            "ConvolutionBackward00"
         ],
         "output_nodes": [
             "ddp_pre_2"
@@ -3165,13 +2951,49 @@
         "output_shapes": []
     },
     {
-        "name": "CudnnConvolutionBackward1",
-        "op": "CudnnConvolutionBackward",
+        "name": "ReluBackward03",
+        "op": "ReluBackward0",
         "input_nodes": [
-            "AddBackward01"
+            "ConvolutionBackward00"
         ],
         "output_nodes": [
-            "ReluBackward14",
+            "ConvolutionBackward01"
+        ],
+        "input_types": [
+            "torch.float32"
+        ],
+        "input_shapes": [
+            [
+                32,
+                512,
+                14,
+                14
+            ]
+        ],
+        "output_types": [
+            "torch.float32"
+        ],
+        "output_shapes": [
+            [
+                32,
+                512,
+                14,
+                14
+            ]
+        ],
+        "attrs": {
+            "inplace": true
+        }
+    },
+    {
+        "name": "ConvolutionBackward01",
+        "op": "ConvolutionBackward0",
+        "input_nodes": [
+            "ReluBackward03"
+        ],
+        "output_nodes": [
+            "ReluBackward04",
+            "AccumulateGrad8",
             "AccumulateGrad9"
         ],
         "input_types": [
@@ -3187,103 +3009,6 @@
         ],
         "output_types": [
             "torch.float32",
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                512,
-                14,
-                14
-            ],
-            [
-                512,
-                512,
-                3,
-                3
-            ]
-        ]
-    },
-    {
-        "name": "AccumulateGrad9",
-        "op": "AccumulateGrad",
-        "input_nodes": [
-            "CudnnConvolutionBackward1"
-        ],
-        "output_nodes": [
-            "ddp_pre_2"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                512,
-                512,
-                3,
-                3
-            ]
-        ],
-        "output_types": [],
-        "output_shapes": []
-    },
-    {
-        "name": "ReluBackward14",
-        "op": "ReluBackward1",
-        "input_nodes": [
-            "CudnnConvolutionBackward1"
-        ],
-        "output_nodes": [
-            "AddBackward02"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                512,
-                14,
-                14
-            ]
-        ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                512,
-                14,
-                14
-            ]
-        ],
-        "attrs": {
-            "inplace": true
-        }
-    },
-    {
-        "name": "AddBackward02",
-        "op": "AddBackward0",
-        "input_nodes": [
-            "ReluBackward14"
-        ],
-        "output_nodes": [
-            "CudnnConvolutionBackward2",
-            "ViewBackward3"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                512,
-                14,
-                14
-            ]
-        ],
-        "output_types": [
             "torch.float32",
             "torch.float32"
         ],
@@ -3295,10 +3020,13 @@
                 14
             ],
             [
-                1,
                 512,
-                1,
-                1
+                512,
+                3,
+                3
+            ],
+            [
+                512
             ]
         ],
         "attrs": {
@@ -3329,39 +3057,33 @@
         }
     },
     {
-        "name": "ViewBackward3",
-        "op": "ViewBackward",
+        "name": "AccumulateGrad8",
+        "op": "AccumulateGrad",
         "input_nodes": [
-            "AddBackward02"
+            "ConvolutionBackward01"
         ],
         "output_nodes": [
-            "AccumulateGrad10"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
         ],
         "input_shapes": [
             [
-                1,
                 512,
-                1,
-                1
+                512,
+                3,
+                3
             ]
         ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                512
-            ]
-        ]
+        "output_types": [],
+        "output_shapes": []
     },
     {
-        "name": "AccumulateGrad10",
+        "name": "AccumulateGrad9",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "ViewBackward3"
+            "ConvolutionBackward01"
         ],
         "output_nodes": [
             "ddp_pre_2"
@@ -3378,13 +3100,49 @@
         "output_shapes": []
     },
     {
-        "name": "CudnnConvolutionBackward2",
-        "op": "CudnnConvolutionBackward",
+        "name": "ReluBackward04",
+        "op": "ReluBackward0",
         "input_nodes": [
-            "AddBackward02"
+            "ConvolutionBackward01"
         ],
         "output_nodes": [
-            "ReluBackward15",
+            "ConvolutionBackward02"
+        ],
+        "input_types": [
+            "torch.float32"
+        ],
+        "input_shapes": [
+            [
+                32,
+                512,
+                14,
+                14
+            ]
+        ],
+        "output_types": [
+            "torch.float32"
+        ],
+        "output_shapes": [
+            [
+                32,
+                512,
+                14,
+                14
+            ]
+        ],
+        "attrs": {
+            "inplace": true
+        }
+    },
+    {
+        "name": "ConvolutionBackward02",
+        "op": "ConvolutionBackward0",
+        "input_nodes": [
+            "ReluBackward04"
+        ],
+        "output_nodes": [
+            "ReluBackward05",
+            "AccumulateGrad10",
             "AccumulateGrad11"
         ],
         "input_types": [
@@ -3400,103 +3158,6 @@
         ],
         "output_types": [
             "torch.float32",
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                512,
-                14,
-                14
-            ],
-            [
-                512,
-                512,
-                3,
-                3
-            ]
-        ]
-    },
-    {
-        "name": "AccumulateGrad11",
-        "op": "AccumulateGrad",
-        "input_nodes": [
-            "CudnnConvolutionBackward2"
-        ],
-        "output_nodes": [
-            "ddp_pre_3"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                512,
-                512,
-                3,
-                3
-            ]
-        ],
-        "output_types": [],
-        "output_shapes": []
-    },
-    {
-        "name": "ReluBackward15",
-        "op": "ReluBackward1",
-        "input_nodes": [
-            "CudnnConvolutionBackward2"
-        ],
-        "output_nodes": [
-            "AddBackward03"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                512,
-                14,
-                14
-            ]
-        ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                512,
-                14,
-                14
-            ]
-        ],
-        "attrs": {
-            "inplace": true
-        }
-    },
-    {
-        "name": "AddBackward03",
-        "op": "AddBackward0",
-        "input_nodes": [
-            "ReluBackward15"
-        ],
-        "output_nodes": [
-            "CudnnConvolutionBackward3",
-            "ViewBackward4"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                512,
-                14,
-                14
-            ]
-        ],
-        "output_types": [
             "torch.float32",
             "torch.float32"
         ],
@@ -3508,10 +3169,13 @@
                 14
             ],
             [
-                1,
                 512,
-                1,
-                1
+                512,
+                3,
+                3
+            ],
+            [
+                512
             ]
         ],
         "attrs": {
@@ -3542,42 +3206,36 @@
         }
     },
     {
-        "name": "ViewBackward4",
-        "op": "ViewBackward",
+        "name": "AccumulateGrad10",
+        "op": "AccumulateGrad",
         "input_nodes": [
-            "AddBackward03"
+            "ConvolutionBackward02"
         ],
         "output_nodes": [
-            "AccumulateGrad12"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
         ],
         "input_shapes": [
             [
-                1,
                 512,
-                1,
-                1
+                512,
+                3,
+                3
             ]
         ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                512
-            ]
-        ]
+        "output_types": [],
+        "output_shapes": []
     },
     {
-        "name": "AccumulateGrad12",
+        "name": "AccumulateGrad11",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "ViewBackward4"
+            "ConvolutionBackward02"
         ],
         "output_nodes": [
-            "ddp_pre_3"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -3591,13 +3249,49 @@
         "output_shapes": []
     },
     {
-        "name": "CudnnConvolutionBackward3",
-        "op": "CudnnConvolutionBackward",
+        "name": "ReluBackward05",
+        "op": "ReluBackward0",
         "input_nodes": [
-            "AddBackward03"
+            "ConvolutionBackward02"
         ],
         "output_nodes": [
-            "MaxPool2DWithIndicesBackward1",
+            "ConvolutionBackward03"
+        ],
+        "input_types": [
+            "torch.float32"
+        ],
+        "input_shapes": [
+            [
+                32,
+                512,
+                14,
+                14
+            ]
+        ],
+        "output_types": [
+            "torch.float32"
+        ],
+        "output_shapes": [
+            [
+                32,
+                512,
+                14,
+                14
+            ]
+        ],
+        "attrs": {
+            "inplace": true
+        }
+    },
+    {
+        "name": "ConvolutionBackward03",
+        "op": "ConvolutionBackward0",
+        "input_nodes": [
+            "ReluBackward05"
+        ],
+        "output_nodes": [
+            "MaxPool2DWithIndicesBackward01",
+            "AccumulateGrad12",
             "AccumulateGrad13"
         ],
         "input_types": [
@@ -3613,6 +3307,7 @@
         ],
         "output_types": [
             "torch.float32",
+            "torch.float32",
             "torch.float32"
         ],
         "output_shapes": [
@@ -3627,14 +3322,43 @@
                 512,
                 3,
                 3
+            ],
+            [
+                512
             ]
-        ]
+        ],
+        "attrs": {
+            "stride": [
+                1,
+                1
+            ],
+            "padding": [
+                1,
+                1
+            ],
+            "dilation": [
+                1,
+                1
+            ],
+            "groups": 1,
+            "padding_mode": "zeros",
+            "output_padding": [
+                0,
+                0
+            ],
+            "in_channels": 512,
+            "out_channels": 512,
+            "kernel_size": [
+                3,
+                3
+            ]
+        }
     },
     {
-        "name": "AccumulateGrad13",
+        "name": "AccumulateGrad12",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "CudnnConvolutionBackward3"
+            "ConvolutionBackward03"
         ],
         "output_nodes": [
             "ddp_pre_3"
@@ -3654,13 +3378,33 @@
         "output_shapes": []
     },
     {
-        "name": "MaxPool2DWithIndicesBackward1",
-        "op": "MaxPool2DWithIndicesBackward",
+        "name": "AccumulateGrad13",
+        "op": "AccumulateGrad",
         "input_nodes": [
-            "CudnnConvolutionBackward3"
+            "ConvolutionBackward03"
         ],
         "output_nodes": [
-            "ReluBackward16"
+            "ddp_pre_3"
+        ],
+        "input_types": [
+            "torch.float32"
+        ],
+        "input_shapes": [
+            [
+                512
+            ]
+        ],
+        "output_types": [],
+        "output_shapes": []
+    },
+    {
+        "name": "MaxPool2DWithIndicesBackward01",
+        "op": "MaxPool2DWithIndicesBackward0",
+        "input_nodes": [
+            "ConvolutionBackward03"
+        ],
+        "output_nodes": [
+            "ReluBackward06"
         ],
         "input_types": [
             "torch.float32"
@@ -3694,13 +3438,13 @@
         }
     },
     {
-        "name": "ReluBackward16",
-        "op": "ReluBackward1",
+        "name": "ReluBackward06",
+        "op": "ReluBackward0",
         "input_nodes": [
-            "MaxPool2DWithIndicesBackward1"
+            "MaxPool2DWithIndicesBackward01"
         ],
         "output_nodes": [
-            "AddBackward04"
+            "ConvolutionBackward04"
         ],
         "input_types": [
             "torch.float32"
@@ -3729,128 +3473,14 @@
         }
     },
     {
-        "name": "AddBackward04",
-        "op": "AddBackward0",
+        "name": "ConvolutionBackward04",
+        "op": "ConvolutionBackward0",
         "input_nodes": [
-            "ReluBackward16"
+            "ReluBackward06"
         ],
         "output_nodes": [
-            "CudnnConvolutionBackward4",
-            "ViewBackward5"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                512,
-                28,
-                28
-            ]
-        ],
-        "output_types": [
-            "torch.float32",
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                512,
-                28,
-                28
-            ],
-            [
-                1,
-                512,
-                1,
-                1
-            ]
-        ],
-        "attrs": {
-            "stride": [
-                1,
-                1
-            ],
-            "padding": [
-                1,
-                1
-            ],
-            "dilation": [
-                1,
-                1
-            ],
-            "groups": 1,
-            "padding_mode": "zeros",
-            "output_padding": [
-                0,
-                0
-            ],
-            "in_channels": 512,
-            "out_channels": 512,
-            "kernel_size": [
-                3,
-                3
-            ]
-        }
-    },
-    {
-        "name": "ViewBackward5",
-        "op": "ViewBackward",
-        "input_nodes": [
-            "AddBackward04"
-        ],
-        "output_nodes": [
-            "AccumulateGrad14"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                1,
-                512,
-                1,
-                1
-            ]
-        ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                512
-            ]
-        ]
-    },
-    {
-        "name": "AccumulateGrad14",
-        "op": "AccumulateGrad",
-        "input_nodes": [
-            "ViewBackward5"
-        ],
-        "output_nodes": [
-            "ddp_pre_3"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                512
-            ]
-        ],
-        "output_types": [],
-        "output_shapes": []
-    },
-    {
-        "name": "CudnnConvolutionBackward4",
-        "op": "CudnnConvolutionBackward",
-        "input_nodes": [
-            "AddBackward04"
-        ],
-        "output_nodes": [
-            "ReluBackward17",
+            "ReluBackward07",
+            "AccumulateGrad14",
             "AccumulateGrad15"
         ],
         "input_types": [
@@ -3866,103 +3496,6 @@
         ],
         "output_types": [
             "torch.float32",
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                512,
-                28,
-                28
-            ],
-            [
-                512,
-                512,
-                3,
-                3
-            ]
-        ]
-    },
-    {
-        "name": "AccumulateGrad15",
-        "op": "AccumulateGrad",
-        "input_nodes": [
-            "CudnnConvolutionBackward4"
-        ],
-        "output_nodes": [
-            "ddp_pre_3"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                512,
-                512,
-                3,
-                3
-            ]
-        ],
-        "output_types": [],
-        "output_shapes": []
-    },
-    {
-        "name": "ReluBackward17",
-        "op": "ReluBackward1",
-        "input_nodes": [
-            "CudnnConvolutionBackward4"
-        ],
-        "output_nodes": [
-            "AddBackward05"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                512,
-                28,
-                28
-            ]
-        ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                512,
-                28,
-                28
-            ]
-        ],
-        "attrs": {
-            "inplace": true
-        }
-    },
-    {
-        "name": "AddBackward05",
-        "op": "AddBackward0",
-        "input_nodes": [
-            "ReluBackward17"
-        ],
-        "output_nodes": [
-            "CudnnConvolutionBackward5",
-            "ViewBackward6"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                512,
-                28,
-                28
-            ]
-        ],
-        "output_types": [
             "torch.float32",
             "torch.float32"
         ],
@@ -3974,10 +3507,13 @@
                 28
             ],
             [
-                1,
                 512,
-                1,
-                1
+                512,
+                3,
+                3
+            ],
+            [
+                512
             ]
         ],
         "attrs": {
@@ -4008,39 +3544,33 @@
         }
     },
     {
-        "name": "ViewBackward6",
-        "op": "ViewBackward",
+        "name": "AccumulateGrad14",
+        "op": "AccumulateGrad",
         "input_nodes": [
-            "AddBackward05"
+            "ConvolutionBackward04"
         ],
         "output_nodes": [
-            "AccumulateGrad16"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
         ],
         "input_shapes": [
             [
-                1,
                 512,
-                1,
-                1
+                512,
+                3,
+                3
             ]
         ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                512
-            ]
-        ]
+        "output_types": [],
+        "output_shapes": []
     },
     {
-        "name": "AccumulateGrad16",
+        "name": "AccumulateGrad15",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "ViewBackward6"
+            "ConvolutionBackward04"
         ],
         "output_nodes": [
             "ddp_pre_3"
@@ -4057,13 +3587,49 @@
         "output_shapes": []
     },
     {
-        "name": "CudnnConvolutionBackward5",
-        "op": "CudnnConvolutionBackward",
+        "name": "ReluBackward07",
+        "op": "ReluBackward0",
         "input_nodes": [
-            "AddBackward05"
+            "ConvolutionBackward04"
         ],
         "output_nodes": [
-            "ReluBackward18",
+            "ConvolutionBackward05"
+        ],
+        "input_types": [
+            "torch.float32"
+        ],
+        "input_shapes": [
+            [
+                32,
+                512,
+                28,
+                28
+            ]
+        ],
+        "output_types": [
+            "torch.float32"
+        ],
+        "output_shapes": [
+            [
+                32,
+                512,
+                28,
+                28
+            ]
+        ],
+        "attrs": {
+            "inplace": true
+        }
+    },
+    {
+        "name": "ConvolutionBackward05",
+        "op": "ConvolutionBackward0",
+        "input_nodes": [
+            "ReluBackward07"
+        ],
+        "output_nodes": [
+            "ReluBackward08",
+            "AccumulateGrad16",
             "AccumulateGrad17"
         ],
         "input_types": [
@@ -4079,103 +3645,6 @@
         ],
         "output_types": [
             "torch.float32",
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                512,
-                28,
-                28
-            ],
-            [
-                512,
-                512,
-                3,
-                3
-            ]
-        ]
-    },
-    {
-        "name": "AccumulateGrad17",
-        "op": "AccumulateGrad",
-        "input_nodes": [
-            "CudnnConvolutionBackward5"
-        ],
-        "output_nodes": [
-            "ddp_pre_4"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                512,
-                512,
-                3,
-                3
-            ]
-        ],
-        "output_types": [],
-        "output_shapes": []
-    },
-    {
-        "name": "ReluBackward18",
-        "op": "ReluBackward1",
-        "input_nodes": [
-            "CudnnConvolutionBackward5"
-        ],
-        "output_nodes": [
-            "AddBackward06"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                512,
-                28,
-                28
-            ]
-        ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                512,
-                28,
-                28
-            ]
-        ],
-        "attrs": {
-            "inplace": true
-        }
-    },
-    {
-        "name": "AddBackward06",
-        "op": "AddBackward0",
-        "input_nodes": [
-            "ReluBackward18"
-        ],
-        "output_nodes": [
-            "CudnnConvolutionBackward6",
-            "ViewBackward7"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                512,
-                28,
-                28
-            ]
-        ],
-        "output_types": [
             "torch.float32",
             "torch.float32"
         ],
@@ -4187,10 +3656,13 @@
                 28
             ],
             [
-                1,
                 512,
-                1,
-                1
+                512,
+                3,
+                3
+            ],
+            [
+                512
             ]
         ],
         "attrs": {
@@ -4221,99 +3693,10 @@
         }
     },
     {
-        "name": "ViewBackward7",
-        "op": "ViewBackward",
-        "input_nodes": [
-            "AddBackward06"
-        ],
-        "output_nodes": [
-            "AccumulateGrad18"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                1,
-                512,
-                1,
-                1
-            ]
-        ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                512
-            ]
-        ]
-    },
-    {
-        "name": "AccumulateGrad18",
+        "name": "AccumulateGrad16",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "ViewBackward7"
-        ],
-        "output_nodes": [
-            "ddp_pre_4"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                512
-            ]
-        ],
-        "output_types": [],
-        "output_shapes": []
-    },
-    {
-        "name": "CudnnConvolutionBackward6",
-        "op": "CudnnConvolutionBackward",
-        "input_nodes": [
-            "AddBackward06"
-        ],
-        "output_nodes": [
-            "ReluBackward19",
-            "AccumulateGrad19"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                512,
-                28,
-                28
-            ]
-        ],
-        "output_types": [
-            "torch.float32",
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                512,
-                28,
-                28
-            ],
-            [
-                512,
-                512,
-                3,
-                3
-            ]
-        ]
-    },
-    {
-        "name": "AccumulateGrad19",
-        "op": "AccumulateGrad",
-        "input_nodes": [
-            "CudnnConvolutionBackward6"
+            "ConvolutionBackward05"
         ],
         "output_nodes": [
             "ddp_pre_4"
@@ -4333,13 +3716,33 @@
         "output_shapes": []
     },
     {
-        "name": "ReluBackward19",
-        "op": "ReluBackward1",
+        "name": "AccumulateGrad17",
+        "op": "AccumulateGrad",
         "input_nodes": [
-            "CudnnConvolutionBackward6"
+            "ConvolutionBackward05"
         ],
         "output_nodes": [
-            "AddBackward07"
+            "ddp_pre_3"
+        ],
+        "input_types": [
+            "torch.float32"
+        ],
+        "input_shapes": [
+            [
+                512
+            ]
+        ],
+        "output_types": [],
+        "output_shapes": []
+    },
+    {
+        "name": "ReluBackward08",
+        "op": "ReluBackward0",
+        "input_nodes": [
+            "ConvolutionBackward05"
+        ],
+        "output_nodes": [
+            "ConvolutionBackward06"
         ],
         "input_types": [
             "torch.float32"
@@ -4368,14 +3771,15 @@
         }
     },
     {
-        "name": "AddBackward07",
-        "op": "AddBackward0",
+        "name": "ConvolutionBackward06",
+        "op": "ConvolutionBackward0",
         "input_nodes": [
-            "ReluBackward19"
+            "ReluBackward08"
         ],
         "output_nodes": [
-            "CudnnConvolutionBackward7",
-            "ViewBackward8"
+            "ReluBackward09",
+            "AccumulateGrad18",
+            "AccumulateGrad19"
         ],
         "input_types": [
             "torch.float32"
@@ -4390,6 +3794,7 @@
         ],
         "output_types": [
             "torch.float32",
+            "torch.float32",
             "torch.float32"
         ],
         "output_shapes": [
@@ -4400,10 +3805,162 @@
                 28
             ],
             [
-                1,
                 512,
+                512,
+                3,
+                3
+            ],
+            [
+                512
+            ]
+        ],
+        "attrs": {
+            "stride": [
                 1,
                 1
+            ],
+            "padding": [
+                1,
+                1
+            ],
+            "dilation": [
+                1,
+                1
+            ],
+            "groups": 1,
+            "padding_mode": "zeros",
+            "output_padding": [
+                0,
+                0
+            ],
+            "in_channels": 512,
+            "out_channels": 512,
+            "kernel_size": [
+                3,
+                3
+            ]
+        }
+    },
+    {
+        "name": "AccumulateGrad18",
+        "op": "AccumulateGrad",
+        "input_nodes": [
+            "ConvolutionBackward06"
+        ],
+        "output_nodes": [
+            "ddp_pre_4"
+        ],
+        "input_types": [
+            "torch.float32"
+        ],
+        "input_shapes": [
+            [
+                512,
+                512,
+                3,
+                3
+            ]
+        ],
+        "output_types": [],
+        "output_shapes": []
+    },
+    {
+        "name": "AccumulateGrad19",
+        "op": "AccumulateGrad",
+        "input_nodes": [
+            "ConvolutionBackward06"
+        ],
+        "output_nodes": [
+            "ddp_pre_4"
+        ],
+        "input_types": [
+            "torch.float32"
+        ],
+        "input_shapes": [
+            [
+                512
+            ]
+        ],
+        "output_types": [],
+        "output_shapes": []
+    },
+    {
+        "name": "ReluBackward09",
+        "op": "ReluBackward0",
+        "input_nodes": [
+            "ConvolutionBackward06"
+        ],
+        "output_nodes": [
+            "ConvolutionBackward07"
+        ],
+        "input_types": [
+            "torch.float32"
+        ],
+        "input_shapes": [
+            [
+                32,
+                512,
+                28,
+                28
+            ]
+        ],
+        "output_types": [
+            "torch.float32"
+        ],
+        "output_shapes": [
+            [
+                32,
+                512,
+                28,
+                28
+            ]
+        ],
+        "attrs": {
+            "inplace": true
+        }
+    },
+    {
+        "name": "ConvolutionBackward07",
+        "op": "ConvolutionBackward0",
+        "input_nodes": [
+            "ReluBackward09"
+        ],
+        "output_nodes": [
+            "MaxPool2DWithIndicesBackward02",
+            "AccumulateGrad20",
+            "AccumulateGrad21"
+        ],
+        "input_types": [
+            "torch.float32"
+        ],
+        "input_shapes": [
+            [
+                32,
+                512,
+                28,
+                28
+            ]
+        ],
+        "output_types": [
+            "torch.float32",
+            "torch.float32",
+            "torch.float32"
+        ],
+        "output_shapes": [
+            [
+                32,
+                256,
+                28,
+                28
+            ],
+            [
+                512,
+                256,
+                3,
+                3
+            ],
+            [
+                512
             ]
         ],
         "attrs": {
@@ -4434,39 +3991,10 @@
         }
     },
     {
-        "name": "ViewBackward8",
-        "op": "ViewBackward",
-        "input_nodes": [
-            "AddBackward07"
-        ],
-        "output_nodes": [
-            "AccumulateGrad20"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                1,
-                512,
-                1,
-                1
-            ]
-        ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                512
-            ]
-        ]
-    },
-    {
         "name": "AccumulateGrad20",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "ViewBackward8"
+            "ConvolutionBackward07"
         ],
         "output_nodes": [
             "ddp_pre_4"
@@ -4476,57 +4004,20 @@
         ],
         "input_shapes": [
             [
-                512
-            ]
-        ],
-        "output_types": [],
-        "output_shapes": []
-    },
-    {
-        "name": "CudnnConvolutionBackward7",
-        "op": "CudnnConvolutionBackward",
-        "input_nodes": [
-            "AddBackward07"
-        ],
-        "output_nodes": [
-            "MaxPool2DWithIndicesBackward2",
-            "AccumulateGrad21"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                512,
-                28,
-                28
-            ]
-        ],
-        "output_types": [
-            "torch.float32",
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                256,
-                28,
-                28
-            ],
-            [
                 512,
                 256,
                 3,
                 3
             ]
-        ]
+        ],
+        "output_types": [],
+        "output_shapes": []
     },
     {
         "name": "AccumulateGrad21",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "CudnnConvolutionBackward7"
+            "ConvolutionBackward07"
         ],
         "output_nodes": [
             "ddp_pre_4"
@@ -4536,23 +4027,20 @@
         ],
         "input_shapes": [
             [
-                512,
-                256,
-                3,
-                3
+                512
             ]
         ],
         "output_types": [],
         "output_shapes": []
     },
     {
-        "name": "MaxPool2DWithIndicesBackward2",
-        "op": "MaxPool2DWithIndicesBackward",
+        "name": "MaxPool2DWithIndicesBackward02",
+        "op": "MaxPool2DWithIndicesBackward0",
         "input_nodes": [
-            "CudnnConvolutionBackward7"
+            "ConvolutionBackward07"
         ],
         "output_nodes": [
-            "ReluBackward110"
+            "ReluBackward010"
         ],
         "input_types": [
             "torch.float32"
@@ -4586,13 +4074,13 @@
         }
     },
     {
-        "name": "ReluBackward110",
-        "op": "ReluBackward1",
+        "name": "ReluBackward010",
+        "op": "ReluBackward0",
         "input_nodes": [
-            "MaxPool2DWithIndicesBackward2"
+            "MaxPool2DWithIndicesBackward02"
         ],
         "output_nodes": [
-            "AddBackward08"
+            "ConvolutionBackward08"
         ],
         "input_types": [
             "torch.float32"
@@ -4621,128 +4109,14 @@
         }
     },
     {
-        "name": "AddBackward08",
-        "op": "AddBackward0",
+        "name": "ConvolutionBackward08",
+        "op": "ConvolutionBackward0",
         "input_nodes": [
-            "ReluBackward110"
+            "ReluBackward010"
         ],
         "output_nodes": [
-            "CudnnConvolutionBackward8",
-            "ViewBackward9"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                256,
-                56,
-                56
-            ]
-        ],
-        "output_types": [
-            "torch.float32",
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                256,
-                56,
-                56
-            ],
-            [
-                1,
-                256,
-                1,
-                1
-            ]
-        ],
-        "attrs": {
-            "stride": [
-                1,
-                1
-            ],
-            "padding": [
-                1,
-                1
-            ],
-            "dilation": [
-                1,
-                1
-            ],
-            "groups": 1,
-            "padding_mode": "zeros",
-            "output_padding": [
-                0,
-                0
-            ],
-            "in_channels": 256,
-            "out_channels": 256,
-            "kernel_size": [
-                3,
-                3
-            ]
-        }
-    },
-    {
-        "name": "ViewBackward9",
-        "op": "ViewBackward",
-        "input_nodes": [
-            "AddBackward08"
-        ],
-        "output_nodes": [
-            "AccumulateGrad22"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                1,
-                256,
-                1,
-                1
-            ]
-        ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                256
-            ]
-        ]
-    },
-    {
-        "name": "AccumulateGrad22",
-        "op": "AccumulateGrad",
-        "input_nodes": [
-            "ViewBackward9"
-        ],
-        "output_nodes": [
-            "ddp_pre_4"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                256
-            ]
-        ],
-        "output_types": [],
-        "output_shapes": []
-    },
-    {
-        "name": "CudnnConvolutionBackward8",
-        "op": "CudnnConvolutionBackward",
-        "input_nodes": [
-            "AddBackward08"
-        ],
-        "output_nodes": [
-            "ReluBackward111",
+            "ReluBackward011",
+            "AccumulateGrad22",
             "AccumulateGrad23"
         ],
         "input_types": [
@@ -4758,103 +4132,6 @@
         ],
         "output_types": [
             "torch.float32",
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                256,
-                56,
-                56
-            ],
-            [
-                256,
-                256,
-                3,
-                3
-            ]
-        ]
-    },
-    {
-        "name": "AccumulateGrad23",
-        "op": "AccumulateGrad",
-        "input_nodes": [
-            "CudnnConvolutionBackward8"
-        ],
-        "output_nodes": [
-            "ddp_pre_4"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                256,
-                256,
-                3,
-                3
-            ]
-        ],
-        "output_types": [],
-        "output_shapes": []
-    },
-    {
-        "name": "ReluBackward111",
-        "op": "ReluBackward1",
-        "input_nodes": [
-            "CudnnConvolutionBackward8"
-        ],
-        "output_nodes": [
-            "AddBackward09"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                256,
-                56,
-                56
-            ]
-        ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                256,
-                56,
-                56
-            ]
-        ],
-        "attrs": {
-            "inplace": true
-        }
-    },
-    {
-        "name": "AddBackward09",
-        "op": "AddBackward0",
-        "input_nodes": [
-            "ReluBackward111"
-        ],
-        "output_nodes": [
-            "CudnnConvolutionBackward9",
-            "ViewBackward10"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                256,
-                56,
-                56
-            ]
-        ],
-        "output_types": [
             "torch.float32",
             "torch.float32"
         ],
@@ -4866,10 +4143,13 @@
                 56
             ],
             [
-                1,
                 256,
-                1,
-                1
+                256,
+                3,
+                3
+            ],
+            [
+                256
             ]
         ],
         "attrs": {
@@ -4900,39 +4180,33 @@
         }
     },
     {
-        "name": "ViewBackward10",
-        "op": "ViewBackward",
+        "name": "AccumulateGrad22",
+        "op": "AccumulateGrad",
         "input_nodes": [
-            "AddBackward09"
+            "ConvolutionBackward08"
         ],
         "output_nodes": [
-            "AccumulateGrad24"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
         ],
         "input_shapes": [
             [
-                1,
                 256,
-                1,
-                1
+                256,
+                3,
+                3
             ]
         ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                256
-            ]
-        ]
+        "output_types": [],
+        "output_shapes": []
     },
     {
-        "name": "AccumulateGrad24",
+        "name": "AccumulateGrad23",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "ViewBackward10"
+            "ConvolutionBackward08"
         ],
         "output_nodes": [
             "ddp_pre_4"
@@ -4949,13 +4223,49 @@
         "output_shapes": []
     },
     {
-        "name": "CudnnConvolutionBackward9",
-        "op": "CudnnConvolutionBackward",
+        "name": "ReluBackward011",
+        "op": "ReluBackward0",
         "input_nodes": [
-            "AddBackward09"
+            "ConvolutionBackward08"
         ],
         "output_nodes": [
-            "ReluBackward112",
+            "ConvolutionBackward09"
+        ],
+        "input_types": [
+            "torch.float32"
+        ],
+        "input_shapes": [
+            [
+                32,
+                256,
+                56,
+                56
+            ]
+        ],
+        "output_types": [
+            "torch.float32"
+        ],
+        "output_shapes": [
+            [
+                32,
+                256,
+                56,
+                56
+            ]
+        ],
+        "attrs": {
+            "inplace": true
+        }
+    },
+    {
+        "name": "ConvolutionBackward09",
+        "op": "ConvolutionBackward0",
+        "input_nodes": [
+            "ReluBackward011"
+        ],
+        "output_nodes": [
+            "ReluBackward012",
+            "AccumulateGrad24",
             "AccumulateGrad25"
         ],
         "input_types": [
@@ -4971,103 +4281,6 @@
         ],
         "output_types": [
             "torch.float32",
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                256,
-                56,
-                56
-            ],
-            [
-                256,
-                256,
-                3,
-                3
-            ]
-        ]
-    },
-    {
-        "name": "AccumulateGrad25",
-        "op": "AccumulateGrad",
-        "input_nodes": [
-            "CudnnConvolutionBackward9"
-        ],
-        "output_nodes": [
-            "ddp_pre_4"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                256,
-                256,
-                3,
-                3
-            ]
-        ],
-        "output_types": [],
-        "output_shapes": []
-    },
-    {
-        "name": "ReluBackward112",
-        "op": "ReluBackward1",
-        "input_nodes": [
-            "CudnnConvolutionBackward9"
-        ],
-        "output_nodes": [
-            "AddBackward010"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                256,
-                56,
-                56
-            ]
-        ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                256,
-                56,
-                56
-            ]
-        ],
-        "attrs": {
-            "inplace": true
-        }
-    },
-    {
-        "name": "AddBackward010",
-        "op": "AddBackward0",
-        "input_nodes": [
-            "ReluBackward112"
-        ],
-        "output_nodes": [
-            "CudnnConvolutionBackward10",
-            "ViewBackward11"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                256,
-                56,
-                56
-            ]
-        ],
-        "output_types": [
             "torch.float32",
             "torch.float32"
         ],
@@ -5079,10 +4292,13 @@
                 56
             ],
             [
-                1,
                 256,
-                1,
-                1
+                256,
+                3,
+                3
+            ],
+            [
+                256
             ]
         ],
         "attrs": {
@@ -5113,99 +4329,10 @@
         }
     },
     {
-        "name": "ViewBackward11",
-        "op": "ViewBackward",
-        "input_nodes": [
-            "AddBackward010"
-        ],
-        "output_nodes": [
-            "AccumulateGrad26"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                1,
-                256,
-                1,
-                1
-            ]
-        ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                256
-            ]
-        ]
-    },
-    {
-        "name": "AccumulateGrad26",
+        "name": "AccumulateGrad24",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "ViewBackward11"
-        ],
-        "output_nodes": [
-            "ddp_pre_4"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                256
-            ]
-        ],
-        "output_types": [],
-        "output_shapes": []
-    },
-    {
-        "name": "CudnnConvolutionBackward10",
-        "op": "CudnnConvolutionBackward",
-        "input_nodes": [
-            "AddBackward010"
-        ],
-        "output_nodes": [
-            "ReluBackward113",
-            "AccumulateGrad27"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                256,
-                56,
-                56
-            ]
-        ],
-        "output_types": [
-            "torch.float32",
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                256,
-                56,
-                56
-            ],
-            [
-                256,
-                256,
-                3,
-                3
-            ]
-        ]
-    },
-    {
-        "name": "AccumulateGrad27",
-        "op": "AccumulateGrad",
-        "input_nodes": [
-            "CudnnConvolutionBackward10"
+            "ConvolutionBackward09"
         ],
         "output_nodes": [
             "ddp_pre_4"
@@ -5225,13 +4352,33 @@
         "output_shapes": []
     },
     {
-        "name": "ReluBackward113",
-        "op": "ReluBackward1",
+        "name": "AccumulateGrad25",
+        "op": "AccumulateGrad",
         "input_nodes": [
-            "CudnnConvolutionBackward10"
+            "ConvolutionBackward09"
         ],
         "output_nodes": [
-            "AddBackward011"
+            "ddp_pre_4"
+        ],
+        "input_types": [
+            "torch.float32"
+        ],
+        "input_shapes": [
+            [
+                256
+            ]
+        ],
+        "output_types": [],
+        "output_shapes": []
+    },
+    {
+        "name": "ReluBackward012",
+        "op": "ReluBackward0",
+        "input_nodes": [
+            "ConvolutionBackward09"
+        ],
+        "output_nodes": [
+            "ConvolutionBackward010"
         ],
         "input_types": [
             "torch.float32"
@@ -5260,14 +4407,15 @@
         }
     },
     {
-        "name": "AddBackward011",
-        "op": "AddBackward0",
+        "name": "ConvolutionBackward010",
+        "op": "ConvolutionBackward0",
         "input_nodes": [
-            "ReluBackward113"
+            "ReluBackward012"
         ],
         "output_nodes": [
-            "CudnnConvolutionBackward11",
-            "ViewBackward12"
+            "ReluBackward013",
+            "AccumulateGrad26",
+            "AccumulateGrad27"
         ],
         "input_types": [
             "torch.float32"
@@ -5282,6 +4430,7 @@
         ],
         "output_types": [
             "torch.float32",
+            "torch.float32",
             "torch.float32"
         ],
         "output_shapes": [
@@ -5292,10 +4441,162 @@
                 56
             ],
             [
-                1,
                 256,
+                256,
+                3,
+                3
+            ],
+            [
+                256
+            ]
+        ],
+        "attrs": {
+            "stride": [
                 1,
                 1
+            ],
+            "padding": [
+                1,
+                1
+            ],
+            "dilation": [
+                1,
+                1
+            ],
+            "groups": 1,
+            "padding_mode": "zeros",
+            "output_padding": [
+                0,
+                0
+            ],
+            "in_channels": 256,
+            "out_channels": 256,
+            "kernel_size": [
+                3,
+                3
+            ]
+        }
+    },
+    {
+        "name": "AccumulateGrad26",
+        "op": "AccumulateGrad",
+        "input_nodes": [
+            "ConvolutionBackward010"
+        ],
+        "output_nodes": [
+            "ddp_pre_4"
+        ],
+        "input_types": [
+            "torch.float32"
+        ],
+        "input_shapes": [
+            [
+                256,
+                256,
+                3,
+                3
+            ]
+        ],
+        "output_types": [],
+        "output_shapes": []
+    },
+    {
+        "name": "AccumulateGrad27",
+        "op": "AccumulateGrad",
+        "input_nodes": [
+            "ConvolutionBackward010"
+        ],
+        "output_nodes": [
+            "ddp_pre_4"
+        ],
+        "input_types": [
+            "torch.float32"
+        ],
+        "input_shapes": [
+            [
+                256
+            ]
+        ],
+        "output_types": [],
+        "output_shapes": []
+    },
+    {
+        "name": "ReluBackward013",
+        "op": "ReluBackward0",
+        "input_nodes": [
+            "ConvolutionBackward010"
+        ],
+        "output_nodes": [
+            "ConvolutionBackward011"
+        ],
+        "input_types": [
+            "torch.float32"
+        ],
+        "input_shapes": [
+            [
+                32,
+                256,
+                56,
+                56
+            ]
+        ],
+        "output_types": [
+            "torch.float32"
+        ],
+        "output_shapes": [
+            [
+                32,
+                256,
+                56,
+                56
+            ]
+        ],
+        "attrs": {
+            "inplace": true
+        }
+    },
+    {
+        "name": "ConvolutionBackward011",
+        "op": "ConvolutionBackward0",
+        "input_nodes": [
+            "ReluBackward013"
+        ],
+        "output_nodes": [
+            "MaxPool2DWithIndicesBackward03",
+            "AccumulateGrad28",
+            "AccumulateGrad29"
+        ],
+        "input_types": [
+            "torch.float32"
+        ],
+        "input_shapes": [
+            [
+                32,
+                256,
+                56,
+                56
+            ]
+        ],
+        "output_types": [
+            "torch.float32",
+            "torch.float32",
+            "torch.float32"
+        ],
+        "output_shapes": [
+            [
+                32,
+                128,
+                56,
+                56
+            ],
+            [
+                256,
+                128,
+                3,
+                3
+            ],
+            [
+                256
             ]
         ],
         "attrs": {
@@ -5326,99 +4627,10 @@
         }
     },
     {
-        "name": "ViewBackward12",
-        "op": "ViewBackward",
-        "input_nodes": [
-            "AddBackward011"
-        ],
-        "output_nodes": [
-            "AccumulateGrad28"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                1,
-                256,
-                1,
-                1
-            ]
-        ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                256
-            ]
-        ]
-    },
-    {
         "name": "AccumulateGrad28",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "ViewBackward12"
-        ],
-        "output_nodes": [
-            "ddp_pre_4"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                256
-            ]
-        ],
-        "output_types": [],
-        "output_shapes": []
-    },
-    {
-        "name": "CudnnConvolutionBackward11",
-        "op": "CudnnConvolutionBackward",
-        "input_nodes": [
-            "AddBackward011"
-        ],
-        "output_nodes": [
-            "MaxPool2DWithIndicesBackward3",
-            "AccumulateGrad29"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                256,
-                56,
-                56
-            ]
-        ],
-        "output_types": [
-            "torch.float32",
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                128,
-                56,
-                56
-            ],
-            [
-                256,
-                128,
-                3,
-                3
-            ]
-        ]
-    },
-    {
-        "name": "AccumulateGrad29",
-        "op": "AccumulateGrad",
-        "input_nodes": [
-            "CudnnConvolutionBackward11"
+            "ConvolutionBackward011"
         ],
         "output_nodes": [
             "ddp_pre_5"
@@ -5438,13 +4650,33 @@
         "output_shapes": []
     },
     {
-        "name": "MaxPool2DWithIndicesBackward3",
-        "op": "MaxPool2DWithIndicesBackward",
+        "name": "AccumulateGrad29",
+        "op": "AccumulateGrad",
         "input_nodes": [
-            "CudnnConvolutionBackward11"
+            "ConvolutionBackward011"
         ],
         "output_nodes": [
-            "ReluBackward114"
+            "ddp_pre_4"
+        ],
+        "input_types": [
+            "torch.float32"
+        ],
+        "input_shapes": [
+            [
+                256
+            ]
+        ],
+        "output_types": [],
+        "output_shapes": []
+    },
+    {
+        "name": "MaxPool2DWithIndicesBackward03",
+        "op": "MaxPool2DWithIndicesBackward0",
+        "input_nodes": [
+            "ConvolutionBackward011"
+        ],
+        "output_nodes": [
+            "ReluBackward014"
         ],
         "input_types": [
             "torch.float32"
@@ -5478,13 +4710,13 @@
         }
     },
     {
-        "name": "ReluBackward114",
-        "op": "ReluBackward1",
+        "name": "ReluBackward014",
+        "op": "ReluBackward0",
         "input_nodes": [
-            "MaxPool2DWithIndicesBackward3"
+            "MaxPool2DWithIndicesBackward03"
         ],
         "output_nodes": [
-            "AddBackward012"
+            "ConvolutionBackward012"
         ],
         "input_types": [
             "torch.float32"
@@ -5513,14 +4745,15 @@
         }
     },
     {
-        "name": "AddBackward012",
-        "op": "AddBackward0",
+        "name": "ConvolutionBackward012",
+        "op": "ConvolutionBackward0",
         "input_nodes": [
-            "ReluBackward114"
+            "ReluBackward014"
         ],
         "output_nodes": [
-            "CudnnConvolutionBackward12",
-            "ViewBackward13"
+            "ReluBackward015",
+            "AccumulateGrad30",
+            "AccumulateGrad31"
         ],
         "input_types": [
             "torch.float32"
@@ -5535,6 +4768,7 @@
         ],
         "output_types": [
             "torch.float32",
+            "torch.float32",
             "torch.float32"
         ],
         "output_shapes": [
@@ -5545,10 +4779,13 @@
                 112
             ],
             [
-                1,
                 128,
-                1,
-                1
+                128,
+                3,
+                3
+            ],
+            [
+                128
             ]
         ],
         "attrs": {
@@ -5579,39 +4816,10 @@
         }
     },
     {
-        "name": "ViewBackward13",
-        "op": "ViewBackward",
-        "input_nodes": [
-            "AddBackward012"
-        ],
-        "output_nodes": [
-            "AccumulateGrad30"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                1,
-                128,
-                1,
-                1
-            ]
-        ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                128
-            ]
-        ]
-    },
-    {
         "name": "AccumulateGrad30",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "ViewBackward13"
+            "ConvolutionBackward012"
         ],
         "output_nodes": [
             "ddp_pre_5"
@@ -5621,57 +4829,20 @@
         ],
         "input_shapes": [
             [
-                128
-            ]
-        ],
-        "output_types": [],
-        "output_shapes": []
-    },
-    {
-        "name": "CudnnConvolutionBackward12",
-        "op": "CudnnConvolutionBackward",
-        "input_nodes": [
-            "AddBackward012"
-        ],
-        "output_nodes": [
-            "ReluBackward115",
-            "AccumulateGrad31"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                128,
-                112,
-                112
-            ]
-        ],
-        "output_types": [
-            "torch.float32",
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                128,
-                112,
-                112
-            ],
-            [
                 128,
                 128,
                 3,
                 3
             ]
-        ]
+        ],
+        "output_types": [],
+        "output_shapes": []
     },
     {
         "name": "AccumulateGrad31",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "CudnnConvolutionBackward12"
+            "ConvolutionBackward012"
         ],
         "output_nodes": [
             "ddp_pre_5"
@@ -5681,23 +4852,20 @@
         ],
         "input_shapes": [
             [
-                128,
-                128,
-                3,
-                3
+                128
             ]
         ],
         "output_types": [],
         "output_shapes": []
     },
     {
-        "name": "ReluBackward115",
-        "op": "ReluBackward1",
+        "name": "ReluBackward015",
+        "op": "ReluBackward0",
         "input_nodes": [
-            "CudnnConvolutionBackward12"
+            "ConvolutionBackward012"
         ],
         "output_nodes": [
-            "AddBackward013"
+            "ConvolutionBackward013"
         ],
         "input_types": [
             "torch.float32"
@@ -5726,14 +4894,15 @@
         }
     },
     {
-        "name": "AddBackward013",
-        "op": "AddBackward0",
+        "name": "ConvolutionBackward013",
+        "op": "ConvolutionBackward0",
         "input_nodes": [
-            "ReluBackward115"
+            "ReluBackward015"
         ],
         "output_nodes": [
-            "CudnnConvolutionBackward13",
-            "ViewBackward14"
+            "MaxPool2DWithIndicesBackward04",
+            "AccumulateGrad32",
+            "AccumulateGrad33"
         ],
         "input_types": [
             "torch.float32"
@@ -5748,20 +4917,24 @@
         ],
         "output_types": [
             "torch.float32",
+            "torch.float32",
             "torch.float32"
         ],
         "output_shapes": [
             [
                 32,
-                128,
+                64,
                 112,
                 112
             ],
             [
-                1,
                 128,
-                1,
-                1
+                64,
+                3,
+                3
+            ],
+            [
+                128
             ]
         ],
         "attrs": {
@@ -5792,39 +4965,10 @@
         }
     },
     {
-        "name": "ViewBackward14",
-        "op": "ViewBackward",
-        "input_nodes": [
-            "AddBackward013"
-        ],
-        "output_nodes": [
-            "AccumulateGrad32"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                1,
-                128,
-                1,
-                1
-            ]
-        ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                128
-            ]
-        ]
-    },
-    {
         "name": "AccumulateGrad32",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "ViewBackward14"
+            "ConvolutionBackward013"
         ],
         "output_nodes": [
             "ddp_pre_5"
@@ -5834,57 +4978,20 @@
         ],
         "input_shapes": [
             [
-                128
-            ]
-        ],
-        "output_types": [],
-        "output_shapes": []
-    },
-    {
-        "name": "CudnnConvolutionBackward13",
-        "op": "CudnnConvolutionBackward",
-        "input_nodes": [
-            "AddBackward013"
-        ],
-        "output_nodes": [
-            "MaxPool2DWithIndicesBackward4",
-            "AccumulateGrad33"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                128,
-                112,
-                112
-            ]
-        ],
-        "output_types": [
-            "torch.float32",
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                64,
-                112,
-                112
-            ],
-            [
                 128,
                 64,
                 3,
                 3
             ]
-        ]
+        ],
+        "output_types": [],
+        "output_shapes": []
     },
     {
         "name": "AccumulateGrad33",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "CudnnConvolutionBackward13"
+            "ConvolutionBackward013"
         ],
         "output_nodes": [
             "ddp_pre_5"
@@ -5894,23 +5001,20 @@
         ],
         "input_shapes": [
             [
-                128,
-                64,
-                3,
-                3
+                128
             ]
         ],
         "output_types": [],
         "output_shapes": []
     },
     {
-        "name": "MaxPool2DWithIndicesBackward4",
-        "op": "MaxPool2DWithIndicesBackward",
+        "name": "MaxPool2DWithIndicesBackward04",
+        "op": "MaxPool2DWithIndicesBackward0",
         "input_nodes": [
-            "CudnnConvolutionBackward13"
+            "ConvolutionBackward013"
         ],
         "output_nodes": [
-            "ReluBackward116"
+            "ReluBackward016"
         ],
         "input_types": [
             "torch.float32"
@@ -5944,13 +5048,13 @@
         }
     },
     {
-        "name": "ReluBackward116",
-        "op": "ReluBackward1",
+        "name": "ReluBackward016",
+        "op": "ReluBackward0",
         "input_nodes": [
-            "MaxPool2DWithIndicesBackward4"
+            "MaxPool2DWithIndicesBackward04"
         ],
         "output_nodes": [
-            "AddBackward014"
+            "ConvolutionBackward014"
         ],
         "input_types": [
             "torch.float32"
@@ -5979,14 +5083,15 @@
         }
     },
     {
-        "name": "AddBackward014",
-        "op": "AddBackward0",
+        "name": "ConvolutionBackward014",
+        "op": "ConvolutionBackward0",
         "input_nodes": [
-            "ReluBackward116"
+            "ReluBackward016"
         ],
         "output_nodes": [
-            "CudnnConvolutionBackward14",
-            "ViewBackward15"
+            "ReluBackward017",
+            "AccumulateGrad34",
+            "AccumulateGrad35"
         ],
         "input_types": [
             "torch.float32"
@@ -6001,6 +5106,7 @@
         ],
         "output_types": [
             "torch.float32",
+            "torch.float32",
             "torch.float32"
         ],
         "output_shapes": [
@@ -6011,10 +5117,13 @@
                 224
             ],
             [
-                1,
                 64,
-                1,
-                1
+                64,
+                3,
+                3
+            ],
+            [
+                64
             ]
         ],
         "attrs": {
@@ -6045,39 +5154,10 @@
         }
     },
     {
-        "name": "ViewBackward15",
-        "op": "ViewBackward",
-        "input_nodes": [
-            "AddBackward014"
-        ],
-        "output_nodes": [
-            "AccumulateGrad34"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                1,
-                64,
-                1,
-                1
-            ]
-        ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                64
-            ]
-        ]
-    },
-    {
         "name": "AccumulateGrad34",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "ViewBackward15"
+            "ConvolutionBackward014"
         ],
         "output_nodes": [
             "ddp_pre_5"
@@ -6087,57 +5167,20 @@
         ],
         "input_shapes": [
             [
-                64
-            ]
-        ],
-        "output_types": [],
-        "output_shapes": []
-    },
-    {
-        "name": "CudnnConvolutionBackward14",
-        "op": "CudnnConvolutionBackward",
-        "input_nodes": [
-            "AddBackward014"
-        ],
-        "output_nodes": [
-            "ReluBackward117",
-            "AccumulateGrad35"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                64,
-                224,
-                224
-            ]
-        ],
-        "output_types": [
-            "torch.float32",
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                32,
-                64,
-                224,
-                224
-            ],
-            [
                 64,
                 64,
                 3,
                 3
             ]
-        ]
+        ],
+        "output_types": [],
+        "output_shapes": []
     },
     {
         "name": "AccumulateGrad35",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "CudnnConvolutionBackward14"
+            "ConvolutionBackward014"
         ],
         "output_nodes": [
             "ddp_pre_5"
@@ -6147,23 +5190,20 @@
         ],
         "input_shapes": [
             [
-                64,
-                64,
-                3,
-                3
+                64
             ]
         ],
         "output_types": [],
         "output_shapes": []
     },
     {
-        "name": "ReluBackward117",
-        "op": "ReluBackward1",
+        "name": "ReluBackward017",
+        "op": "ReluBackward0",
         "input_nodes": [
-            "CudnnConvolutionBackward14"
+            "ConvolutionBackward014"
         ],
         "output_nodes": [
-            "AddBackward015"
+            "ConvolutionBackward015"
         ],
         "input_types": [
             "torch.float32"
@@ -6192,14 +5232,14 @@
         }
     },
     {
-        "name": "AddBackward015",
-        "op": "AddBackward0",
+        "name": "ConvolutionBackward015",
+        "op": "ConvolutionBackward0",
         "input_nodes": [
-            "ReluBackward117"
+            "ReluBackward017"
         ],
         "output_nodes": [
-            "CudnnConvolutionBackward15",
-            "ViewBackward16"
+            "AccumulateGrad36",
+            "AccumulateGrad37"
         ],
         "input_types": [
             "torch.float32"
@@ -6213,21 +5253,20 @@
             ]
         ],
         "output_types": [
+            null,
             "torch.float32",
             "torch.float32"
         ],
         "output_shapes": [
+            null,
             [
-                32,
                 64,
-                224,
-                224
+                3,
+                3,
+                3
             ],
             [
-                1,
-                64,
-                1,
-                1
+                64
             ]
         ],
         "attrs": {
@@ -6258,39 +5297,10 @@
         }
     },
     {
-        "name": "ViewBackward16",
-        "op": "ViewBackward",
-        "input_nodes": [
-            "AddBackward015"
-        ],
-        "output_nodes": [
-            "AccumulateGrad36"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                1,
-                64,
-                1,
-                1
-            ]
-        ],
-        "output_types": [
-            "torch.float32"
-        ],
-        "output_shapes": [
-            [
-                64
-            ]
-        ]
-    },
-    {
         "name": "AccumulateGrad36",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "ViewBackward16"
+            "ConvolutionBackward015"
         ],
         "output_nodes": [
             "ddp_pre_5"
@@ -6300,51 +5310,20 @@
         ],
         "input_shapes": [
             [
-                64
+                64,
+                3,
+                3,
+                3
             ]
         ],
         "output_types": [],
         "output_shapes": []
     },
     {
-        "name": "CudnnConvolutionBackward15",
-        "op": "CudnnConvolutionBackward",
-        "input_nodes": [
-            "AddBackward015"
-        ],
-        "output_nodes": [
-            "AccumulateGrad37"
-        ],
-        "input_types": [
-            "torch.float32"
-        ],
-        "input_shapes": [
-            [
-                32,
-                64,
-                224,
-                224
-            ]
-        ],
-        "output_types": [
-            null,
-            "torch.float32"
-        ],
-        "output_shapes": [
-            null,
-            [
-                64,
-                3,
-                3,
-                3
-            ]
-        ]
-    },
-    {
         "name": "AccumulateGrad37",
         "op": "AccumulateGrad",
         "input_nodes": [
-            "CudnnConvolutionBackward15"
+            "ConvolutionBackward015"
         ],
         "output_nodes": [
             "ddp_pre_5"
@@ -6354,10 +5333,7 @@
         ],
         "input_shapes": [
             [
-                64,
-                3,
-                3,
-                3
+                64
             ]
         ],
         "output_types": [],
@@ -6444,7 +5420,7 @@
             "AccumulateGrad7",
             "AccumulateGrad8",
             "AccumulateGrad9",
-            "AccumulateGrad10",
+            "AccumulateGrad11",
             "ddp_Allreduce_1"
         ],
         "output_nodes": [
@@ -6479,12 +5455,12 @@
         "name": "ddp_pre_3",
         "op": "ddp_pre",
         "input_nodes": [
-            "AccumulateGrad11",
+            "AccumulateGrad10",
             "AccumulateGrad12",
             "AccumulateGrad13",
             "AccumulateGrad14",
             "AccumulateGrad15",
-            "AccumulateGrad16",
+            "AccumulateGrad17",
             "ddp_Allreduce_2"
         ],
         "output_nodes": [
@@ -6519,7 +5495,7 @@
         "name": "ddp_pre_4",
         "op": "ddp_pre",
         "input_nodes": [
-            "AccumulateGrad17",
+            "AccumulateGrad16",
             "AccumulateGrad18",
             "AccumulateGrad19",
             "AccumulateGrad20",
@@ -6530,7 +5506,7 @@
             "AccumulateGrad25",
             "AccumulateGrad26",
             "AccumulateGrad27",
-            "AccumulateGrad28",
+            "AccumulateGrad29",
             "ddp_Allreduce_3"
         ],
         "output_nodes": [
@@ -6565,7 +5541,7 @@
         "name": "ddp_pre_5",
         "op": "ddp_pre",
         "input_nodes": [
-            "AccumulateGrad29",
+            "AccumulateGrad28",
             "AccumulateGrad30",
             "AccumulateGrad31",
             "AccumulateGrad32",
@@ -6825,7 +5801,8 @@
             "momentum": 0,
             "dampening": 0,
             "weight_decay": 0,
-            "nesterov": false
+            "nesterov": false,
+            "maximize": false
         }
     },
     {
@@ -7049,7 +6026,8 @@
             "momentum": 0,
             "dampening": 0,
             "weight_decay": 0,
-            "nesterov": false
+            "nesterov": false,
+            "maximize": false
         }
     }
 ]

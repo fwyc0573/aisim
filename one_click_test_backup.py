@@ -65,92 +65,62 @@ ddp_graph_command = 'python3 -m torch.distributed.launch --nproc_per_node 1 \
     --model {} \
     --path ai_simulator/simulator_benchmark/data/torch/graphs/distributed/{}.json'
 
-def nccl_test(args, config):
-    for _, value in config['enviroments'].items():
-        cmd = nccl_meta_command.format(value, value)
-        os.system(cmd)
-
-def baseline_test(args, config):
-    for model in args.model_list:
-        for _, value in config['enviroments'].items():
-            cmd = ddp_meta_command.format(value, model, args.batchsize)
-            time = os.popen(cmd).read()
-            args.model_zoo.set_baseline_time(value, model, float(time))
-
-def TorchGraph_test(args, config):
-    for model in args.model_list:
-        module = getattr(models, model)().cuda()
-        example = torch.rand(args.batchsize, 3, 224, 224).cuda()
-        optimizer = optim.SGD(module.parameters(), lr=0.01)
-        g = TorchGraph(module, example, optimizer, model)
-        g.dump_graph('ai_simulator/simulator_benchmark/data/torch/graphs/' + model + ".json")
-
-def ddpgraph_test(args, config):
-    for model in args.model_list:
-        cmd = ddp_graph_command.format(model, model, args.batchsize)
-        os.system(cmd)
-
-def op_test(args, config):
-    for model in args.model_list:
-        timer = Timer(100, args.model)
-        module = getattr(models, model)().cuda()
-        example = torch.rand(args.batchsize, 3, 224, 224).cuda()
-        optimizer = optim.SGD(module.parameters(), lr=0.01)
-        
-        g = TorchDatabase(module, example, model, timer, optimizer)
-        db = (g._get_overall_database())
-        json.dump(db,
-                  open('ai_simulator/simulator_benchmark/data/torch/database/' + model + "_db.json", 'w'),
-                  indent=4)
-
-def one_click_test(args, config):
+def one_click_test(args, config, model_zoo):
 
     if args.skip_data:
         return
+    module = getattr(models, args.model)().cuda()
+    example = torch.rand(args.batchsize, 3, 224, 224).cuda()
+    optimizer = optim.SGD(module.parameters(), lr=0.01)
 
     # do all test within one click
-
     # nccl_test
     if not args.skip_nccl:
-        nccl_test(args, config)
+        for _, value in config['enviroments'].items():
+            cmd = nccl_meta_command.format(value, value)
+            os.system(cmd)
 
     # baseline test
     if not args.skip_baseline:
-        baseline_test(args, config)
         for _, value in config['enviroments'].items():
             cmd = ddp_meta_command.format(value, args.model, args.batchsize)
             time = os.popen(cmd).read()
+            print(time)
+            model_zoo.set_baseline_time(value, args.model, float(time))
 
-    # TorchGraph test
     if not args.skip_graph:
-        TorchGraph_test(args, config)
+        g = TorchGraph(module, example, optimizer, args.model)
+        g.dump_graph('ai_simulator/simulator_benchmark/data/torch/graphs/' + args.model + ".json")
 
-    # ddpgraph test
     if not args.skip_ddpgraph:
-        ddpgraph_test(args, config)
-
+        cmd = ddp_graph_command.format(args.model, args.model, args.batchsize)
+        os.system(cmd)
+    
     if not args.skip_op:
-        op_test(args, config)
+        timer = Timer(100, args.model)
+        g = TorchDatabase(module, example, args.model, timer, optimizer)
+        db = (g._get_overall_database())
+        json.dump(db,
+                  open('ai_simulator/simulator_benchmark/data/torch/database/' + args.model + "_db.json", 'w'),
+                  indent=4)
 
 if __name__ == '__main__':
     args = parser.parse_args()
 
     with open(args.config) as f:
         config = yaml.load(f, Loader=yaml.FullLoader)
-
+    
     model_zoo = ModelZoo(config)
-    args.model_zoo = model_zoo
 
     model_list = model_zoo.get_model_list()
-    args.model_list = model_list
     print(model_list)
 
     print(config)
 
-    one_click_test(args, config)
+    one_click_test(args, config, model_zoo)
 
-    benchmarktools = BenchmarkTools(args.model_list,
-                                    args.model_zoo,
+    benchmarktools = BenchmarkTools(model_list,
+                                    model_zoo,
                                     args.skip_coverage,
                                     args.skip_accuracy,
                                     config)

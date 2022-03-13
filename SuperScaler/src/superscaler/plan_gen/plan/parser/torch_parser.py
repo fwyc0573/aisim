@@ -56,7 +56,6 @@ class TorchParser(DAGParser):
     def generate_fake_execution_time(self, attrs, gpu):
         if 'ddp' in attrs['op']:
             bucket_size = attrs['bucket_size']
-            #print(bucket_size)
             VM = gpu
             for key,value in self._allreduce_dict[VM].items():
                 if key < bucket_size:
@@ -79,6 +78,7 @@ class TorchParser(DAGParser):
             return fake_time
 
     def extract_attrs(self, node, device, gpu):
+        #print(node)
         if 'attrs' in node:
             attrs = node['attrs']
         else:

@@ -1,10 +1,12 @@
 import time
 import sys
+import torch
 sys.setrecursionlimit(1500)
 
 class Timer():
 
     def __init__(self, profiling_steps: int, name: str):
+        self.warming = 10
         self.profiling_steps = profiling_steps
         self.name = name
         self.database = dict()
@@ -22,9 +24,13 @@ class Timer():
             if name in self.database:
                 raise RuntimeError(f"Node {name} repeat in {self.name} graph")
             else:
+                for i in range(self.warming):
+                    var(*outputs)
+                torch.cuda.synchronize()
                 ss = time.perf_counter()
                 for i in range(self.profiling_steps):
                     var(*outputs)
+                torch.cuda.synchronize()
                 ee = time.perf_counter()
                 self.database[name] = (ee-ss) / self.profiling_steps
 
@@ -43,9 +49,13 @@ class Timer():
             if name in self.database:
                 raise RuntimeError(f"Node {name} repeat in {self.name} graph")
             else:
+                for i in range(self.warming):
+                    var(*outputs)
+                torch.cuda.synchronize()
                 ss = time.perf_counter()
                 for i in range(self.profiling_steps):
                     var(*outputs)
+                torch.cuda.synchronize()
                 ee = time.perf_counter()
                 self.database[name] = (ee-ss) / self.profiling_steps
             
@@ -60,26 +70,36 @@ class Timer():
         return hook
 
     def _call_function(self, function, node, args, kwargs):
+        for i in range(self.warming):
+            output = function(node.target, args, kwargs)
+        torch.cuda.synchronize()
         ss = time.perf_counter()
         for i in range(self.profiling_steps):
             output = function(node.target, args, kwargs)
+        torch.cuda.synchronize()
         ee = time.perf_counter()
         self.database[node.name] = (ee-ss) / self.profiling_steps
         return output
 
 
     def _call_function_once(self, function, node, args, kwargs):
+        torch.cuda.synchronize()
         ss = time.perf_counter()
         output = function(node.target, args, kwargs)
+        torch.cuda.synchronize()
         ee = time.perf_counter()
         self.database[node.name] = (ee-ss) / self.profiling_steps
         return output
 
 
     def _call_optimizer(self, function, name):
+        for i in range(self.warming):
+            function()
+        torch.cuda.synchronize()
         ss = time.perf_counter()
         for i in range(self.profiling_steps):
             function()
+        torch.cuda.synchronize()
         ee = time.perf_counter()
         self.database[name] = (ee-ss) / self.profiling_steps
     

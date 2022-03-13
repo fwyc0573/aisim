@@ -11,6 +11,7 @@ import argparse
 parser = argparse.ArgumentParser(description='PyTorch Synthetic Benchmark',
                                  formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument("--local_rank", default=-1, type=int)
+parser.add_argument("--batchsize", default=32, type=int)
 parser.add_argument('--model', type=str, default='resnet50',
                     help='model to benchmark')
 parser.add_argument('--path', type=str, default='DDP.json',
@@ -19,7 +20,7 @@ args = parser.parse_args()
 
 from torchvision import models
 module = getattr(models, args.model)().cuda()
-example = torch.rand(32, 3, 224, 224).cuda()
+example = torch.rand(args.batchsize, 3, 224, 224).cuda()
 optimizer = optim.SGD(module.parameters(), lr=0.01)
 
 g = DDPGraph(module, example, optimizer, 'resnet50')
