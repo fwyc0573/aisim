@@ -1,0 +1,1746 @@
+{
+    "VariableV2%dtype%1%shape%[30522,1024]": {
+        "avg": 16.221517,
+        "std_err": 0.187176
+    },
+    "VariableV2%dtype%1%shape%[1024,1024]": {
+        "avg": 15.550454,
+        "std_err": 0.254363
+    },
+    "Const%dtype%3%value%[3,[224]]": {
+        "avg": 2.404451,
+        "std_err": 0.137277
+    },
+    "Const%dtype%3%value%[3,[]]": {
+        "avg": 2.217293,
+        "std_err": 0.151826
+    },
+    "Const%dtype%3%value%[3,[3]]": {
+        "avg": 2.66552,
+        "std_err": 0.154525
+    },
+    "Const%dtype%1%value%[1,[]]": {
+        "avg": 1.978636,
+        "std_err": 0.108371
+    },
+    "VariableV2%dtype%1%shape%[2,1024]": {
+        "avg": 16.517937,
+        "std_err": 0.941737
+    },
+    "VariableV2%dtype%1%shape%[512,1024]": {
+        "avg": 15.954375,
+        "std_err": 0.547993
+    },
+    "Const%dtype%3%value%[3,[2]]": {
+        "avg": 2.54035,
+        "std_err": 0.128707
+    },
+    "VariableV2%dtype%1%shape%[1024]": {
+        "avg": 15.934408,
+        "std_err": 0.638202
+    },
+    "Const%dtype%3%value%[3,[1]]": {
+        "avg": 2.550125,
+        "std_err": 0.111885
+    },
+    "Const%dtype%3%value%[3,[4]]": {
+        "avg": 2.428293,
+        "std_err": 0.157806
+    },
+    "Const%dtype%1%value%[1,[32,1,1,7]]": {
+        "avg": 2.337524,
+        "std_err": 0.11198
+    },
+    "VariableV2%dtype%1%shape%[1024,4096]": {
+        "avg": 15.672644,
+        "std_err": 0.468735
+    },
+    "VariableV2%dtype%1%shape%[4096]": {
+        "avg": 15.719235,
+        "std_err": 0.135953
+    },
+    "VariableV2%dtype%1%shape%[4096,1024]": {
+        "avg": 16.23763,
+        "std_err": 0.83943
+    },
+    "VariableV2%dtype%1%shape%[32,1024]": {
+        "avg": 15.933812,
+        "std_err": 0.391178
+    },
+    "VariableV2%dtype%1%shape%[32]": {
+        "avg": 15.406807,
+        "std_err": 0.322815
+    },
+    "VariableV2%dtype%9%shape%[]": {
+        "avg": 15.859902,
+        "std_err": 0.33286
+    },
+    "Const%dtype%10%value%[10,[]]": {
+        "avg": 2.093315,
+        "std_err": 0.104488
+    },
+    "Const%dtype%9%value%[9,[]]": {
+        "avg": 2.709428,
+        "std_err": 0.165952
+    },
+    "Const%dtype%3%value%[3,[2,2]]": {
+        "avg": 2.297333,
+        "std_err": 0.136753
+    },
+    "Identity%input%[30522,1024]%T%1": {
+        "avg": 4.695941,
+        "std_err": 0.223236
+    },
+    "Identity%input%[1024,1024]%T%1": {
+        "avg": 2.465844,
+        "std_err": 0.061545
+    },
+    "Identity%input%[2,1024]%T%1": {
+        "avg": 2.864467,
+        "std_err": 0.174638
+    },
+    "Identity%input%[512,1024]%T%1": {
+        "avg": 3.08156,
+        "std_err": 0.156745
+    },
+    "Identity%input%[1024]%T%1": {
+        "avg": 2.420346,
+        "std_err": 0.098643
+    },
+    "Identity%input%[1024,4096]%T%1": {
+        "avg": 2.46942,
+        "std_err": 0.058966
+    },
+    "Identity%input%[4096]%T%1": {
+        "avg": 2.455061,
+        "std_err": 0.091643
+    },
+    "Identity%input%[4096,1024]%T%1": {
+        "avg": 2.478361,
+        "std_err": 0.032187
+    },
+    "Identity%input%[32,1024]%T%1": {
+        "avg": 3.247261,
+        "std_err": 0.19159
+    },
+    "Identity%input%[32]%T%1": {
+        "avg": 2.630711,
+        "std_err": 0.168024
+    },
+    "Identity%input%[]%T%9": {
+        "avg": 4.026549,
+        "std_err": 0.194602
+    },
+    "Cast%input%[]%DstT%3%SrcT%9%Truncate%0": {
+        "avg": 43.712457,
+        "std_err": 0.552194
+    },
+    "Cast%input%[]%DstT%1%SrcT%9%Truncate%0": {
+        "avg": 10.156198,
+        "std_err": 0.614101
+    },
+    "_HostSend%input%[224]%T%3%client_terminated%0%send_device_incarnation%1": {
+        "avg": 0.0,
+        "std_err": 0.0
+    },
+    "_Recv%client_terminated%0%send_device_incarnation%1%tensor_type%3": {
+        "avg": 0.0,
+        "std_err": 0.0
+    },
+    "GatherV2%input%[30522,1024]%input%[224]%input%[]%Taxis%3%Tindices%3%Tparams%1%batch_dims%0": {
+        "avg": 19.982078,
+        "std_err": 1.056163
+    },
+    "GatherV2%input%[2,1024]%input%[224]%input%[]%Taxis%3%Tindices%3%Tparams%1%batch_dims%0": {
+        "avg": 17.623425,
+        "std_err": 0.975016
+    },
+    "Slice%input%[512,1024]%input%[2]%input%[2]%Index%3%T%1": {
+        "avg": 4.763603,
+        "std_err": 0.057444
+    },
+    "AddV2%input%[]%input%[]%T%9": {
+        "avg": 7.044474,
+        "std_err": 0.104076
+    },
+    "Cast%input%[]%DstT%1%SrcT%3%Truncate%0": {
+        "avg": 6.768703,
+        "std_err": 0.0
+    },
+    "_Send%input%[]%T%3%client_terminated%0%send_device_incarnation%1": {
+        "avg": 0.0,
+        "std_err": 0.0
+    },
+    "_HostRecv%client_terminated%0%send_device_incarnation%1%tensor_type%3": {
+        "avg": 0.0,
+        "std_err": 0.0
+    },
+    "Less%input%[]%input%[]%T%3": {
+        "avg": 38.94949,
+        "std_err": 1.829017
+    },
+    "Minimum%input%[]%input%[]%T%1": {
+        "avg": 9.498331,
+        "std_err": 0.227624
+    },
+    "Reshape%input%[224,1024]%input%[3]%T%1%Tshape%3": {
+        "avg": 4.546881,
+        "std_err": 0.151509
+    },
+    "Reshape%input%[7,1024]%input%[3]%T%1%Tshape%3": {
+        "avg": 3.739993,
+        "std_err": 0.14916
+    },
+    "Assign%input%[]%input%[]%T%9%_grappler_relax_allocator_constraints%1%use_locking%0%validate_shape%1": {
+        "avg": 21.854043,
+        "std_err": 0.651829
+    },
+    "Snapshot%input%[]%T%1": {
+        "avg": 8.204778,
+        "std_err": 0.520863
+    },
+    "_HostSend%input%[]%T%10%client_terminated%0%send_device_incarnation%1": {
+        "avg": 0.0,
+        "std_err": 0.0
+    },
+    "_Recv%client_terminated%0%send_device_incarnation%1%tensor_type%10": {
+        "avg": 0.0,
+        "std_err": 0.0
+    },
+    "Cast%input%[]%DstT%1%SrcT%10%Truncate%0": {
+        "avg": 8.468969,
+        "std_err": 0.200375
+    },
+    "AddN%input%[32,7,1024]%input%[32,7,1024]%N%2%T%1%_grappler_ArithmeticOptimizer_AddOpsRewriteStage%1": {
+        "avg": 15.839447,
+        "std_err": 0.794158
+    },
+    "Mul%input%[]%input%[]%T%1%_grappler_ArithmeticOptimizer_MinimizeBroadcasts%1": {
+        "avg": 13.060371,
+        "std_err": 0.607997
+    },
+    "Sub%input%[]%input%[]%T%1": {
+        "avg": 12.069808,
+        "std_err": 0.600542
+    },
+    "Add%input%[32,7,1024]%input%[1,7,1024]%T%1%_grappler_ArithmeticOptimizer_AddOpsRewriteStage%1": {
+        "avg": 15.533621,
+        "std_err": 0.832531
+    },
+    "Mul%input%[]%input%[]%T%1": {
+        "avg": 11.897882,
+        "std_err": 0.712934
+    },
+    "Mean%input%[32,7,1024]%input%[1]%T%1%Tidx%3%keep_dims%1": {
+        "avg": 14.86659,
+        "std_err": 0.475842
+    },
+    "SquaredDifference%input%[32,7,1024]%input%[32,7,1]%T%1": {
+        "avg": 18.371542,
+        "std_err": 0.23404
+    },
+    "AddV2%input%[]%input%[32,7,1]%T%1": {
+        "avg": 6.234646,
+        "std_err": 0.338787
+    },
+    "Rsqrt%input%[32,7,1]%T%1": {
+        "avg": 8.309484,
+        "std_err": 0.13702
+    },
+    "Mul%input%[32,7,1]%input%[1024]%T%1": {
+        "avg": 16.8278,
+        "std_err": 0.683031
+    },
+    "_Send%input%[]%T%1%client_terminated%0%send_device_incarnation%1": {
+        "avg": 0.0,
+        "std_err": 0.0
+    },
+    "_HostRecv%client_terminated%0%send_device_incarnation%1%tensor_type%1": {
+        "avg": 0.0,
+        "std_err": 0.0
+    },
+    "_Send%input%[]%T%10%client_terminated%0%send_device_incarnation%1": {
+        "avg": 0.0,
+        "std_err": 0.0
+    },
+    "_HostRecv%client_terminated%0%send_device_incarnation%1%tensor_type%10": {
+        "avg": 0.0,
+        "std_err": 0.0
+    },
+    "_FusedMulAdd2%input%[]%input%[]%input%[]%input%[]%T%1": {
+        "avg": 7.52449,
+        "std_err": 0.088215
+    },
+    "_FusedMulSubRev%input%[32,7,1024]%input%[32,7,1]%input%[1024]%T%1": {
+        "avg": 16.878247,
+        "std_err": 0.867007
+    },
+    "_FusedMulAdd%input%[32,7,1024]%input%[32,7,1024]%input%[32,7,1024]%T%1": {
+        "avg": 15.731942,
+        "std_err": 0.899667
+    },
+    "Dropout%input%[32,7,1024]%input%[]%input%[3]%input%[]%T%1%Tseed%3": {
+        "avg": 17.612696,
+        "std_err": 0.620225
+    },
+    "Reshape%input%[32,7,1024]%input%[2]%T%1%Tshape%3": {
+        "avg": 5.403625,
+        "std_err": 0.266584
+    },
+    "MatMul%input%[224,1024]%input%[1024,1024]%T%1%transpose_a%0%transpose_b%0": {
+        "avg": 55.452784,
+        "std_err": 0.49129
+    },
+    "BiasAdd%input%[224,1024]%input%[1024]%T%1": {
+        "avg": 16.847957,
+        "std_err": 0.31115
+    },
+    "Reshape%input%[224,1024]%input%[4]%T%1%Tshape%3": {
+        "avg": 4.246831,
+        "std_err": 0.301264
+    },
+    "Transpose%input%[32,7,16,64]%input%[4]%T%1%Tperm%3": {
+        "avg": 17.502705,
+        "std_err": 0.823859
+    },
+    "BatchMatMulV2%input%[32,16,7,64]%input%[32,16,7,64]%T%1%adj_x%0%adj_y%1": {
+        "avg": 62.122941,
+        "std_err": 4.59039
+    },
+    "_FusedMulAdd%input%[32,16,7,7]%input%[]%input%[32,1,1,7]%T%1": {
+        "avg": 17.114083,
+        "std_err": 0.333499
+    },
+    "Softmax%input%[32,16,7,7]%T%1": {
+        "avg": 43.701331,
+        "std_err": 1.341876
+    },
+    "Dropout%input%[32,16,7,7]%input%[]%input%[4]%input%[]%T%1%Tseed%3": {
+        "avg": 15.87126,
+        "std_err": 0.443462
+    },
+    "Mul%input%[]%input%[32,16,7,7]%T%1%_grappler_ArithmeticOptimizer_MinimizeBroadcasts%1": {
+        "avg": 9.804964,
+        "std_err": 0.335016
+    },
+    "BatchMatMulV2%input%[32,16,7,7]%input%[32,16,7,64]%T%1%adj_x%0%adj_y%0": {
+        "avg": 61.020255,
+        "std_err": 0.720299
+    },
+    "Transpose%input%[32,16,7,64]%input%[4]%T%1%Tperm%3": {
+        "avg": 21.298528,
+        "std_err": 0.685009
+    },
+    "Reshape%input%[32,7,16,64]%input%[2]%T%1%Tshape%3": {
+        "avg": 4.398823,
+        "std_err": 0.131308
+    },
+    "Dropout%input%[224,1024]%input%[]%input%[2]%input%[]%T%1%Tseed%3": {
+        "avg": 18.816193,
+        "std_err": 0.578299
+    },
+    "AddV2%input%[224,1024]%input%[224,1024]%T%1": {
+        "avg": 15.605092,
+        "std_err": 0.721733
+    },
+    "Mean%input%[224,1024]%input%[1]%T%1%Tidx%3%keep_dims%1": {
+        "avg": 15.334288,
+        "std_err": 0.387203
+    },
+    "SquaredDifference%input%[224,1]%input%[224,1024]%T%1": {
+        "avg": 18.436313,
+        "std_err": 0.423327
+    },
+    "AddV2%input%[]%input%[224,1]%T%1": {
+        "avg": 14.14458,
+        "std_err": 0.952788
+    },
+    "Rsqrt%input%[224,1]%T%1": {
+        "avg": 12.10928,
+        "std_err": 0.470239
+    },
+    "Mul%input%[224,1]%input%[1024]%T%1": {
+        "avg": 18.509952,
+        "std_err": 0.481473
+    },
+    "_FusedMulSubRev%input%[224,1024]%input%[224,1]%input%[1024]%T%1": {
+        "avg": 19.375628,
+        "std_err": 0.522474
+    },
+    "_FusedMulAdd%input%[224,1024]%input%[224,1024]%input%[224,1024]%T%1": {
+        "avg": 17.032623,
+        "std_err": 0.958494
+    },
+    "MatMul%input%[224,1024]%input%[1024,4096]%T%1%transpose_a%0%transpose_b%0": {
+        "avg": 204.201142,
+        "std_err": 0.502764
+    },
+    "BiasAdd%input%[224,4096]%input%[4096]%T%1": {
+        "avg": 20.403862,
+        "std_err": 0.525025
+    },
+    "Square%input%[224,4096]%T%1": {
+        "avg": 17.10097,
+        "std_err": 0.32331
+    },
+    "Pow%input%[224,4096]%input%[]%T%1": {
+        "avg": 45.457284,
+        "std_err": 1.544601
+    },
+    "Mul%input%[]%input%[224,4096]%T%1%_grappler_ArithmeticOptimizer_MinimizeBroadcasts%1": {
+        "avg": 17.87099,
+        "std_err": 0.706819
+    },
+    "_FusedMulAdd%input%[224,4096]%input%[]%input%[224,4096]%T%1": {
+        "avg": 21.622181,
+        "std_err": 0.855119
+    },
+    "Mul%input%[224,4096]%input%[]%T%1": {
+        "avg": 17.774582,
+        "std_err": 0.506789
+    },
+    "Tanh%input%[224,4096]%T%1": {
+        "avg": 27.478933,
+        "std_err": 0.728962
+    },
+    "AddV2%input%[224,4096]%input%[]%T%1": {
+        "avg": 18.404524,
+        "std_err": 0.733227
+    },
+    "Mul%input%[224,4096]%input%[224,4096]%T%1": {
+        "avg": 18.951026,
+        "std_err": 0.618398
+    },
+    "MatMul%input%[224,4096]%input%[4096,1024]%T%1%transpose_a%0%transpose_b%0": {
+        "avg": 181.851387,
+        "std_err": 0.499764
+    },
+    "_FusedMulAdd%input%[]%input%[32,16,7,7]%input%[32,1,1,7]%T%1": {
+        "avg": 16.41353,
+        "std_err": 0.440776
+    },
+    "_FusedMulAdd%input%[]%input%[224,4096]%input%[224,4096]%T%1": {
+        "avg": 20.881693,
+        "std_err": 0.820525
+    },
+    "Mul%input%[]%input%[224,4096]%T%1": {
+        "avg": 18.020074,
+        "std_err": 0.400328
+    },
+    "AddV2%input%[]%input%[224,4096]%T%1": {
+        "avg": 18.015901,
+        "std_err": 0.680766
+    },
+    "StridedSlice%input%[32,7,1024]%input%[3]%input%[3]%input%[3]%Index%3%T%1%begin_mask%5%ellipsis_mask%0%end_mask%5%new_axis_mask%0%shrink_axis_mask%0": {
+        "avg": 11.394024,
+        "std_err": 0.0
+    },
+    "Squeeze%input%[32,1,1024]%T%1%squeeze_dims%[1]": {
+        "avg": 5.399585,
+        "std_err": 0.15805
+    },
+    "MatMul%input%[32,1024]%input%[1024,1024]%T%1%transpose_a%0%transpose_b%0": {
+        "avg": 32.13644,
+        "std_err": 0.455388
+    },
+    "BiasAdd%input%[32,1024]%input%[1024]%T%1": {
+        "avg": 13.824701,
+        "std_err": 0.712229
+    },
+    "Tanh%input%[32,1024]%T%1": {
+        "avg": 14.612913,
+        "std_err": 0.681942
+    },
+    "Dropout%input%[32,1024]%input%[]%input%[2]%input%[]%T%1%Tseed%3": {
+        "avg": 16.746918,
+        "std_err": 0.778694
+    },
+    "MatMul%input%[32,1024]%input%[32,1024]%T%1%transpose_a%0%transpose_b%1": {
+        "avg": 41.838288,
+        "std_err": 1.169052
+    },
+    "BiasAdd%input%[32,32]%input%[32]%T%1": {
+        "avg": 14.468431,
+        "std_err": 0.55177
+    },
+    "LogSoftmax%input%[32,32]%T%1": {
+        "avg": 30.436118,
+        "std_err": 1.857039
+    },
+    "Exp%input%[32,32]%T%1": {
+        "avg": 11.696815,
+        "std_err": 0.643071
+    },
+    "Const%dtype%1%value%[1,[32,32]]": {
+        "avg": 2.535343,
+        "std_err": 0.173474
+    },
+    "Const%dtype%1%value%[1,[32,1]]": {
+        "avg": 2.333588,
+        "std_err": 0.138701
+    },
+    "_FusedMulSubRev%input%[32,32]%input%[32,1]%input%[32,32]%T%1": {
+        "avg": 11.33283,
+        "std_err": 0.364171
+    },
+    "BiasAddGrad%input%[32,32]%T%1": {
+        "avg": 18.454075,
+        "std_err": 1.367381
+    },
+    "MatMul%input%[32,32]%input%[32,1024]%T%1%transpose_a%0%transpose_b%0": {
+        "avg": 18.608093,
+        "std_err": 1.251642
+    },
+    "MatMul%input%[32,32]%input%[32,1024]%T%1%transpose_a%1%transpose_b%0": {
+        "avg": 17.455816,
+        "std_err": 0.115633
+    },
+    "Switch%input%[32]%input%[]%T%1": {
+        "avg": 7.17926,
+        "std_err": 0.396428
+    },
+    "DropoutGrad%input%[32,1024]%input%[]%input%[2]%input%[32,1024]%input%[32,1024]%T%1": {
+        "avg": 17.409854,
+        "std_err": 0.786064
+    },
+    "Switch%input%[32,1024]%input%[]%T%1": {
+        "avg": 4.793167,
+        "std_err": 0.310862
+    },
+    "Cast%input%[32]%DstT%19%SrcT%1%Truncate%0": {
+        "avg": 9.560585,
+        "std_err": 0.376233
+    },
+    "TanhGrad%input%[32,1024]%input%[32,1024]%T%1": {
+        "avg": 9.901524,
+        "std_err": 0.028808
+    },
+    "Cast%input%[32,1024]%DstT%19%SrcT%1%Truncate%0": {
+        "avg": 12.933867,
+        "std_err": 0.801128
+    },
+    "BiasAddGrad%input%[32,1024]%T%1": {
+        "avg": 17.911304,
+        "std_err": 0.535501
+    },
+    "Cast%input%[32]%DstT%1%SrcT%19%Truncate%0": {
+        "avg": 13.757282,
+        "std_err": 0.858289
+    },
+    "MatMul%input%[32,1024]%input%[1024,1024]%T%1%transpose_a%0%transpose_b%1": {
+        "avg": 36.754409,
+        "std_err": 0.403811
+    },
+    "MatMul%input%[32,1024]%input%[32,1024]%T%1%transpose_a%1%transpose_b%0": {
+        "avg": 25.015275,
+        "std_err": 0.57891
+    },
+    "Switch%input%[1024]%input%[]%T%1": {
+        "avg": 5.50127,
+        "std_err": 0.26598
+    },
+    "Cast%input%[32,1024]%DstT%1%SrcT%19%Truncate%0": {
+        "avg": 13.216337,
+        "std_err": 0.471903
+    },
+    "Mul%input%[32]%input%[]%T%1": {
+        "avg": 14.088371,
+        "std_err": 0.841988
+    },
+    "Reshape%input%[32,1024]%input%[3]%T%1%Tshape%3": {
+        "avg": 5.238533,
+        "std_err": 0.269811
+    },
+    "Switch%input%[1024,1024]%input%[]%T%1": {
+        "avg": 4.734993,
+        "std_err": 0.285295
+    },
+    "Cast%input%[1024]%DstT%19%SrcT%1%Truncate%0": {
+        "avg": 9.037654,
+        "std_err": 0.108811
+    },
+    "Mul%input%[32,1024]%input%[]%T%1": {
+        "avg": 13.642311,
+        "std_err": 0.76153
+    },
+    "Square%input%[32]%T%1": {
+        "avg": 9.53118,
+        "std_err": 0.204404
+    },
+    "StridedSliceGrad%input%[3]%input%[3]%input%[3]%input%[3]%input%[32,1,1024]%Index%3%T%1%begin_mask%5%ellipsis_mask%0%end_mask%5%new_axis_mask%0%shrink_axis_mask%0": {
+        "avg": 24.350484,
+        "std_err": 1.173075
+    },
+    "Cast%input%[1024,1024]%DstT%19%SrcT%1%Truncate%0": {
+        "avg": 17.935435,
+        "std_err": 0.489288
+    },
+    "Square%input%[32,1024]%T%1": {
+        "avg": 13.433695,
+        "std_err": 0.525777
+    },
+    "Cast%input%[1024]%DstT%1%SrcT%19%Truncate%0": {
+        "avg": 10.010004,
+        "std_err": 0.424568
+    },
+    "Mul%input%[224,1024]%input%[224,1024]%T%1": {
+        "avg": 15.922652,
+        "std_err": 0.799034
+    },
+    "Neg%input%[224,1024]%T%1": {
+        "avg": 13.059775,
+        "std_err": 0.592962
+    },
+    "Sum%input%[224,1024]%input%[1]%T%1%Tidx%3%keep_dims%0": {
+        "avg": 12.879372,
+        "std_err": 0.152692
+    },
+    "Cast%input%[1024,1024]%DstT%1%SrcT%19%Truncate%0": {
+        "avg": 18.702745,
+        "std_err": 0.440667
+    },
+    "Mul%input%[1024]%input%[]%T%1": {
+        "avg": 9.645621,
+        "std_err": 0.008105
+    },
+    "NoOp": {
+        "avg": 5.0,
+        "std_err": 0.0
+    },
+    "Mul%input%[1024,1024]%input%[]%T%1": {
+        "avg": 18.962947,
+        "std_err": 0.567848
+    },
+    "Square%input%[1024]%T%1": {
+        "avg": 12.950557,
+        "std_err": 0.629577
+    },
+    "Mul%input%[224,1]%input%[224,1024]%T%1": {
+        "avg": 11.578202,
+        "std_err": 0.616768
+    },
+    "Square%input%[1024,1024]%T%1": {
+        "avg": 17.55933,
+        "std_err": 0.359616
+    },
+    "Reshape%input%[224]%input%[2]%T%1%Tshape%3": {
+        "avg": 4.406214,
+        "std_err": 0.225137
+    },
+    "AddN%input%[224,1024]%input%[224,1024]%N%2%T%1": {
+        "avg": 14.909397,
+        "std_err": 0.586552
+    },
+    "Tile%input%[224,1]%input%[2]%T%1%Tmultiples%3": {
+        "avg": 14.751391,
+        "std_err": 0.461158
+    },
+    "Mul%input%[1024]%input%[224,1024]%T%1": {
+        "avg": 15.542984,
+        "std_err": 0.555177
+    },
+    "Mul%input%[]%input%[224,1024]%T%1": {
+        "avg": 11.969209,
+        "std_err": 0.329839
+    },
+    "RsqrtGrad%input%[224,1]%input%[224,1]%T%1": {
+        "avg": 15.33409,
+        "std_err": 0.619423
+    },
+    "Sub%input%[224,1024]%input%[224,1]%T%1": {
+        "avg": 12.1514,
+        "std_err": 0.139759
+    },
+    "Mul%input%[]%input%[224,1024]%T%1%_grappler_ArithmeticOptimizer_MinimizeBroadcasts%1": {
+        "avg": 14.852524,
+        "std_err": 0.543039
+    },
+    "Mul%input%[224,1024]%input%[224,1024]%T%1%_grappler_ArithmeticOptimizer_MinimizeBroadcasts%1": {
+        "avg": 15.508334,
+        "std_err": 0.594881
+    },
+    "AddN%input%[224,1024]%input%[224,1024]%input%[224,1024]%N%3%T%1": {
+        "avg": 16.128421,
+        "std_err": 0.890707
+    },
+    "DropoutGrad%input%[224,1024]%input%[]%input%[2]%input%[224,1024]%input%[224,1024]%T%1": {
+        "avg": 21.95096,
+        "std_err": 1.004907
+    },
+    "BiasAddGrad%input%[224,1024]%T%1": {
+        "avg": 18.723445,
+        "std_err": 0.605822
+    },
+    "MatMul%input%[224,1024]%input%[4096,1024]%T%1%transpose_a%0%transpose_b%1": {
+        "avg": 205.972195,
+        "std_err": 0.735003
+    },
+    "MatMul%input%[224,4096]%input%[224,1024]%T%1%transpose_a%1%transpose_b%0": {
+        "avg": 140.681068,
+        "std_err": 1.537925
+    },
+    "Switch%input%[4096,1024]%input%[]%T%1": {
+        "avg": 4.790306,
+        "std_err": 0.301472
+    },
+    "Cast%input%[4096,1024]%DstT%19%SrcT%1%Truncate%0": {
+        "avg": 36.681294,
+        "std_err": 0.220109
+    },
+    "TanhGrad%input%[224,4096]%input%[224,4096]%T%1": {
+        "avg": 19.459724,
+        "std_err": 1.081949
+    },
+    "Cast%input%[4096,1024]%DstT%1%SrcT%19%Truncate%0": {
+        "avg": 39.584438,
+        "std_err": 0.263862
+    },
+    "Mul%input%[4096,1024]%input%[]%T%1": {
+        "avg": 45.514703,
+        "std_err": 1.382712
+    },
+    "Mul%input%[224,4096]%input%[224,4096]%T%1%_grappler_ArithmeticOptimizer_MinimizeBroadcasts%1": {
+        "avg": 19.138654,
+        "std_err": 0.619178
+    },
+    "Square%input%[4096,1024]%T%1": {
+        "avg": 44.681629,
+        "std_err": 1.568034
+    },
+    "AddN%input%[224,4096]%input%[224,4096]%input%[224,4096]%N%3%T%1": {
+        "avg": 23.316145,
+        "std_err": 0.350702
+    },
+    "BiasAddGrad%input%[224,4096]%T%1": {
+        "avg": 31.906962,
+        "std_err": 0.927008
+    },
+    "Switch%input%[4096]%input%[]%T%1": {
+        "avg": 4.513562,
+        "std_err": 0.254881
+    },
+    "MatMul%input%[224,4096]%input%[1024,4096]%T%1%transpose_a%0%transpose_b%1": {
+        "avg": 306.716164,
+        "std_err": 1.513408
+    },
+    "MatMul%input%[224,1024]%input%[224,4096]%T%1%transpose_a%1%transpose_b%0": {
+        "avg": 150.246223,
+        "std_err": 1.338421
+    },
+    "Cast%input%[4096]%DstT%19%SrcT%1%Truncate%0": {
+        "avg": 11.333625,
+        "std_err": 0.275744
+    },
+    "Switch%input%[1024,4096]%input%[]%T%1": {
+        "avg": 5.14698,
+        "std_err": 0.340055
+    },
+    "Cast%input%[1024,4096]%DstT%19%SrcT%1%Truncate%0": {
+        "avg": 36.615531,
+        "std_err": 1.006684
+    },
+    "Cast%input%[4096]%DstT%1%SrcT%19%Truncate%0": {
+        "avg": 14.879942,
+        "std_err": 0.735494
+    },
+    "Mul%input%[4096]%input%[]%T%1": {
+        "avg": 15.529564,
+        "std_err": 1.009539
+    },
+    "Cast%input%[1024,4096]%DstT%1%SrcT%19%Truncate%0": {
+        "avg": 38.111806,
+        "std_err": 0.41687
+    },
+    "Square%input%[4096]%T%1": {
+        "avg": 13.50075,
+        "std_err": 0.800048
+    },
+    "Mul%input%[1024,4096]%input%[]%T%1": {
+        "avg": 43.699344,
+        "std_err": 1.06016
+    },
+    "Square%input%[1024,4096]%T%1": {
+        "avg": 42.504072,
+        "std_err": 0.330966
+    },
+    "MatMul%input%[224,1024]%input%[1024,1024]%T%1%transpose_a%0%transpose_b%1": {
+        "avg": 84.757408,
+        "std_err": 0.897719
+    },
+    "MatMul%input%[224,1024]%input%[224,1024]%T%1%transpose_a%1%transpose_b%0": {
+        "avg": 29.391646,
+        "std_err": 0.639147
+    },
+    "BatchMatMulV2%input%[32,16,7,7]%input%[32,16,7,64]%T%1%adj_x%1%adj_y%0": {
+        "avg": 48.875809,
+        "std_err": 0.0
+    },
+    "DropoutGrad%input%[32,16,7,7]%input%[]%input%[4]%input%[32,16,7,7]%input%[32,16,7,7]%T%1": {
+        "avg": 19.194782,
+        "std_err": 0.665089
+    },
+    "Mul%input%[32,16,7,7]%input%[32,16,7,7]%T%1": {
+        "avg": 15.471198,
+        "std_err": 0.756008
+    },
+    "Sum%input%[32,16,7,7]%input%[]%T%1%Tidx%3%keep_dims%1": {
+        "avg": 15.428782,
+        "std_err": 0.776811
+    },
+    "Sub%input%[32,16,7,7]%input%[32,16,7,1]%T%1": {
+        "avg": 15.121102,
+        "std_err": 0.227567
+    },
+    "Mul%input%[32,16,7,7]%input%[32,16,7,7]%T%1%_grappler_ArithmeticOptimizer_MinimizeBroadcasts%1": {
+        "avg": 14.981627,
+        "std_err": 0.868168
+    },
+    "AddN%input%[224,1024]%input%[224,1024]%input%[224,1024]%input%[224,1024]%N%4%T%1": {
+        "avg": 16.75415,
+        "std_err": 0.616844
+    },
+    "DropoutGrad%input%[32,7,1024]%input%[]%input%[3]%input%[32,7,1024]%input%[32,7,1024]%T%1": {
+        "avg": 19.066334,
+        "std_err": 1.156309
+    },
+    "Mul%input%[32,7,1024]%input%[32,7,1024]%T%1": {
+        "avg": 15.925765,
+        "std_err": 0.5273
+    },
+    "Neg%input%[32,7,1024]%T%1": {
+        "avg": 15.724699,
+        "std_err": 0.627872
+    },
+    "Sum%input%[32,7,1024]%input%[2]%T%1%Tidx%3%keep_dims%0": {
+        "avg": 16.188622,
+        "std_err": 0.357057
+    },
+    "Mul%input%[32,7,1]%input%[32,7,1024]%T%1": {
+        "avg": 17.272896,
+        "std_err": 0.569304
+    },
+    "Sum%input%[32,7,1024]%input%[1]%T%1%Tidx%3%keep_dims%0": {
+        "avg": 18.458168,
+        "std_err": 0.545391
+    },
+    "Reshape%input%[32,7]%input%[3]%T%1%Tshape%3": {
+        "avg": 5.419254,
+        "std_err": 0.238486
+    },
+    "AddN%input%[32,7,1024]%input%[32,7,1024]%N%2%T%1": {
+        "avg": 16.426245,
+        "std_err": 0.791913
+    },
+    "Tile%input%[32,7,1]%input%[3]%T%1%Tmultiples%3": {
+        "avg": 15.852054,
+        "std_err": 0.813696
+    },
+    "Mul%input%[1024]%input%[32,7,1024]%T%1": {
+        "avg": 17.672235,
+        "std_err": 0.842795
+    },
+    "Mul%input%[]%input%[32,7,1024]%T%1": {
+        "avg": 16.526381,
+        "std_err": 0.393993
+    },
+    "RsqrtGrad%input%[32,7,1]%input%[32,7,1]%T%1": {
+        "avg": 13.343096,
+        "std_err": 0.77701
+    },
+    "Sub%input%[32,7,1024]%input%[32,7,1]%T%1": {
+        "avg": 15.917884,
+        "std_err": 0.631195
+    },
+    "Mul%input%[]%input%[32,7,1024]%T%1%_grappler_ArithmeticOptimizer_MinimizeBroadcasts%1": {
+        "avg": 16.245445,
+        "std_err": 0.348188
+    },
+    "Mul%input%[32,7,1024]%input%[32,7,1024]%T%1%_grappler_ArithmeticOptimizer_MinimizeBroadcasts%1": {
+        "avg": 15.746832,
+        "std_err": 0.880185
+    },
+    "AddN%input%[32,7,1024]%input%[32,7,1024]%input%[32,7,1024]%N%3%T%1": {
+        "avg": 17.066201,
+        "std_err": 0.918883
+    },
+    "Pad%input%[7,1024]%input%[2,2]%T%1%Tpaddings%3": {
+        "avg": 16.786257,
+        "std_err": 0.828037
+    },
+    "Switch%input%[512,1024]%input%[]%T%1": {
+        "avg": 5.208015,
+        "std_err": 0.302871
+    },
+    "UnsortedSegmentSum%input%[224,1024]%input%[224]%input%[]%T%1%Tindices%3%Tnumsegments%3": {
+        "avg": 80.725153,
+        "std_err": 1.437178
+    },
+    "Cast%input%[512,1024]%DstT%19%SrcT%1%Truncate%0": {
+        "avg": 16.460419,
+        "std_err": 0.330337
+    },
+    "Switch%input%[30522,1024]%input%[]%T%1": {
+        "avg": 7.798702,
+        "std_err": 0.411403
+    },
+    "Switch%input%[2,1024]%input%[]%T%1": {
+        "avg": 4.535251,
+        "std_err": 0.234553
+    },
+    "Cast%input%[30522,1024]%DstT%19%SrcT%1%Truncate%0": {
+        "avg": 226.544936,
+        "std_err": 2.735341
+    },
+    "Cast%input%[2,1024]%DstT%19%SrcT%1%Truncate%0": {
+        "avg": 13.617939,
+        "std_err": 0.978674
+    },
+    "Cast%input%[512,1024]%DstT%1%SrcT%19%Truncate%0": {
+        "avg": 16.723546,
+        "std_err": 0.393381
+    },
+    "Mul%input%[512,1024]%input%[]%T%1": {
+        "avg": 17.568469,
+        "std_err": 0.571336
+    },
+    "Cast%input%[30522,1024]%DstT%1%SrcT%19%Truncate%0": {
+        "avg": 262.12136,
+        "std_err": 0.588514
+    },
+    "Cast%input%[2,1024]%DstT%1%SrcT%19%Truncate%0": {
+        "avg": 14.017991,
+        "std_err": 1.036361
+    },
+    "Square%input%[512,1024]%T%1": {
+        "avg": 17.028505,
+        "std_err": 0.680247
+    },
+    "Mul%input%[30522,1024]%input%[]%T%1": {
+        "avg": 284.236192,
+        "std_err": 0.600049
+    },
+    "Mul%input%[2,1024]%input%[]%T%1": {
+        "avg": 14.768839,
+        "std_err": 0.641099
+    },
+    "Square%input%[30522,1024]%T%1": {
+        "avg": 283.189464,
+        "std_err": 0.930283
+    },
+    "Square%input%[2,1024]%T%1": {
+        "avg": 13.391105,
+        "std_err": 0.795006
+    },
+    "_FusedMulAdd2%input%[]%input%[1024]%input%[]%input%[1024]%T%1": {
+        "avg": 16.474724,
+        "std_err": 0.669762
+    },
+    "Sqrt%input%[1024]%T%1": {
+        "avg": 12.963035,
+        "std_err": 0.787768
+    },
+    "Assign%input%[1024]%input%[1024]%T%1%_grappler_relax_allocator_constraints%1%use_locking%0%validate_shape%1": {
+        "avg": 32.010078,
+        "std_err": 0.518289
+    },
+    "AddV2%input%[1024]%input%[]%T%1": {
+        "avg": 14.232908,
+        "std_err": 0.428058
+    },
+    "_FusedMulAdd2%input%[]%input%[1024]%input%[1024]%input%[]%T%1": {
+        "avg": 16.398132,
+        "std_err": 0.520035
+    },
+    "RealDiv%input%[1024]%input%[1024]%T%1": {
+        "avg": 10.085106,
+        "std_err": 0.0
+    },
+    "_FusedMulSubRev%input%[]%input%[1024]%input%[1024]%T%1": {
+        "avg": 12.150288,
+        "std_err": 0.767211
+    },
+    "_FusedMulAdd2%input%[]%input%[2,1024]%input%[2,1024]%input%[]%T%1": {
+        "avg": 16.17074,
+        "std_err": 0.505805
+    },
+    "Assign%input%[2,1024]%input%[2,1024]%T%1%_grappler_relax_allocator_constraints%1%use_locking%0%validate_shape%1": {
+        "avg": 20.771027,
+        "std_err": 0.0
+    },
+    "_FusedMulAdd2%input%[]%input%[2,1024]%input%[]%input%[2,1024]%T%1": {
+        "avg": 8.391738,
+        "std_err": 0.14826
+    },
+    "Sqrt%input%[2,1024]%T%1": {
+        "avg": 6.833758,
+        "std_err": 0.230662
+    },
+    "AddV2%input%[2,1024]%input%[]%T%1": {
+        "avg": 12.000561,
+        "std_err": 0.96038
+    },
+    "RealDiv%input%[2,1024]%input%[2,1024]%T%1": {
+        "avg": 10.419488,
+        "std_err": 0.511774
+    },
+    "_FusedMulAdd%input%[2,1024]%input%[]%input%[2,1024]%T%1": {
+        "avg": 12.203625,
+        "std_err": 0.621134
+    },
+    "_FusedMulSubRev%input%[2,1024]%input%[]%input%[2,1024]%T%1": {
+        "avg": 11.872053,
+        "std_err": 0.558515
+    },
+    "_FusedMulAdd2%input%[]%input%[30522,1024]%input%[30522,1024]%input%[]%T%1": {
+        "avg": 401.711665,
+        "std_err": 1.112841
+    },
+    "Assign%input%[30522,1024]%input%[30522,1024]%T%1%_grappler_relax_allocator_constraints%1%use_locking%0%validate_shape%1": {
+        "avg": 24.050097,
+        "std_err": 0.416478
+    },
+    "_FusedMulAdd2%input%[]%input%[30522,1024]%input%[]%input%[30522,1024]%T%1": {
+        "avg": 402.233017,
+        "std_err": 1.780587
+    },
+    "Sqrt%input%[30522,1024]%T%1": {
+        "avg": 286.017792,
+        "std_err": 1.388635
+    },
+    "AddV2%input%[30522,1024]%input%[]%T%1": {
+        "avg": 285.744919,
+        "std_err": 0.826557
+    },
+    "RealDiv%input%[30522,1024]%input%[30522,1024]%T%1": {
+        "avg": 420.194889,
+        "std_err": 1.249216
+    },
+    "_FusedMulAdd%input%[30522,1024]%input%[]%input%[30522,1024]%T%1": {
+        "avg": 400.969751,
+        "std_err": 1.29808
+    },
+    "_FusedMulSubRev%input%[30522,1024]%input%[]%input%[30522,1024]%T%1": {
+        "avg": 400.014567,
+        "std_err": 0.805673
+    },
+    "_FusedMulAdd2%input%[]%input%[512,1024]%input%[512,1024]%input%[]%T%1": {
+        "avg": 18.848181,
+        "std_err": 1.08883
+    },
+    "Assign%input%[512,1024]%input%[512,1024]%T%1%_grappler_relax_allocator_constraints%1%use_locking%0%validate_shape%1": {
+        "avg": 22.234917,
+        "std_err": 0.95708
+    },
+    "_FusedMulAdd2%input%[]%input%[512,1024]%input%[]%input%[512,1024]%T%1": {
+        "avg": 19.179583,
+        "std_err": 0.846738
+    },
+    "Sqrt%input%[512,1024]%T%1": {
+        "avg": 17.240914,
+        "std_err": 0.788243
+    },
+    "AddV2%input%[512,1024]%input%[]%T%1": {
+        "avg": 16.208092,
+        "std_err": 0.343149
+    },
+    "RealDiv%input%[512,1024]%input%[512,1024]%T%1": {
+        "avg": 17.882586,
+        "std_err": 0.576489
+    },
+    "_FusedMulAdd%input%[512,1024]%input%[]%input%[512,1024]%T%1": {
+        "avg": 17.750065,
+        "std_err": 0.820088
+    },
+    "_FusedMulSubRev%input%[512,1024]%input%[]%input%[512,1024]%T%1": {
+        "avg": 18.081015,
+        "std_err": 0.57528
+    },
+    "_FusedMulAdd2%input%[]%input%[1024,1024]%input%[1024,1024]%input%[]%T%1": {
+        "avg": 21.974842,
+        "std_err": 0.86314
+    },
+    "Assign%input%[1024,1024]%input%[1024,1024]%T%1%_grappler_relax_allocator_constraints%1%use_locking%0%validate_shape%1": {
+        "avg": 23.276806,
+        "std_err": 0.786781
+    },
+    "_FusedMulAdd2%input%[]%input%[1024,1024]%input%[]%input%[1024,1024]%T%1": {
+        "avg": 21.813711,
+        "std_err": 0.500352
+    },
+    "Sqrt%input%[1024,1024]%T%1": {
+        "avg": 14.937719,
+        "std_err": 0.413728
+    },
+    "AddV2%input%[1024,1024]%input%[]%T%1": {
+        "avg": 16.389543,
+        "std_err": 1.205532
+    },
+    "RealDiv%input%[1024,1024]%input%[1024,1024]%T%1": {
+        "avg": 20.337701,
+        "std_err": 0.391903
+    },
+    "_FusedMulAdd%input%[1024,1024]%input%[]%input%[1024,1024]%T%1": {
+        "avg": 21.122098,
+        "std_err": 0.223695
+    },
+    "_FusedMulSubRev%input%[1024,1024]%input%[]%input%[1024,1024]%T%1": {
+        "avg": 21.839142,
+        "std_err": 0.985541
+    },
+    "_FusedMulAdd2%input%[]%input%[4096,1024]%input%[4096,1024]%input%[]%T%1": {
+        "avg": 60.886145,
+        "std_err": 1.800447
+    },
+    "Assign%input%[4096,1024]%input%[4096,1024]%T%1%_grappler_relax_allocator_constraints%1%use_locking%0%validate_shape%1": {
+        "avg": 26.056767,
+        "std_err": 0.0
+    },
+    "_FusedMulAdd2%input%[]%input%[4096,1024]%input%[]%input%[4096,1024]%T%1": {
+        "avg": 59.793591,
+        "std_err": 0.476944
+    },
+    "Sqrt%input%[4096,1024]%T%1": {
+        "avg": 43.352445,
+        "std_err": 0.584604
+    },
+    "AddV2%input%[4096,1024]%input%[]%T%1": {
+        "avg": 43.473244,
+        "std_err": 0.241312
+    },
+    "RealDiv%input%[4096,1024]%input%[4096,1024]%T%1": {
+        "avg": 61.122071,
+        "std_err": 1.283105
+    },
+    "_FusedMulAdd%input%[4096,1024]%input%[]%input%[4096,1024]%T%1": {
+        "avg": 59.766173,
+        "std_err": 0.592491
+    },
+    "_FusedMulSubRev%input%[4096,1024]%input%[]%input%[4096,1024]%T%1": {
+        "avg": 57.871103,
+        "std_err": 0.507013
+    },
+    "_FusedMulAdd2%input%[]%input%[1024,4096]%input%[1024,4096]%input%[]%T%1": {
+        "avg": 59.577028,
+        "std_err": 0.921865
+    },
+    "Assign%input%[1024,4096]%input%[1024,4096]%T%1%_grappler_relax_allocator_constraints%1%use_locking%0%validate_shape%1": {
+        "avg": 25.629997,
+        "std_err": 0.0
+    },
+    "_FusedMulAdd2%input%[]%input%[1024,4096]%input%[]%input%[1024,4096]%T%1": {
+        "avg": 58.459242,
+        "std_err": 0.454536
+    },
+    "Sqrt%input%[1024,4096]%T%1": {
+        "avg": 42.056044,
+        "std_err": 0.29133
+    },
+    "AddV2%input%[1024,4096]%input%[]%T%1": {
+        "avg": 42.287111,
+        "std_err": 0.451093
+    },
+    "RealDiv%input%[1024,4096]%input%[1024,4096]%T%1": {
+        "avg": 61.014096,
+        "std_err": 0.619088
+    },
+    "_FusedMulAdd%input%[1024,4096]%input%[]%input%[1024,4096]%T%1": {
+        "avg": 59.195956,
+        "std_err": 0.657094
+    },
+    "_FusedMulSubRev%input%[1024,4096]%input%[]%input%[1024,4096]%T%1": {
+        "avg": 59.249401,
+        "std_err": 0.28695
+    },
+    "_FusedMulAdd2%input%[]%input%[4096]%input%[4096]%input%[]%T%1": {
+        "avg": 15.032291,
+        "std_err": 0.772366
+    },
+    "Assign%input%[4096]%input%[4096]%T%1%_grappler_relax_allocator_constraints%1%use_locking%0%validate_shape%1": {
+        "avg": 25.266806,
+        "std_err": 1.080765
+    },
+    "_FusedMulAdd2%input%[]%input%[4096]%input%[]%input%[4096]%T%1": {
+        "avg": 13.883114,
+        "std_err": 0.375101
+    },
+    "Sqrt%input%[4096]%T%1": {
+        "avg": 11.80751,
+        "std_err": 0.390707
+    },
+    "AddV2%input%[4096]%input%[]%T%1": {
+        "avg": 16.220013,
+        "std_err": 1.211939
+    },
+    "RealDiv%input%[4096]%input%[4096]%T%1": {
+        "avg": 15.746223,
+        "std_err": 0.81946
+    },
+    "_FusedMulSubRev%input%[]%input%[4096]%input%[4096]%T%1": {
+        "avg": 18.196106,
+        "std_err": 0.272557
+    },
+    "_FusedMulAdd2%input%[]%input%[32,1024]%input%[]%input%[32,1024]%T%1": {
+        "avg": 17.129978,
+        "std_err": 1.077879
+    },
+    "Sqrt%input%[32,1024]%T%1": {
+        "avg": 13.292233,
+        "std_err": 0.647551
+    },
+    "Assign%input%[32,1024]%input%[32,1024]%T%1%_grappler_relax_allocator_constraints%1%use_locking%0%validate_shape%1": {
+        "avg": 22.543669,
+        "std_err": 1.079869
+    },
+    "AddV2%input%[32,1024]%input%[]%T%1": {
+        "avg": 14.006197,
+        "std_err": 0.582602
+    },
+    "_FusedMulAdd2%input%[]%input%[32,1024]%input%[32,1024]%input%[]%T%1": {
+        "avg": 16.84709,
+        "std_err": 0.868597
+    },
+    "RealDiv%input%[32,1024]%input%[32,1024]%T%1": {
+        "avg": 14.507771,
+        "std_err": 0.960451
+    },
+    "_FusedMulAdd%input%[]%input%[32,1024]%input%[32,1024]%T%1": {
+        "avg": 16.263553,
+        "std_err": 0.811601
+    },
+    "_FusedMulSubRev%input%[32,1024]%input%[]%input%[32,1024]%T%1": {
+        "avg": 16.111027,
+        "std_err": 0.47793
+    },
+    "_FusedMulAdd2%input%[]%input%[32]%input%[32]%input%[]%T%1": {
+        "avg": 12.465119,
+        "std_err": 0.458627
+    },
+    "Assign%input%[32]%input%[32]%T%1%_grappler_relax_allocator_constraints%1%use_locking%0%validate_shape%1": {
+        "avg": 31.444232,
+        "std_err": 0.641448
+    },
+    "_FusedMulAdd2%input%[]%input%[32]%input%[]%input%[32]%T%1": {
+        "avg": 16.819477,
+        "std_err": 0.710952
+    },
+    "Sqrt%input%[32]%T%1": {
+        "avg": 13.207027,
+        "std_err": 0.686982
+    },
+    "AddV2%input%[32]%input%[]%T%1": {
+        "avg": 14.194142,
+        "std_err": 0.950317
+    },
+    "RealDiv%input%[32]%input%[32]%T%1": {
+        "avg": 9.92775,
+        "std_err": 0.107288
+    },
+    "HorovodAllreduce%endpoints%1%numElements%0": {
+        "avg": 0.0,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%1024": {
+        "avg": 1.59999998,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%2048": {
+        "avg": 1.50588234408,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%4096": {
+        "avg": 1.76551723529,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%8192": {
+        "avg": 1.79649122492,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%16384": {
+        "avg": 2.17872340194,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%32768": {
+        "avg": 2.51288343404,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%65536": {
+        "avg": 2.88450704124,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%131072": {
+        "avg": 3.19999999937,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%262144": {
+        "avg": 3.49711846281,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%524288": {
+        "avg": 4.41915037057,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%1048576": {
+        "avg": 5.669204152,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%2097152": {
+        "avg": 7.51559633006,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%4194304": {
+        "avg": 8.89679280487,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%8388608": {
+        "avg": 12.4637584689,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%16777216": {
+        "avg": 19.2346326697,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%33554432": {
+        "avg": 23.0544934864,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%67108864": {
+        "avg": 40.6208319208,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%134217728": {
+        "avg": 77.1224418494,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%268435456": {
+        "avg": 150.111537601,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%1%numElements%536870912": {
+        "avg": 294.543820223,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%0": {
+        "avg": 0.0,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%1024": {
+        "avg": 3.19999996,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%2048": {
+        "avg": 3.01176468817,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%4096": {
+        "avg": 3.53103447058,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%8192": {
+        "avg": 3.59298244984,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%16384": {
+        "avg": 4.35744680388,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%32768": {
+        "avg": 5.02576686808,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%65536": {
+        "avg": 5.76901408248,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%131072": {
+        "avg": 6.39999999875,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%262144": {
+        "avg": 6.99423692561,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%524288": {
+        "avg": 8.83830074114,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%1048576": {
+        "avg": 11.338408304,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%2097152": {
+        "avg": 15.0311926601,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%4194304": {
+        "avg": 17.7935856097,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%8388608": {
+        "avg": 24.9275169378,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%16777216": {
+        "avg": 38.4692653395,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%33554432": {
+        "avg": 46.1089869728,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%67108864": {
+        "avg": 81.2416638416,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%134217728": {
+        "avg": 154.244883699,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%268435456": {
+        "avg": 300.223075201,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%2%numElements%536870912": {
+        "avg": 589.087640447,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%0": {
+        "avg": 0.0,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%1024": {
+        "avg": 6.39999992,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%2048": {
+        "avg": 6.02352937633,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%4096": {
+        "avg": 7.06206894117,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%8192": {
+        "avg": 7.18596489967,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%16384": {
+        "avg": 8.71489360775,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%32768": {
+        "avg": 10.0515337362,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%65536": {
+        "avg": 11.538028165,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%131072": {
+        "avg": 12.7999999975,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%262144": {
+        "avg": 13.9884738512,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%524288": {
+        "avg": 17.6766014823,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%1048576": {
+        "avg": 22.676816608,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%2097152": {
+        "avg": 30.0623853202,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%4194304": {
+        "avg": 35.5871712195,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%8388608": {
+        "avg": 49.8550338756,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%16777216": {
+        "avg": 76.9385306789,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%33554432": {
+        "avg": 92.2179739455,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%67108864": {
+        "avg": 162.483327683,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%134217728": {
+        "avg": 308.489767398,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%268435456": {
+        "avg": 600.446150402,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%4%numElements%536870912": {
+        "avg": 1178.17528089,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%0": {
+        "avg": 0.0,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%1024": {
+        "avg": 12.79999984,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%2048": {
+        "avg": 12.0470587527,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%4096": {
+        "avg": 14.1241378823,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%8192": {
+        "avg": 14.3719297993,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%16384": {
+        "avg": 17.4297872155,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%32768": {
+        "avg": 20.1030674723,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%65536": {
+        "avg": 23.0760563299,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%131072": {
+        "avg": 25.599999995,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%262144": {
+        "avg": 27.9769477025,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%524288": {
+        "avg": 35.3532029646,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%1048576": {
+        "avg": 45.353633216,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%2097152": {
+        "avg": 60.1247706405,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%4194304": {
+        "avg": 71.174342439,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%8388608": {
+        "avg": 99.7100677511,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%16777216": {
+        "avg": 153.877061358,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%33554432": {
+        "avg": 184.435947891,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%67108864": {
+        "avg": 324.966655366,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%134217728": {
+        "avg": 616.979534795,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%268435456": {
+        "avg": 1200.8923008,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%8%numElements%536870912": {
+        "avg": 2356.35056179,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%0": {
+        "avg": 0.0,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%1024": {
+        "avg": 34.133332195555596,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%2048": {
+        "avg": 40.95999918080001,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%4096": {
+        "avg": 45.51111060543211,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%8192": {
+        "avg": 48.188235010657436,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%16384": {
+        "avg": 54.613333151288884,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%32768": {
+        "avg": 58.51428560979591,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%65536": {
+        "avg": 63.62718440424545,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%131072": {
+        "avg": 123.65283007202562,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%262144": {
+        "avg": 154.2023528504692,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%524288": {
+        "avg": 422.8129028848283,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%1048576": {
+        "avg": 408.0062255221766,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%2097152": {
+        "avg": 765.3839413265022,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%4194304": {
+        "avg": 157.3847654725184,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%8388608": {
+        "avg": 218.11253249562893,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%16777216": {
+        "avg": 271.30038809393113,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%33554432": {
+        "avg": 371.67071333217024,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%67108864": {
+        "avg": 565.4605999278273,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%134217728": {
+        "avg": 1229.3252243888137,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%268435456": {
+        "avg": 1614.4551392216608,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%56%numElements%536870912": {
+        "avg": 2955.5238755686455,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%0": {
+        "avg": 0.0,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%1024": {
+        "avg": 102.39998976000103,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%2048": {
+        "avg": 102.39999488000026,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%4096": {
+        "avg": 102.39999744000006,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%8192": {
+        "avg": 102.39999872000001,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%16384": {
+        "avg": 109.22666593848889,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%32768": {
+        "avg": 112.99310305864446,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%65536": {
+        "avg": 123.65282995537201,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%131072": {
+        "avg": 133.74693863903374,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%262144": {
+        "avg": 153.30058470567218,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%524288": {
+        "avg": 227.95130424871684,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%1048576": {
+        "avg": 643.298159114541,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%2097152": {
+        "avg": 694.4211918230393,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%4194304": {
+        "avg": 1318.96352159781,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%8388608": {
+        "avg": 420.4816039889483,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%16777216": {
+        "avg": 495.6341506500552,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%33554432": {
+        "avg": 564.0348293736084,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%67108864": {
+        "avg": 787.4778690355846,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%134217728": {
+        "avg": 1262.1565544361279,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%268435456": {
+        "avg": 2432.3618702208014,
+        "std_err": 0
+    },
+    "HorovodAllreduce%endpoints%256%numElements%536870912": {
+        "avg": 3370.610949250561,
+        "std_err": 0
+    },
+    "_FusedMulSubRev%input%[]%input%[32]%input%[32]%T%1": {
+        "avg": 12.173653,
+        "std_err": 0.258469
+    }
+}

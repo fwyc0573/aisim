@@ -1,0 +1,166 @@
+{
+    "Const%dtype%3%value%[3,[]]": {
+        "avg": 16.69693,
+        "std_err": 0.356314
+    },
+    "VariableV2%dtype%1%shape%[512]": {
+        "avg": 17.25316,
+        "std_err": 0.629711
+    },
+    "VariableV2%dtype%1%shape%[256,512]": {
+        "avg": 17.153025,
+        "std_err": 0.34906
+    },
+    "Const%dtype%1%value%[1,[16,128]]": {
+        "avg": 16.592503,
+        "std_err": 0.386038
+    },
+    "Const%dtype%3%value%[3,[3]]": {
+        "avg": 16.764402,
+        "std_err": 0.275064
+    },
+    "Const%dtype%1%value%[1,[]]": {
+        "avg": 16.416788,
+        "std_err": 0.3399
+    },
+    "Const%dtype%3%value%[3,[2]]": {
+        "avg": 16.372442,
+        "std_err": 0.248954
+    },
+    "Identity%input%[512]%T%1": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "Identity%input%[256,512]%T%1": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "RandomUniform%input%[3]%T%3%dtype%1%seed%0%seed2%0": {
+        "avg": 23.853302,
+        "std_err": 0.8697
+    },
+    "RandomUniform%input%[2]%T%3%dtype%1%seed%0%seed2%0": {
+        "avg": 22.332668,
+        "std_err": 0.261863
+    },
+    "Snapshot%input%[100,16,128]%T%1": {
+        "avg": 23.020983,
+        "std_err": 1.042687
+    },
+    "Snapshot%input%[16,128]%T%1": {
+        "avg": 22.781849,
+        "std_err": 0.279085
+    },
+    "Split%input%[]%input%[100,16,128]%T%1%num_split%100": {
+        "avg": 40.224552,
+        "std_err": 0.369511
+    },
+    "Squeeze%input%[1,16,128]%T%1%squeeze_dims%[0]": {
+        "avg": 17.404795,
+        "std_err": 0.196583
+    },
+    "ConcatV2%input%[16,128]%input%[16,128]%input%[]%N%2%T%1%Tidx%3": {
+        "avg": 24.552584,
+        "std_err": 0.522428
+    },
+    "MatMul%input%[16,256]%input%[256,512]%T%1%transpose_a%0%transpose_b%0": {
+        "avg": 28.553486,
+        "std_err": 0.40079
+    },
+    "BiasAdd%input%[16,512]%input%[512]%T%1": {
+        "avg": 21.590471,
+        "std_err": 0.232215
+    },
+    "Split%input%[]%input%[16,512]%T%1%num_split%4": {
+        "avg": 22.939682,
+        "std_err": 0.241166
+    },
+    "Sigmoid%input%[16,128]%T%1": {
+        "avg": 21.152973,
+        "std_err": 0.189973
+    },
+    "Add%input%[16,128]%input%[]%T%1": {
+        "avg": 21.78359,
+        "std_err": 0.329708
+    },
+    "Tanh%input%[16,128]%T%1": {
+        "avg": 21.414995,
+        "std_err": 0.258676
+    },
+    "Mul%input%[16,128]%input%[16,128]%T%1": {
+        "avg": 22.149086,
+        "std_err": 0.599159
+    },
+    "Add%input%[16,128]%input%[16,128]%T%1": {
+        "avg": 21.776676,
+        "std_err": 0.384719
+    },
+    "ZerosLike%input%[16,128]%T%1": {
+        "avg": 17.00139,
+        "std_err": 0.292244
+    },
+    "Sub%input%[16,128]%input%[16,128]%T%1": {
+        "avg": 21.741152,
+        "std_err": 0.256099
+    },
+    "SigmoidGrad%input%[16,128]%input%[16,128]%T%1": {
+        "avg": 21.656513,
+        "std_err": 0.529341
+    },
+    "TanhGrad%input%[16,128]%input%[16,128]%T%1": {
+        "avg": 21.418095,
+        "std_err": 0.216579
+    },
+    "ConcatV2%input%[16,128]%input%[16,128]%input%[16,128]%input%[16,128]%input%[]%N%4%T%1%Tidx%3": {
+        "avg": 29.955864,
+        "std_err": 0.229525
+    },
+    "BiasAddGrad%input%[16,512]%T%1": {
+        "avg": 23.39983,
+        "std_err": 0.201853
+    },
+    "MatMul%input%[16,256]%input%[16,512]%T%1%transpose_a%1%transpose_b%0": {
+        "avg": 30.102015,
+        "std_err": 0.59887
+    },
+    "MatMul%input%[16,512]%input%[256,512]%T%1%transpose_a%0%transpose_b%1": {
+        "avg": 24.520636,
+        "std_err": 1.556594
+    },
+    "Slice%input%[16,256]%input%[2]%input%[2]%Index%3%T%1": {
+        "avg": 21.81673,
+        "std_err": 0.292945
+    },
+    "AddN%input%[16,128]%input%[16,128]%N%2%T%1": {
+        "avg": 22.868156,
+        "std_err": 1.829057
+    },
+    "AddN%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%N%30%T%1": {
+        "avg": 34.959555,
+        "std_err": 0.704988
+    },
+    "AddN%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%N%30%T%1": {
+        "avg": 51.341057,
+        "std_err": 0.978103
+    },
+    "ApplyGradientDescent%input%[512]%input%[]%input%[512]%T%1%use_locking%0": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "ApplyGradientDescent%input%[256,512]%input%[]%input%[256,512]%T%1%use_locking%0": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "NoOp": {
+        "avg": 16.623735,
+        "std_err": 0.41454
+    },
+    "AddN%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%input%[512]%N%100%T%1": {
+        "avg": 69.131613,
+        "std_err": 1.367726
+    },
+    "AddN%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%input%[256,512]%N%100%T%1": {
+        "avg": 123.638868,
+        "std_err": 0.403867
+    }
+}

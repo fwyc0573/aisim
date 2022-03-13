@@ -1,0 +1,114 @@
+enviroments:
+    '1 Host X 1 V100': 1
+    '1 Host X 2 V100': 2
+    '1 Host X 4 V100': 4
+    '1 Host X 8 V100': 8
+    # '2 Host X 8 V100': 16
+    # '4 Host X 8 V100': 32
+    # '8 Host X 8 V100': 64
+    # '32 Host X 8 V100': 256
+
+device:
+    'TeslaV100'
+
+platform:
+    'pytorch'
+
+baseline_path:
+    'ai_simulator/simulator_benchmark/data/torch/baseline.json'
+
+resource_pool_path:
+    'ai_simulator/simulator_benchmark/data/resource_pool.yaml'
+
+nccl_path:
+    './'
+
+tasks:
+
+   #  vgg11:
+   #      graph_path:
+   #         './data/torch/graphs/vgg11.json'
+   #      graph_path_multi_gpu:
+   #         './data/torch/graphs/distributed/vgg11.json'
+   #      database_path:
+   #         './data/torch/database/vgg11_db.json'
+   #  vgg13:
+   #      graph_path:
+   #         './data/torch/graphs/vgg13.json'
+   #      graph_path_multi_gpu:
+   #         './data/torch/graphs/distributed/vgg13.json'
+   #      database_path:
+   #         './data/torch/database/vgg13_db.json'
+   #  vgg16:
+   #      graph_path:
+   #         './data/torch/graphs/vgg16.json'
+   #      graph_path_multi_gpu:
+   #         './data/torch/graphs/distributed/vgg16.json'
+   #      database_path:
+   #         './data/torch/database/vgg16_db.json'
+   #  vgg19:
+   #      graph_path:
+   #         './data/torch/graphs/vgg19.json'
+   #      graph_path_multi_gpu:
+   #         './data/torch/graphs/distributed/vgg19.json'
+   #      database_path:
+   #         './data/torch/database/vgg19_db.json'
+   #  densenet169:
+   #      graph_path:
+   #          './data/torch/test.json'
+   #      #    './data/torch/graphs/densenet169.json'
+   #      graph_path_multi_gpu:
+   #         './data/torch/graphs/distributed/densenet169.json'
+   #      database_path:
+   #          './data/torch/db.json'
+   #      #    './data/torch/database/densenet169_db.json'
+   #  densenet201:
+   #      graph_path:
+   #         './data/torch/graphs/densenet201.json'
+   #      graph_path_multi_gpu:
+   #         './data/torch/graphs/distributed/densenet201.json'
+   #      database_path:
+   #         './data/torch/database/densenet201_db.json'
+
+    resnet50:
+        graph_path:
+           'ai_simulator/simulator_benchmark/data/torch/graphs/resnet50.json'
+        graph_path_multi_gpu:
+           'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/resnet50.json'
+        database_path:
+           'ai_simulator/simulator_benchmark/data/torch/database/resnet50_db.json'
+   #  resnet101:
+   #      graph_path:
+   #         './data/torch/graphs/resnet101.json'
+   #      graph_path_multi_gpu:
+   #         './data/torch/graphs/distributed/resnet101.json'
+   #      database_path:
+   #         './data/torch/database/resnet101_db.json'
+   #  resnet152:
+   #      graph_path:
+   #          './data/torch/graphs/resnet152.json'
+   #      graph_path_multi_gpu:
+   #          './data/torch/graphs/distributed/resnet152.json'
+   #      database_path:
+   #          './data/torch/database/resnet152_db.json'
+   #  gpt2:
+   #      graph_path:
+   #          './data/torch/graphs/gpt2.json'
+   #      graph_path_multi_gpu:
+   #          './data/torch/graphs/distributed/gpt2.json'
+   #      database_path:
+   #          './data/torch/database/gpt2_db.json'
+   #  bert:
+   #      graph_path:
+   #          './data/torch/graphs/bert.json'
+   #      graph_path_multi_gpu:
+   #          './data/torch/graphs/distributed/bert.json'
+   #      database_path:
+   #          './data/torch/database/bert_db.json'
+   #  bert_large:
+   #      graph_path:
+   #          './data/torch/graphs/bert_large.json'
+   #      graph_path_multi_gpu:
+   #          './data/torch/graphs/distributed/bert_large.json'
+   #      database_path:
+   #          './data/torch/database/bert_large_db.json'

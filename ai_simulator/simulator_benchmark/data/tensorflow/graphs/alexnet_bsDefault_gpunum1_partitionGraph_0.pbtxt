@@ -1,0 +1,4420 @@
+node {
+  name: "labels_cast"
+  op: "Const"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT64
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT64
+        tensor_shape {
+          dim {
+            size: 128
+          }
+        }
+        int64_val: 0
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "labels_cast"
+  }
+}
+node {
+  name: "conv0/conv2d/kernel"
+  op: "VariableV2"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_conv0/conv2d/kernel/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 5
+          }
+          dim {
+            size: 5
+          }
+          dim {
+            size: 3
+          }
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "container"
+    value {
+      s: ""
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: 5
+        }
+        dim {
+          size: 5
+        }
+        dim {
+          size: 3
+        }
+        dim {
+          size: 64
+        }
+      }
+    }
+  }
+  attr {
+    key: "shared_name"
+    value {
+      s: ""
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "conv0/conv2d/kernel"
+  }
+}
+node {
+  name: "gradients/Reshape_grad/Shape"
+  op: "Const"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 4
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 4
+          }
+        }
+        tensor_content: "\200\000\000\000\010\000\000\000\010\000\000\000@\000\000\000"
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/Reshape_grad/Shape"
+  }
+}
+node {
+  name: "conv0/biases"
+  op: "VariableV2"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_conv0/biases/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "container"
+    value {
+      s: ""
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: 64
+        }
+      }
+    }
+  }
+  attr {
+    key: "shared_name"
+    value {
+      s: ""
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "conv0/biases"
+  }
+}
+node {
+  name: "conv1/conv2d/kernel"
+  op: "VariableV2"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_conv1/conv2d/kernel/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 5
+          }
+          dim {
+            size: 5
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "container"
+    value {
+      s: ""
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: 5
+        }
+        dim {
+          size: 5
+        }
+        dim {
+          size: 64
+        }
+        dim {
+          size: 64
+        }
+      }
+    }
+  }
+  attr {
+    key: "shared_name"
+    value {
+      s: ""
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "conv1/conv2d/kernel"
+  }
+}
+node {
+  name: "conv1/biases"
+  op: "VariableV2"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_conv1/biases/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "container"
+    value {
+      s: ""
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: 64
+        }
+      }
+    }
+  }
+  attr {
+    key: "shared_name"
+    value {
+      s: ""
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "conv1/biases"
+  }
+}
+node {
+  name: "Reshape/shape"
+  op: "Const"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 2
+          }
+        }
+        tensor_content: "\377\377\377\377\000\020\000\000"
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "Reshape/shape"
+  }
+}
+node {
+  name: "affine0/weights"
+  op: "VariableV2"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_affine0/weights/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 4096
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "container"
+    value {
+      s: ""
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: 4096
+        }
+        dim {
+          size: 384
+        }
+      }
+    }
+  }
+  attr {
+    key: "shared_name"
+    value {
+      s: ""
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine0/weights"
+  }
+}
+node {
+  name: "affine0/biases"
+  op: "VariableV2"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_affine0/biases/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "container"
+    value {
+      s: ""
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: 384
+        }
+      }
+    }
+  }
+  attr {
+    key: "shared_name"
+    value {
+      s: ""
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine0/biases"
+  }
+}
+node {
+  name: "affine1/weights"
+  op: "VariableV2"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_affine1/weights/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 384
+          }
+          dim {
+            size: 192
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "container"
+    value {
+      s: ""
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: 384
+        }
+        dim {
+          size: 192
+        }
+      }
+    }
+  }
+  attr {
+    key: "shared_name"
+    value {
+      s: ""
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine1/weights"
+  }
+}
+node {
+  name: "affine1/biases"
+  op: "VariableV2"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_affine1/biases/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 192
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "container"
+    value {
+      s: ""
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: 192
+        }
+      }
+    }
+  }
+  attr {
+    key: "shared_name"
+    value {
+      s: ""
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine1/biases"
+  }
+}
+node {
+  name: "GradientDescent/learning_rate"
+  op: "Const"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 0.12345600128173828
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "GradientDescent/learning_rate"
+  }
+}
+node {
+  name: "affine2/weights"
+  op: "VariableV2"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_affine2/weights/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 192
+          }
+          dim {
+            size: 10
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "container"
+    value {
+      s: ""
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: 192
+        }
+        dim {
+          size: 10
+        }
+      }
+    }
+  }
+  attr {
+    key: "shared_name"
+    value {
+      s: ""
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine2/weights"
+  }
+}
+node {
+  name: "affine2/biases"
+  op: "VariableV2"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_affine2/biases/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 10
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "container"
+    value {
+      s: ""
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: 10
+        }
+      }
+    }
+  }
+  attr {
+    key: "shared_name"
+    value {
+      s: ""
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine2/biases"
+  }
+}
+node {
+  name: "gradients/cross_entropy_per_example/cross_entropy_per_example_grad/ExpandDims"
+  op: "Const"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 1
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 1
+          }
+        }
+        float_val: 0.0078125
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/cross_entropy_per_example/cross_entropy_per_example_grad/ExpandDims"
+  }
+}
+node {
+  name: "conv0/conv2d/Conv2D-0-TransposeNHWCToNCHW-LayoutOptimizer"
+  op: "Const"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 3
+          }
+          dim {
+            size: 32
+          }
+          dim {
+            size: 32
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 3
+          }
+          dim {
+            size: 32
+          }
+          dim {
+            size: 32
+          }
+        }
+        float_val: 1.0
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "conv0/conv2d/Conv2D-0-TransposeNHWCToNCHW-LayoutOptimizer"
+  }
+}
+node {
+  name: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-2-PermConstNHWCToNCHW-LayoutOptimizer"
+  op: "Const"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 4
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 4
+          }
+        }
+        tensor_content: "\000\000\000\000\003\000\000\000\001\000\000\000\002\000\000\000"
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-2-PermConstNHWCToNCHW-LayoutOptimizer"
+  }
+}
+node {
+  name: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-0-0-PermConstNCHWToNHWC-LayoutOptimizer"
+  op: "Const"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 4
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 4
+          }
+        }
+        tensor_content: "\000\000\000\000\002\000\000\000\003\000\000\000\001\000\000\000"
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-0-0-PermConstNCHWToNHWC-LayoutOptimizer"
+  }
+}
+node {
+  name: "conv0/conv2d/kernel/read"
+  op: "Identity"
+  input: "conv0/conv2d/kernel"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_conv0/conv2d/kernel/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 5
+          }
+          dim {
+            size: 5
+          }
+          dim {
+            size: 3
+          }
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "conv0/conv2d/kernel/read"
+  }
+}
+node {
+  name: "conv0/biases/read"
+  op: "Identity"
+  input: "conv0/biases"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_conv0/biases/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "conv0/biases/read"
+  }
+}
+node {
+  name: "conv1/conv2d/kernel/read"
+  op: "Identity"
+  input: "conv1/conv2d/kernel"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_conv1/conv2d/kernel/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 5
+          }
+          dim {
+            size: 5
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "conv1/conv2d/kernel/read"
+  }
+}
+node {
+  name: "conv1/biases/read"
+  op: "Identity"
+  input: "conv1/biases"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_conv1/biases/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "conv1/biases/read"
+  }
+}
+node {
+  name: "affine0/weights/read"
+  op: "Identity"
+  input: "affine0/weights"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_affine0/weights/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 4096
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine0/weights/read"
+  }
+}
+node {
+  name: "affine0/biases/read"
+  op: "Identity"
+  input: "affine0/biases"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_affine0/biases/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine0/biases/read"
+  }
+}
+node {
+  name: "affine1/weights/read"
+  op: "Identity"
+  input: "affine1/weights"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_affine1/weights/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 384
+          }
+          dim {
+            size: 192
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine1/weights/read"
+  }
+}
+node {
+  name: "affine1/biases/read"
+  op: "Identity"
+  input: "affine1/biases"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_affine1/biases/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 192
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine1/biases/read"
+  }
+}
+node {
+  name: "affine2/weights/read"
+  op: "Identity"
+  input: "affine2/weights"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_affine2/weights/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 192
+          }
+          dim {
+            size: 10
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine2/weights/read"
+  }
+}
+node {
+  name: "affine2/biases/read"
+  op: "Identity"
+  input: "affine2/biases"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@GradientDescent/update_affine2/biases/ApplyGradientDescent"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 10
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine2/biases/read"
+  }
+}
+node {
+  name: "ConstantFolding/gradients/conv0/conv2d/Conv2D_grad/ShapeN-matshapes-1"
+  op: "Const"
+  input: "^conv0/conv2d/kernel/read"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 4
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 4
+          }
+        }
+        tensor_content: "\005\000\000\000\005\000\000\000\003\000\000\000@\000\000\000"
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "ConstantFolding/gradients/conv0/conv2d/Conv2D_grad/ShapeN-matshapes-1"
+  }
+}
+node {
+  name: "conv0/conv2d/Conv2D"
+  op: "Conv2D"
+  input: "conv0/conv2d/Conv2D-0-TransposeNHWCToNCHW-LayoutOptimizer"
+  input: "conv0/conv2d/kernel/read"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 32
+          }
+          dim {
+            size: 32
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "data_format"
+    value {
+      s: "NCHW"
+    }
+  }
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "use_cudnn_on_gpu"
+    value {
+      b: true
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "conv0/conv2d/Conv2D"
+  }
+}
+node {
+  name: "conv0/BiasAdd"
+  op: "BiasAdd"
+  input: "conv0/conv2d/Conv2D"
+  input: "conv0/biases/read"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 32
+          }
+          dim {
+            size: 32
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "data_format"
+    value {
+      s: "NCHW"
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "conv0/BiasAdd"
+  }
+}
+node {
+  name: "conv0/Relu"
+  op: "Relu"
+  input: "conv0/BiasAdd"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 32
+          }
+          dim {
+            size: 32
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "conv0/Relu"
+  }
+}
+node {
+  name: "mpool0/MaxPool"
+  op: "MaxPool"
+  input: "conv0/Relu"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 16
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "data_format"
+    value {
+      s: "NCHW"
+    }
+  }
+  attr {
+    key: "ksize"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 3
+        i: 3
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 2
+        i: 2
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "mpool0/MaxPool"
+  }
+}
+node {
+  name: "mpool0/MaxPool-0-0-TransposeNCHWToNHWC-LayoutOptimizer"
+  op: "Transpose"
+  input: "mpool0/MaxPool"
+  input: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-0-0-PermConstNCHWToNHWC-LayoutOptimizer"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tperm"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "mpool0/MaxPool-0-0-TransposeNCHWToNHWC-LayoutOptimizer"
+  }
+}
+node {
+  name: "lrn0"
+  op: "LRN"
+  input: "mpool0/MaxPool-0-0-TransposeNCHWToNHWC-LayoutOptimizer"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "alpha"
+    value {
+      f: 0.00011111111234640703
+    }
+  }
+  attr {
+    key: "beta"
+    value {
+      f: 0.75
+    }
+  }
+  attr {
+    key: "bias"
+    value {
+      f: 1.0
+    }
+  }
+  attr {
+    key: "depth_radius"
+    value {
+      i: 4
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "lrn0"
+  }
+}
+node {
+  name: "gradients/conv1/conv2d/Conv2D_grad/Conv2DBackpropInput-0-DataFormatVecPermuteNHWCToNCHW-LayoutOptimizer"
+  op: "Const"
+  input: "^conv1/conv2d/kernel/read"
+  input: "^lrn0"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 4
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 4
+          }
+        }
+        tensor_content: "\200\000\000\000@\000\000\000\020\000\000\000\020\000\000\000"
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/conv1/conv2d/Conv2D_grad/Conv2DBackpropInput-0-DataFormatVecPermuteNHWCToNCHW-LayoutOptimizer"
+  }
+}
+node {
+  name: "ConstantFolding/gradients/conv1/conv2d/Conv2D_grad/ShapeN-matshapes-1"
+  op: "Const"
+  input: "^conv1/conv2d/kernel/read"
+  input: "^lrn0"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 4
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 4
+          }
+        }
+        tensor_content: "\005\000\000\000\005\000\000\000@\000\000\000@\000\000\000"
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "ConstantFolding/gradients/conv1/conv2d/Conv2D_grad/ShapeN-matshapes-1"
+  }
+}
+node {
+  name: "conv1/conv2d/Conv2D-0-TransposeNHWCToNCHW-LayoutOptimizer"
+  op: "Transpose"
+  input: "lrn0"
+  input: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-2-PermConstNHWCToNCHW-LayoutOptimizer"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tperm"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 16
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "conv1/conv2d/Conv2D-0-TransposeNHWCToNCHW-LayoutOptimizer"
+  }
+}
+node {
+  name: "conv1/conv2d/Conv2D"
+  op: "Conv2D"
+  input: "conv1/conv2d/Conv2D-0-TransposeNHWCToNCHW-LayoutOptimizer"
+  input: "conv1/conv2d/kernel/read"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 16
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "data_format"
+    value {
+      s: "NCHW"
+    }
+  }
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "use_cudnn_on_gpu"
+    value {
+      b: true
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "conv1/conv2d/Conv2D"
+  }
+}
+node {
+  name: "conv1/BiasAdd"
+  op: "BiasAdd"
+  input: "conv1/conv2d/Conv2D"
+  input: "conv1/biases/read"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 16
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "data_format"
+    value {
+      s: "NCHW"
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "conv1/BiasAdd"
+  }
+}
+node {
+  name: "conv1/Relu"
+  op: "Relu"
+  input: "conv1/BiasAdd"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 16
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "conv1/Relu"
+  }
+}
+node {
+  name: "conv1/Relu-0-1-TransposeNCHWToNHWC-LayoutOptimizer"
+  op: "Transpose"
+  input: "conv1/Relu"
+  input: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-0-0-PermConstNCHWToNHWC-LayoutOptimizer"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tperm"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "conv1/Relu-0-1-TransposeNCHWToNHWC-LayoutOptimizer"
+  }
+}
+node {
+  name: "lrn1"
+  op: "LRN"
+  input: "conv1/Relu-0-1-TransposeNCHWToNHWC-LayoutOptimizer"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "alpha"
+    value {
+      f: 0.00011111111234640703
+    }
+  }
+  attr {
+    key: "beta"
+    value {
+      f: 0.75
+    }
+  }
+  attr {
+    key: "bias"
+    value {
+      f: 1.0
+    }
+  }
+  attr {
+    key: "depth_radius"
+    value {
+      i: 4
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "lrn1"
+  }
+}
+node {
+  name: "mpool1/MaxPool-0-TransposeNHWCToNCHW-LayoutOptimizer"
+  op: "Transpose"
+  input: "lrn1"
+  input: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-2-PermConstNHWCToNCHW-LayoutOptimizer"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tperm"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 16
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "mpool1/MaxPool-0-TransposeNHWCToNCHW-LayoutOptimizer"
+  }
+}
+node {
+  name: "mpool1/MaxPool"
+  op: "MaxPool"
+  input: "mpool1/MaxPool-0-TransposeNHWCToNCHW-LayoutOptimizer"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 8
+          }
+          dim {
+            size: 8
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "data_format"
+    value {
+      s: "NCHW"
+    }
+  }
+  attr {
+    key: "ksize"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 3
+        i: 3
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 2
+        i: 2
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "mpool1/MaxPool"
+  }
+}
+node {
+  name: "mpool1/MaxPool-0-0-TransposeNCHWToNHWC-LayoutOptimizer"
+  op: "Transpose"
+  input: "mpool1/MaxPool"
+  input: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-0-0-PermConstNCHWToNHWC-LayoutOptimizer"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tperm"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 8
+          }
+          dim {
+            size: 8
+          }
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "mpool1/MaxPool-0-0-TransposeNCHWToNHWC-LayoutOptimizer"
+  }
+}
+node {
+  name: "Reshape"
+  op: "Reshape"
+  input: "mpool1/MaxPool-0-0-TransposeNCHWToNHWC-LayoutOptimizer"
+  input: "Reshape/shape"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tshape"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 4096
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "Reshape"
+  }
+}
+node {
+  name: "affine0/xw_plus_b/MatMul"
+  op: "MatMul"
+  input: "Reshape"
+  input: "affine0/weights/read"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "transpose_a"
+    value {
+      b: false
+    }
+  }
+  attr {
+    key: "transpose_b"
+    value {
+      b: false
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine0/xw_plus_b/MatMul"
+  }
+}
+node {
+  name: "affine0/xw_plus_b"
+  op: "BiasAdd"
+  input: "affine0/xw_plus_b/MatMul"
+  input: "affine0/biases/read"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "data_format"
+    value {
+      s: "NHWC"
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine0/xw_plus_b"
+  }
+}
+node {
+  name: "affine0/affine0"
+  op: "Relu"
+  input: "affine0/xw_plus_b"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine0/affine0"
+  }
+}
+node {
+  name: "affine1/xw_plus_b/MatMul"
+  op: "MatMul"
+  input: "affine0/affine0"
+  input: "affine1/weights/read"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 192
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "transpose_a"
+    value {
+      b: false
+    }
+  }
+  attr {
+    key: "transpose_b"
+    value {
+      b: false
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine1/xw_plus_b/MatMul"
+  }
+}
+node {
+  name: "affine1/xw_plus_b"
+  op: "BiasAdd"
+  input: "affine1/xw_plus_b/MatMul"
+  input: "affine1/biases/read"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 192
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "data_format"
+    value {
+      s: "NHWC"
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine1/xw_plus_b"
+  }
+}
+node {
+  name: "affine1/affine1"
+  op: "Relu"
+  input: "affine1/xw_plus_b"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 192
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine1/affine1"
+  }
+}
+node {
+  name: "affine2/xw_plus_b/MatMul"
+  op: "MatMul"
+  input: "affine1/affine1"
+  input: "affine2/weights/read"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 10
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "transpose_a"
+    value {
+      b: false
+    }
+  }
+  attr {
+    key: "transpose_b"
+    value {
+      b: false
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine2/xw_plus_b/MatMul"
+  }
+}
+node {
+  name: "affine2/xw_plus_b"
+  op: "BiasAdd"
+  input: "affine2/xw_plus_b/MatMul"
+  input: "affine2/biases/read"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 10
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "data_format"
+    value {
+      s: "NHWC"
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "affine2/xw_plus_b"
+  }
+}
+node {
+  name: "cross_entropy_per_example/cross_entropy_per_example"
+  op: "SparseSoftmaxCrossEntropyWithLogits"
+  input: "affine2/xw_plus_b"
+  input: "labels_cast"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tlabels"
+    value {
+      type: DT_INT64
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+        }
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 10
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "cross_entropy_per_example/cross_entropy_per_example"
+  }
+}
+node {
+  name: "gradients/cross_entropy_per_example/cross_entropy_per_example_grad/mul"
+  op: "Mul"
+  input: "cross_entropy_per_example/cross_entropy_per_example:1"
+  input: "gradients/cross_entropy_per_example/cross_entropy_per_example_grad/ExpandDims"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 10
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/cross_entropy_per_example/cross_entropy_per_example_grad/mul"
+  }
+}
+node {
+  name: "gradients/affine2/xw_plus_b_grad/BiasAddGrad"
+  op: "BiasAddGrad"
+  input: "gradients/cross_entropy_per_example/cross_entropy_per_example_grad/mul"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 10
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "data_format"
+    value {
+      s: "NHWC"
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/affine2/xw_plus_b_grad/BiasAddGrad"
+  }
+}
+node {
+  name: "GradientDescent/update_affine2/biases/ApplyGradientDescent"
+  op: "ApplyGradientDescent"
+  input: "affine2/biases"
+  input: "GradientDescent/learning_rate"
+  input: "gradients/affine2/xw_plus_b_grad/BiasAddGrad"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 10
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "use_locking"
+    value {
+      b: false
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "GradientDescent/update_affine2/biases/ApplyGradientDescent"
+  }
+}
+node {
+  name: "gradients/affine2/xw_plus_b/MatMul_grad/MatMul"
+  op: "MatMul"
+  input: "gradients/cross_entropy_per_example/cross_entropy_per_example_grad/mul"
+  input: "affine2/weights/read"
+  input: "^gradients/affine2/xw_plus_b_grad/BiasAddGrad"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 192
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "transpose_a"
+    value {
+      b: false
+    }
+  }
+  attr {
+    key: "transpose_b"
+    value {
+      b: true
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/affine2/xw_plus_b/MatMul_grad/MatMul"
+  }
+}
+node {
+  name: "gradients/affine2/xw_plus_b/MatMul_grad/MatMul_1"
+  op: "MatMul"
+  input: "affine1/affine1"
+  input: "gradients/cross_entropy_per_example/cross_entropy_per_example_grad/mul"
+  input: "^gradients/affine2/xw_plus_b_grad/BiasAddGrad"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 192
+          }
+          dim {
+            size: 10
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "transpose_a"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "transpose_b"
+    value {
+      b: false
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/affine2/xw_plus_b/MatMul_grad/MatMul_1"
+  }
+}
+node {
+  name: "GradientDescent/update_affine2/weights/ApplyGradientDescent"
+  op: "ApplyGradientDescent"
+  input: "affine2/weights"
+  input: "GradientDescent/learning_rate"
+  input: "gradients/affine2/xw_plus_b/MatMul_grad/MatMul_1"
+  input: "^gradients/affine2/xw_plus_b/MatMul_grad/MatMul"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 192
+          }
+          dim {
+            size: 10
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "use_locking"
+    value {
+      b: false
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "GradientDescent/update_affine2/weights/ApplyGradientDescent"
+  }
+}
+node {
+  name: "gradients/affine1/affine1_grad/ReluGrad"
+  op: "ReluGrad"
+  input: "gradients/affine2/xw_plus_b/MatMul_grad/MatMul"
+  input: "affine1/affine1"
+  input: "^gradients/affine2/xw_plus_b/MatMul_grad/MatMul_1"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 192
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/affine1/affine1_grad/ReluGrad"
+  }
+}
+node {
+  name: "gradients/affine1/xw_plus_b_grad/BiasAddGrad"
+  op: "BiasAddGrad"
+  input: "gradients/affine1/affine1_grad/ReluGrad"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 192
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "data_format"
+    value {
+      s: "NHWC"
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/affine1/xw_plus_b_grad/BiasAddGrad"
+  }
+}
+node {
+  name: "GradientDescent/update_affine1/biases/ApplyGradientDescent"
+  op: "ApplyGradientDescent"
+  input: "affine1/biases"
+  input: "GradientDescent/learning_rate"
+  input: "gradients/affine1/xw_plus_b_grad/BiasAddGrad"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 192
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "use_locking"
+    value {
+      b: false
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "GradientDescent/update_affine1/biases/ApplyGradientDescent"
+  }
+}
+node {
+  name: "gradients/affine1/xw_plus_b/MatMul_grad/MatMul"
+  op: "MatMul"
+  input: "gradients/affine1/affine1_grad/ReluGrad"
+  input: "affine1/weights/read"
+  input: "^gradients/affine1/xw_plus_b_grad/BiasAddGrad"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "transpose_a"
+    value {
+      b: false
+    }
+  }
+  attr {
+    key: "transpose_b"
+    value {
+      b: true
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/affine1/xw_plus_b/MatMul_grad/MatMul"
+  }
+}
+node {
+  name: "gradients/affine1/xw_plus_b/MatMul_grad/MatMul_1"
+  op: "MatMul"
+  input: "affine0/affine0"
+  input: "gradients/affine1/affine1_grad/ReluGrad"
+  input: "^gradients/affine1/xw_plus_b_grad/BiasAddGrad"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 384
+          }
+          dim {
+            size: 192
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "transpose_a"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "transpose_b"
+    value {
+      b: false
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/affine1/xw_plus_b/MatMul_grad/MatMul_1"
+  }
+}
+node {
+  name: "GradientDescent/update_affine1/weights/ApplyGradientDescent"
+  op: "ApplyGradientDescent"
+  input: "affine1/weights"
+  input: "GradientDescent/learning_rate"
+  input: "gradients/affine1/xw_plus_b/MatMul_grad/MatMul_1"
+  input: "^gradients/affine1/xw_plus_b/MatMul_grad/MatMul"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 384
+          }
+          dim {
+            size: 192
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "use_locking"
+    value {
+      b: false
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "GradientDescent/update_affine1/weights/ApplyGradientDescent"
+  }
+}
+node {
+  name: "gradients/affine0/affine0_grad/ReluGrad"
+  op: "ReluGrad"
+  input: "gradients/affine1/xw_plus_b/MatMul_grad/MatMul"
+  input: "affine0/affine0"
+  input: "^gradients/affine1/xw_plus_b/MatMul_grad/MatMul_1"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/affine0/affine0_grad/ReluGrad"
+  }
+}
+node {
+  name: "gradients/affine0/xw_plus_b_grad/BiasAddGrad"
+  op: "BiasAddGrad"
+  input: "gradients/affine0/affine0_grad/ReluGrad"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "data_format"
+    value {
+      s: "NHWC"
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/affine0/xw_plus_b_grad/BiasAddGrad"
+  }
+}
+node {
+  name: "GradientDescent/update_affine0/biases/ApplyGradientDescent"
+  op: "ApplyGradientDescent"
+  input: "affine0/biases"
+  input: "GradientDescent/learning_rate"
+  input: "gradients/affine0/xw_plus_b_grad/BiasAddGrad"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "use_locking"
+    value {
+      b: false
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "GradientDescent/update_affine0/biases/ApplyGradientDescent"
+  }
+}
+node {
+  name: "gradients/affine0/xw_plus_b/MatMul_grad/MatMul"
+  op: "MatMul"
+  input: "gradients/affine0/affine0_grad/ReluGrad"
+  input: "affine0/weights/read"
+  input: "^gradients/affine0/xw_plus_b_grad/BiasAddGrad"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 4096
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "transpose_a"
+    value {
+      b: false
+    }
+  }
+  attr {
+    key: "transpose_b"
+    value {
+      b: true
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/affine0/xw_plus_b/MatMul_grad/MatMul"
+  }
+}
+node {
+  name: "gradients/affine0/xw_plus_b/MatMul_grad/MatMul_1"
+  op: "MatMul"
+  input: "Reshape"
+  input: "gradients/affine0/affine0_grad/ReluGrad"
+  input: "^gradients/affine0/xw_plus_b_grad/BiasAddGrad"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 4096
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "transpose_a"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "transpose_b"
+    value {
+      b: false
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/affine0/xw_plus_b/MatMul_grad/MatMul_1"
+  }
+}
+node {
+  name: "GradientDescent/update_affine0/weights/ApplyGradientDescent"
+  op: "ApplyGradientDescent"
+  input: "affine0/weights"
+  input: "GradientDescent/learning_rate"
+  input: "gradients/affine0/xw_plus_b/MatMul_grad/MatMul_1"
+  input: "^gradients/affine0/xw_plus_b/MatMul_grad/MatMul"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 4096
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "use_locking"
+    value {
+      b: false
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "GradientDescent/update_affine0/weights/ApplyGradientDescent"
+  }
+}
+node {
+  name: "gradients/Reshape_grad/Reshape"
+  op: "Reshape"
+  input: "gradients/affine0/xw_plus_b/MatMul_grad/MatMul"
+  input: "gradients/Reshape_grad/Shape"
+  input: "^gradients/affine0/xw_plus_b/MatMul_grad/MatMul_1"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tshape"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 8
+          }
+          dim {
+            size: 8
+          }
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/Reshape_grad/Reshape"
+  }
+}
+node {
+  name: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-2-TransposeNHWCToNCHW-LayoutOptimizer"
+  op: "Transpose"
+  input: "gradients/Reshape_grad/Reshape"
+  input: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-2-PermConstNHWCToNCHW-LayoutOptimizer"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tperm"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 8
+          }
+          dim {
+            size: 8
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-2-TransposeNHWCToNCHW-LayoutOptimizer"
+  }
+}
+node {
+  name: "gradients/mpool1/MaxPool_grad/MaxPoolGrad"
+  op: "MaxPoolGrad"
+  input: "mpool1/MaxPool-0-TransposeNHWCToNCHW-LayoutOptimizer"
+  input: "mpool1/MaxPool"
+  input: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-2-TransposeNHWCToNCHW-LayoutOptimizer"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 16
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "data_format"
+    value {
+      s: "NCHW"
+    }
+  }
+  attr {
+    key: "ksize"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 3
+        i: 3
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 2
+        i: 2
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/mpool1/MaxPool_grad/MaxPoolGrad"
+  }
+}
+node {
+  name: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-0-0-TransposeNCHWToNHWC-LayoutOptimizer"
+  op: "Transpose"
+  input: "gradients/mpool1/MaxPool_grad/MaxPoolGrad"
+  input: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-0-0-PermConstNCHWToNHWC-LayoutOptimizer"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tperm"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-0-0-TransposeNCHWToNHWC-LayoutOptimizer"
+  }
+}
+node {
+  name: "gradients/lrn1_grad/LRNGrad"
+  op: "LRNGrad"
+  input: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-0-0-TransposeNCHWToNHWC-LayoutOptimizer"
+  input: "conv1/Relu-0-1-TransposeNCHWToNHWC-LayoutOptimizer"
+  input: "lrn1"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "alpha"
+    value {
+      f: 0.00011111111234640703
+    }
+  }
+  attr {
+    key: "beta"
+    value {
+      f: 0.75
+    }
+  }
+  attr {
+    key: "bias"
+    value {
+      f: 1.0
+    }
+  }
+  attr {
+    key: "depth_radius"
+    value {
+      i: 4
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/lrn1_grad/LRNGrad"
+  }
+}
+node {
+  name: "gradients/conv1/Relu_grad/ReluGrad-0-TransposeNHWCToNCHW-LayoutOptimizer"
+  op: "Transpose"
+  input: "gradients/lrn1_grad/LRNGrad"
+  input: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-2-PermConstNHWCToNCHW-LayoutOptimizer"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tperm"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 16
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/conv1/Relu_grad/ReluGrad-0-TransposeNHWCToNCHW-LayoutOptimizer"
+  }
+}
+node {
+  name: "gradients/conv1/Relu_grad/ReluGrad"
+  op: "ReluGrad"
+  input: "gradients/conv1/Relu_grad/ReluGrad-0-TransposeNHWCToNCHW-LayoutOptimizer"
+  input: "conv1/Relu"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 16
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/conv1/Relu_grad/ReluGrad"
+  }
+}
+node {
+  name: "gradients/conv1/BiasAdd_grad/BiasAddGrad"
+  op: "BiasAddGrad"
+  input: "gradients/conv1/Relu_grad/ReluGrad"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "data_format"
+    value {
+      s: "NCHW"
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/conv1/BiasAdd_grad/BiasAddGrad"
+  }
+}
+node {
+  name: "GradientDescent/update_conv1/biases/ApplyGradientDescent"
+  op: "ApplyGradientDescent"
+  input: "conv1/biases"
+  input: "GradientDescent/learning_rate"
+  input: "gradients/conv1/BiasAdd_grad/BiasAddGrad"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "use_locking"
+    value {
+      b: false
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "GradientDescent/update_conv1/biases/ApplyGradientDescent"
+  }
+}
+node {
+  name: "gradients/conv1/conv2d/Conv2D_grad/Conv2DBackpropInput"
+  op: "Conv2DBackpropInput"
+  input: "gradients/conv1/conv2d/Conv2D_grad/Conv2DBackpropInput-0-DataFormatVecPermuteNHWCToNCHW-LayoutOptimizer"
+  input: "conv1/conv2d/kernel/read"
+  input: "gradients/conv1/Relu_grad/ReluGrad"
+  input: "^gradients/conv1/BiasAdd_grad/BiasAddGrad"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 16
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "data_format"
+    value {
+      s: "NCHW"
+    }
+  }
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "use_cudnn_on_gpu"
+    value {
+      b: true
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/conv1/conv2d/Conv2D_grad/Conv2DBackpropInput"
+  }
+}
+node {
+  name: "gradients/conv1/conv2d/Conv2D_grad/Conv2DBackpropFilter"
+  op: "Conv2DBackpropFilter"
+  input: "conv1/conv2d/Conv2D-0-TransposeNHWCToNCHW-LayoutOptimizer"
+  input: "ConstantFolding/gradients/conv1/conv2d/Conv2D_grad/ShapeN-matshapes-1"
+  input: "gradients/conv1/Relu_grad/ReluGrad"
+  input: "^gradients/conv1/BiasAdd_grad/BiasAddGrad"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 5
+          }
+          dim {
+            size: 5
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "data_format"
+    value {
+      s: "NCHW"
+    }
+  }
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "use_cudnn_on_gpu"
+    value {
+      b: true
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/conv1/conv2d/Conv2D_grad/Conv2DBackpropFilter"
+  }
+}
+node {
+  name: "gradients/conv1/conv2d/Conv2D_grad/Conv2DBackpropInput-0-0-TransposeNCHWToNHWC-LayoutOptimizer"
+  op: "Transpose"
+  input: "gradients/conv1/conv2d/Conv2D_grad/Conv2DBackpropInput"
+  input: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-0-0-PermConstNCHWToNHWC-LayoutOptimizer"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tperm"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/conv1/conv2d/Conv2D_grad/Conv2DBackpropInput-0-0-TransposeNCHWToNHWC-LayoutOptimizer"
+  }
+}
+node {
+  name: "GradientDescent/update_conv1/conv2d/kernel/ApplyGradientDescent"
+  op: "ApplyGradientDescent"
+  input: "conv1/conv2d/kernel"
+  input: "GradientDescent/learning_rate"
+  input: "gradients/conv1/conv2d/Conv2D_grad/Conv2DBackpropFilter"
+  input: "^gradients/conv1/conv2d/Conv2D_grad/Conv2DBackpropInput"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 5
+          }
+          dim {
+            size: 5
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "use_locking"
+    value {
+      b: false
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "GradientDescent/update_conv1/conv2d/kernel/ApplyGradientDescent"
+  }
+}
+node {
+  name: "gradients/lrn0_grad/LRNGrad"
+  op: "LRNGrad"
+  input: "gradients/conv1/conv2d/Conv2D_grad/Conv2DBackpropInput-0-0-TransposeNCHWToNHWC-LayoutOptimizer"
+  input: "mpool0/MaxPool-0-0-TransposeNCHWToNHWC-LayoutOptimizer"
+  input: "lrn0"
+  input: "^gradients/conv1/conv2d/Conv2D_grad/Conv2DBackpropFilter"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "alpha"
+    value {
+      f: 0.00011111111234640703
+    }
+  }
+  attr {
+    key: "beta"
+    value {
+      f: 0.75
+    }
+  }
+  attr {
+    key: "bias"
+    value {
+      f: 1.0
+    }
+  }
+  attr {
+    key: "depth_radius"
+    value {
+      i: 4
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/lrn0_grad/LRNGrad"
+  }
+}
+node {
+  name: "gradients/mpool0/MaxPool_grad/MaxPoolGrad-2-TransposeNHWCToNCHW-LayoutOptimizer"
+  op: "Transpose"
+  input: "gradients/lrn0_grad/LRNGrad"
+  input: "gradients/mpool1/MaxPool_grad/MaxPoolGrad-2-PermConstNHWCToNCHW-LayoutOptimizer"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tperm"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 16
+          }
+          dim {
+            size: 16
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/mpool0/MaxPool_grad/MaxPoolGrad-2-TransposeNHWCToNCHW-LayoutOptimizer"
+  }
+}
+node {
+  name: "gradients/mpool0/MaxPool_grad/MaxPoolGrad"
+  op: "MaxPoolGrad"
+  input: "conv0/Relu"
+  input: "mpool0/MaxPool"
+  input: "gradients/mpool0/MaxPool_grad/MaxPoolGrad-2-TransposeNHWCToNCHW-LayoutOptimizer"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 32
+          }
+          dim {
+            size: 32
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "data_format"
+    value {
+      s: "NCHW"
+    }
+  }
+  attr {
+    key: "ksize"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 3
+        i: 3
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 2
+        i: 2
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/mpool0/MaxPool_grad/MaxPoolGrad"
+  }
+}
+node {
+  name: "gradients/conv0/Relu_grad/ReluGrad"
+  op: "ReluGrad"
+  input: "gradients/mpool0/MaxPool_grad/MaxPoolGrad"
+  input: "conv0/Relu"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 128
+          }
+          dim {
+            size: 64
+          }
+          dim {
+            size: 32
+          }
+          dim {
+            size: 32
+          }
+        }
+      }
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/conv0/Relu_grad/ReluGrad"
+  }
+}
+node {
+  name: "gradients/conv0/BiasAdd_grad/BiasAddGrad"
+  op: "BiasAddGrad"
+  input: "gradients/conv0/Relu_grad/ReluGrad"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "data_format"
+    value {
+      s: "NCHW"
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/conv0/BiasAdd_grad/BiasAddGrad"
+  }
+}
+node {
+  name: "GradientDescent/update_conv0/biases/ApplyGradientDescent"
+  op: "ApplyGradientDescent"
+  input: "conv0/biases"
+  input: "GradientDescent/learning_rate"
+  input: "gradients/conv0/BiasAdd_grad/BiasAddGrad"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "use_locking"
+    value {
+      b: false
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "GradientDescent/update_conv0/biases/ApplyGradientDescent"
+  }
+}
+node {
+  name: "gradients/conv0/conv2d/Conv2D_grad/Conv2DBackpropFilter"
+  op: "Conv2DBackpropFilter"
+  input: "conv0/conv2d/Conv2D-0-TransposeNHWCToNCHW-LayoutOptimizer"
+  input: "ConstantFolding/gradients/conv0/conv2d/Conv2D_grad/ShapeN-matshapes-1"
+  input: "gradients/conv0/Relu_grad/ReluGrad"
+  input: "^gradients/conv0/BiasAdd_grad/BiasAddGrad"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 5
+          }
+          dim {
+            size: 5
+          }
+          dim {
+            size: 3
+          }
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "data_format"
+    value {
+      s: "NCHW"
+    }
+  }
+  attr {
+    key: "dilations"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "explicit_paddings"
+    value {
+      list {
+      }
+    }
+  }
+  attr {
+    key: "padding"
+    value {
+      s: "SAME"
+    }
+  }
+  attr {
+    key: "strides"
+    value {
+      list {
+        i: 1
+        i: 1
+        i: 1
+        i: 1
+      }
+    }
+  }
+  attr {
+    key: "use_cudnn_on_gpu"
+    value {
+      b: true
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "gradients/conv0/conv2d/Conv2D_grad/Conv2DBackpropFilter"
+  }
+}
+node {
+  name: "GradientDescent/update_conv0/conv2d/kernel/ApplyGradientDescent"
+  op: "ApplyGradientDescent"
+  input: "conv0/conv2d/kernel"
+  input: "GradientDescent/learning_rate"
+  input: "gradients/conv0/conv2d/Conv2D_grad/Conv2DBackpropFilter"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 5
+          }
+          dim {
+            size: 5
+          }
+          dim {
+            size: 3
+          }
+          dim {
+            size: 64
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "use_locking"
+    value {
+      b: false
+    }
+  }
+  experimental_debug_info {
+    original_node_names: "GradientDescent/update_conv0/conv2d/kernel/ApplyGradientDescent"
+  }
+}
+node {
+  name: "GradientDescent"
+  op: "NoOp"
+  input: "^GradientDescent/update_affine0/biases/ApplyGradientDescent"
+  input: "^GradientDescent/update_affine0/weights/ApplyGradientDescent"
+  input: "^GradientDescent/update_affine1/biases/ApplyGradientDescent"
+  input: "^GradientDescent/update_affine1/weights/ApplyGradientDescent"
+  input: "^GradientDescent/update_affine2/biases/ApplyGradientDescent"
+  input: "^GradientDescent/update_affine2/weights/ApplyGradientDescent"
+  input: "^GradientDescent/update_conv0/biases/ApplyGradientDescent"
+  input: "^GradientDescent/update_conv0/conv2d/kernel/ApplyGradientDescent"
+  input: "^GradientDescent/update_conv1/biases/ApplyGradientDescent"
+  input: "^GradientDescent/update_conv1/conv2d/kernel/ApplyGradientDescent"
+  device: "/job:localhost/replica:0/task:0/device:GPU:0"
+  experimental_debug_info {
+    original_node_names: "GradientDescent"
+  }
+}
+versions {
+  producer: 134
+}

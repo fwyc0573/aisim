@@ -1,0 +1,96 @@
+ARG ROCM_VERSION=4.0
+ARG TF_VERSION=1.15
+
+FROM rocm/tensorflow:rocm${ROCM_VERSION}-tf${TF_VERSION}-dev
+
+ARG SSH_PORT=33333
+ARG OFED_VERSION=5.0-2.1.8.0
+ARG DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    build-essential \
+    cmake \
+    g++-4.8 \
+    git \
+    jq \
+    vim \
+    git \
+    curl \
+    wget \
+    ca-certificates \
+    libjpeg-dev \
+    libpng-dev \
+    lshw \
+    dmidecode \
+    util-linux \
+    automake \
+    autoconf \
+    libtool \
+    perftest \
+    net-tools \
+    openssh-client \
+    openssh-server \
+    pciutils \
+    libaio-dev \
+    libcap2 \
+    librdmacm1 \
+    libibverbs1 \
+    ibverbs-providers
+
+# Install Openmpi
+RUN wget --progress=dot:mega -O /tmp/openmpi-3.0.0-bin.tar.gz https://github.com/horovod/horovod/files/1596799/openmpi-3.0.0-bin.tar.gz && \
+    cd /usr/local && tar -zxf /tmp/openmpi-3.0.0-bin.tar.gz && ldconfig && \
+    echo "mpirun -allow-run-as-root -np 2 -H localhost:2 -bind-to none -map-by slot -mca mpi_abort_print_stack 1" > /mpirun_command;
+
+# Configure SSH
+RUN mkdir -p /root/.ssh && \
+    touch /root/.ssh/authorized_keys && \
+    chmod 644 /root/.ssh/authorized_keys && \
+    cat /etc/ssh/ssh_host_ed25519_key.pub >> /root/.ssh/authorized_keys && \
+    mkdir -p /var/run/sshd && \
+    sed -i "s/[# ]*PermitRootLogin prohibit-password/PermitRootLogin yes/" /etc/ssh/sshd_config && \
+    sed -i "s/[# ]*Port.*/Port ${SSH_PORT}/" /etc/ssh/sshd_config && \
+    echo "PermitUserEnvironment yes" >> /etc/ssh/sshd_config
+RUN echo -e "Host node\n\
+    HostName 127.0.0.1\n\
+    Port ${SSH_PORT}\n\
+    IdentityFile /etc/ssh/ssh_host_ed25519_key\n\
+    StrictHostKeyChecking no\n"\
+    >> /root/.ssh/config
+
+# Install OFED
+RUN rm /usr/bin/python && ln -s /usr/bin/python2.7 /usr/bin/python
+RUN cd /tmp && \
+    wget http://content.mellanox.com/ofed/MLNX_OFED-${OFED_VERSION}/MLNX_OFED_LINUX-${OFED_VERSION}-ubuntu18.04-x86_64.tgz -q && \
+    tar -xzvf MLNX_OFED_LINUX-${OFED_VERSION}-ubuntu18.04-x86_64.tgz && \
+    PATH=/usr/bin:${PATH} MLNX_OFED_LINUX-${OFED_VERSION}-ubuntu18.04-x86_64/mlnxofedinstall --user-space-only --without-fw-update --force --all && \
+    rm -rf MLNX_OFED_LINUX-${OFED_VERSION}*
+
+ENV PATH="/usr/local/cmake/bin:${PATH}" \
+    LD_LIBRARY_PATH="/usr/local/lib:${LD_LIBRARY_PATH}" \
+    AISIM_DIR="/AISim"
+
+# Update python link 
+RUN rm /usr/bin/python && ln -s /usr/bin/python3.6 /usr/bin/python && \
+    rm /usr/bin/python3 && ln -s /usr/bin/python3.6 /usr/bin/python3
+
+RUN python -m pip install --upgrade pip && \
+    python -m pip install \
+    psutil \
+    pyyaml \
+    pandas \
+    transformers \
+    matplotlib \
+    azure-cosmosdb-table \
+    azure-storage-blob \
+    msrestazure
+
+# Install horovod
+RUN HOROVOD_GPU_ALLREDUCE=NCCL HOROVOD_GPU_ROCM=1 HOROVOD_GPU=ROCM HOROVOD_ROCM_HOME=/opt/rocm HOROVOD_WITH_TENSORFLOW=1 \
+    python -m pip install --no-cache-dir horovod
+
+COPY . ${AISIM_DIR}
+
+WORKDIR ${AISIM_DIR}
+

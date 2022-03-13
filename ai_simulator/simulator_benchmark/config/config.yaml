@@ -1,0 +1,33 @@
+enviroments:
+    '1 Host X 1 V100': 1
+    '1 Host X 2 V100': 2
+    '1 Host X 4 V100': 4
+    '2 Host X 4 V100': 8
+
+device:
+    'AMDMI100'
+
+platform:
+    'tensorflow'
+
+baseline_path:
+    'data/tensorflow/baseline.json'
+
+resource_pool_path:
+    'data/resource_pool.yaml'
+
+tasks:
+    alexnet:
+        graph_path:
+            './data/graphs/alexnet_bsDefault_gpunum1_partitionGraph_0.pbtxt'
+        graph_path_multi_gpu:
+            './data/graphs/alexnet_bsDefault_gpunum2_partitionGraph/0/graph_0.pbtxt'
+        database_path:
+            './data/database/alexnet_db.json'
+    vgg16:
+        graph_path:
+            './data/graphs/vgg16_bsDefault_gpunum1_partitionGraph_0.pbtxt'
+        graph_path_multi_gpu:
+            './data/graphs/vgg16_bsDefault_gpunum2_partitionGraph/0/graph_0.pbtxt'
+        database_path:
+            './data/database/vgg16_db.json'
