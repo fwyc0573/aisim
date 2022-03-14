@@ -91,7 +91,7 @@ class TorchDatabase(torch.fx.Interpreter):
 
     def _get_bp_node_time(self):
         self.timer._init_database()
-        y = self.module(self.example)[1]
+        y = self.module(self.example)
         make_dot(y, self.module.named_parameters(), self.timer._make_hook)
         y.backward(y)
         self.timer._bp_profiling()

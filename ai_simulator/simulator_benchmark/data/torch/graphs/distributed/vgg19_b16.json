@@ -2281,7 +2281,7 @@
             "AddmmBackward00"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_0"
         ],
         "input_types": [
             "torch.float32"
@@ -2329,7 +2329,7 @@
             "TBackward00"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_0"
         ],
         "input_types": [
             "torch.float32"
@@ -2456,7 +2456,7 @@
             "AddmmBackward01"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_0"
         ],
         "input_types": [
             "torch.float32"
@@ -2504,7 +2504,7 @@
             "TBackward01"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_1"
         ],
         "input_types": [
             "torch.float32"
@@ -2631,7 +2631,7 @@
             "AddmmBackward02"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_1"
         ],
         "input_types": [
             "torch.float32"
@@ -2679,7 +2679,7 @@
             "TBackward02"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -2914,7 +2914,7 @@
             "ConvolutionBackward00"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -2937,7 +2937,7 @@
             "ConvolutionBackward00"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -3063,7 +3063,7 @@
             "ConvolutionBackward01"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -3086,7 +3086,7 @@
             "ConvolutionBackward01"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -3212,7 +3212,7 @@
             "ConvolutionBackward02"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -3235,7 +3235,7 @@
             "ConvolutionBackward02"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -3361,7 +3361,7 @@
             "ConvolutionBackward03"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -3384,7 +3384,7 @@
             "ConvolutionBackward03"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -3550,7 +3550,7 @@
             "ConvolutionBackward04"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -3573,7 +3573,7 @@
             "ConvolutionBackward04"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -3699,7 +3699,7 @@
             "ConvolutionBackward05"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -3722,7 +3722,7 @@
             "ConvolutionBackward05"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -3848,7 +3848,7 @@
             "ConvolutionBackward06"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -3871,7 +3871,7 @@
             "ConvolutionBackward06"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -3997,7 +3997,7 @@
             "ConvolutionBackward07"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -4020,7 +4020,7 @@
             "ConvolutionBackward07"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -4186,7 +4186,7 @@
             "ConvolutionBackward08"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -4209,7 +4209,7 @@
             "ConvolutionBackward08"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -4335,7 +4335,7 @@
             "ConvolutionBackward09"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -4358,7 +4358,7 @@
             "ConvolutionBackward09"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -4484,7 +4484,7 @@
             "ConvolutionBackward010"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -4507,7 +4507,7 @@
             "ConvolutionBackward010"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -4633,7 +4633,7 @@
             "ConvolutionBackward011"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -4656,7 +4656,7 @@
             "ConvolutionBackward011"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -4822,7 +4822,7 @@
             "ConvolutionBackward012"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -4845,7 +4845,7 @@
             "ConvolutionBackward012"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -4971,7 +4971,7 @@
             "ConvolutionBackward013"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -4994,7 +4994,7 @@
             "ConvolutionBackward013"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -5160,7 +5160,7 @@
             "ConvolutionBackward014"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -5183,7 +5183,7 @@
             "ConvolutionBackward014"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -5303,7 +5303,7 @@
             "ConvolutionBackward015"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -5326,7 +5326,7 @@
             "ConvolutionBackward015"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -5338,6 +5338,247 @@
         ],
         "output_types": [],
         "output_shapes": []
+    },
+    {
+        "name": "ddp_pre_0",
+        "op": "ddp_pre",
+        "input_nodes": [
+            "AccumulateGrad0",
+            "AccumulateGrad1",
+            "AccumulateGrad2"
+        ],
+        "output_nodes": [
+            "ddp_Allreduce_0"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 4101096
+        }
+    },
+    {
+        "name": "ddp_Allreduce_0",
+        "op": "ddp_Allreduce",
+        "input_nodes": [
+            "ddp_pre_0"
+        ],
+        "output_nodes": [
+            "ddp_pre_1"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 4101096
+        }
+    },
+    {
+        "name": "ddp_pre_1",
+        "op": "ddp_pre",
+        "input_nodes": [
+            "AccumulateGrad3",
+            "AccumulateGrad4",
+            "ddp_Allreduce_0"
+        ],
+        "output_nodes": [
+            "ddp_Allreduce_1"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 16781312
+        }
+    },
+    {
+        "name": "ddp_Allreduce_1",
+        "op": "ddp_Allreduce",
+        "input_nodes": [
+            "ddp_pre_1"
+        ],
+        "output_nodes": [
+            "ddp_pre_2"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 16781312
+        }
+    },
+    {
+        "name": "ddp_pre_2",
+        "op": "ddp_pre",
+        "input_nodes": [
+            "AccumulateGrad5",
+            "AccumulateGrad6",
+            "AccumulateGrad7",
+            "AccumulateGrad8",
+            "AccumulateGrad9",
+            "AccumulateGrad11",
+            "ddp_Allreduce_1"
+        ],
+        "output_nodes": [
+            "ddp_Allreduce_2"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 107480576
+        }
+    },
+    {
+        "name": "ddp_Allreduce_2",
+        "op": "ddp_Allreduce",
+        "input_nodes": [
+            "ddp_pre_2"
+        ],
+        "output_nodes": [
+            "ddp_pre_3"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 107480576
+        }
+    },
+    {
+        "name": "ddp_pre_3",
+        "op": "ddp_pre",
+        "input_nodes": [
+            "AccumulateGrad10",
+            "AccumulateGrad12",
+            "AccumulateGrad13",
+            "AccumulateGrad14",
+            "AccumulateGrad15",
+            "AccumulateGrad17",
+            "ddp_Allreduce_2"
+        ],
+        "output_nodes": [
+            "ddp_Allreduce_3"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 7079424
+        }
+    },
+    {
+        "name": "ddp_Allreduce_3",
+        "op": "ddp_Allreduce",
+        "input_nodes": [
+            "ddp_pre_3"
+        ],
+        "output_nodes": [
+            "ddp_pre_4"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 7079424
+        }
+    },
+    {
+        "name": "ddp_pre_4",
+        "op": "ddp_pre",
+        "input_nodes": [
+            "AccumulateGrad16",
+            "AccumulateGrad18",
+            "AccumulateGrad19",
+            "AccumulateGrad20",
+            "AccumulateGrad21",
+            "AccumulateGrad22",
+            "AccumulateGrad23",
+            "AccumulateGrad24",
+            "AccumulateGrad25",
+            "AccumulateGrad26",
+            "AccumulateGrad27",
+            "AccumulateGrad29",
+            "ddp_Allreduce_3"
+        ],
+        "output_nodes": [
+            "ddp_Allreduce_4"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 7669760
+        }
+    },
+    {
+        "name": "ddp_Allreduce_4",
+        "op": "ddp_Allreduce",
+        "input_nodes": [
+            "ddp_pre_4"
+        ],
+        "output_nodes": [
+            "ddp_pre_5"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 7669760
+        }
+    },
+    {
+        "name": "ddp_pre_5",
+        "op": "ddp_pre",
+        "input_nodes": [
+            "AccumulateGrad28",
+            "AccumulateGrad30",
+            "AccumulateGrad31",
+            "AccumulateGrad32",
+            "AccumulateGrad33",
+            "AccumulateGrad34",
+            "AccumulateGrad35",
+            "AccumulateGrad36",
+            "AccumulateGrad37",
+            "ddp_Allreduce_4"
+        ],
+        "output_nodes": [
+            "ddp_Allreduce_5"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 555072
+        }
+    },
+    {
+        "name": "ddp_Allreduce_5",
+        "op": "ddp_Allreduce",
+        "input_nodes": [
+            "ddp_pre_5"
+        ],
+        "output_nodes": [
+            "optimizer_step"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 555072
+        }
     },
     {
         "name": "optimizer_zero",
@@ -5568,44 +5809,7 @@
         "name": "optimizer_step",
         "op": "optimizer_step",
         "input_nodes": [
-            "AccumulateGrad0",
-            "AccumulateGrad1",
-            "AccumulateGrad2",
-            "AccumulateGrad3",
-            "AccumulateGrad4",
-            "AccumulateGrad5",
-            "AccumulateGrad6",
-            "AccumulateGrad7",
-            "AccumulateGrad8",
-            "AccumulateGrad9",
-            "AccumulateGrad10",
-            "AccumulateGrad11",
-            "AccumulateGrad12",
-            "AccumulateGrad13",
-            "AccumulateGrad14",
-            "AccumulateGrad15",
-            "AccumulateGrad16",
-            "AccumulateGrad17",
-            "AccumulateGrad18",
-            "AccumulateGrad19",
-            "AccumulateGrad20",
-            "AccumulateGrad21",
-            "AccumulateGrad22",
-            "AccumulateGrad23",
-            "AccumulateGrad24",
-            "AccumulateGrad25",
-            "AccumulateGrad26",
-            "AccumulateGrad27",
-            "AccumulateGrad28",
-            "AccumulateGrad29",
-            "AccumulateGrad30",
-            "AccumulateGrad31",
-            "AccumulateGrad32",
-            "AccumulateGrad33",
-            "AccumulateGrad34",
-            "AccumulateGrad35",
-            "AccumulateGrad36",
-            "AccumulateGrad37"
+            "ddp_Allreduce_5"
         ],
         "output_nodes": [],
         "input_types": [

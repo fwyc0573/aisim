@@ -1,4 +1,3 @@
-
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
@@ -33,7 +32,10 @@ class ModelZoo():
         self.parser = Parser
 
     def __init_models(self, config):
+        self.config = config
         self.__models = []
+        self.__sub_models = {}
+        self.__batch_sizes = {}
         self.__graph_path = {}
         self.__graph_path_multi_gpu = {}
         self.__database_path = {}
@@ -59,6 +61,16 @@ class ModelZoo():
             else:
                 self.__models.append(model)
                 task = config['tasks'][model]
+
+                if 'model' not in task:
+                    raise ValueError("Task \"{}\" are ininlized without model".format(task))
+                else:
+                    self.set_sub_models(model, task['model'])
+    
+                if 'batch_size' not in task:
+                    raise ValueError("Task \"{}\" are ininlized without batch_size".format(task))
+                else:
+                    self.set_batch_size(model, task['batch_size'])
 
                 if 'graph_path' not in task:
                     raise ValueError("Task \"{}\" are ininlized without graph".format(task))
@@ -90,6 +102,18 @@ class ModelZoo():
     def get_graph_path(self, model):
         return self.__graph_path[model]
 
+    def set_sub_models(self, model, sub_model):
+        self.__sub_models[model] = sub_model
+
+    def get_sub_models(self, model):
+        return self.__sub_models[model]
+
+    def set_batch_size(self, model, batch_size):
+        self.__batch_sizes[model] = batch_size
+
+    def get_batch_size(self, model):
+        return self.__batch_sizes[model]
+
     def set_graph_path_multi_gpu(self, model, graph_path):
         self.__graph_path_multi_gpu[model] = graph_path
 
@@ -107,8 +131,13 @@ class ModelZoo():
 
     def set_baseline_time(self, gpu, model, baseline_time):
         if str(gpu) in self.__baseline:
-            if model in self.__baseline[str(gpu)]:
-                self.__baseline[str(gpu)][model] = baseline_time
+            self.__baseline[str(gpu)][model] = baseline_time
+        else:
+            self.__baseline[str(gpu)] = {}
+            self.__baseline[str(gpu)][model] = baseline_time
+    
+    def dump_baseline(self):
+        json.dump(self.__baseline, open(self.config['baseline_path'], 'w'))
 
     def get_baseline_time(self, gpu, model):
         baseline_time = 1.0

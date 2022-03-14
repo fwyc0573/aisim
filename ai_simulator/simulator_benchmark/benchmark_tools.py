@@ -260,3 +260,4 @@ class BenchmarkTools():
                 if result is not None:
                     self.__coverages['node'].append(result[0])
                     self.__coverages['op'].append(result[1])
+

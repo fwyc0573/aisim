@@ -63,7 +63,8 @@ ddp_graph_command = 'python3 -m torch.distributed.launch --nproc_per_node 1 \
     --node_rank 0 \
     ddp_test.py \
     --model {} \
-    --path ai_simulator/simulator_benchmark/data/torch/graphs/distributed/{}.json'
+    --path ai_simulator/simulator_benchmark/data/torch/graphs/distributed/{}.json \
+    --batchsize {} '
 
 def nccl_test(args, config):
     for _, value in config['enviroments'].items():
@@ -72,29 +73,36 @@ def nccl_test(args, config):
 
 def baseline_test(args, config):
     for model in args.model_list:
+        print(model, args.model_list)
         for _, value in config['enviroments'].items():
-            cmd = ddp_meta_command.format(value, model, args.batchsize)
+            cmd = ddp_meta_command.format(value,
+                                          args.model_zoo.get_sub_models(model), 
+                                          args.model_zoo.get_batch_size(model))
             time = os.popen(cmd).read()
             args.model_zoo.set_baseline_time(value, model, float(time))
+    args.model_zoo.dump_baseline()
+    print(args.model_zoo.get_baseline())
 
 def TorchGraph_test(args, config):
     for model in args.model_list:
-        module = getattr(models, model)().cuda()
-        example = torch.rand(args.batchsize, 3, 224, 224).cuda()
+        module = getattr(models, args.model_zoo.get_sub_models(model))().cuda()
+        example = torch.rand(args.model_zoo.get_batch_size(model), 3, 224, 224).cuda()
         optimizer = optim.SGD(module.parameters(), lr=0.01)
         g = TorchGraph(module, example, optimizer, model)
         g.dump_graph('ai_simulator/simulator_benchmark/data/torch/graphs/' + model + ".json")
 
 def ddpgraph_test(args, config):
     for model in args.model_list:
-        cmd = ddp_graph_command.format(model, model, args.batchsize)
+        cmd = ddp_graph_command.format(args.model_zoo.get_sub_models(model),
+                                       model,
+                                       args.model_zoo.get_batch_size(model))
         os.system(cmd)
 
 def op_test(args, config):
     for model in args.model_list:
         timer = Timer(100, args.model)
-        module = getattr(models, model)().cuda()
-        example = torch.rand(args.batchsize, 3, 224, 224).cuda()
+        module = getattr(models, args.model_zoo.get_sub_models(model))().cuda()
+        example = torch.rand(args.model_zoo.get_batch_size(model), 3, 224, 224).cuda()
         optimizer = optim.SGD(module.parameters(), lr=0.01)
         
         g = TorchDatabase(module, example, model, timer, optimizer)
@@ -143,8 +151,8 @@ if __name__ == '__main__':
 
     model_list = model_zoo.get_model_list()
     args.model_list = model_list
-    print(model_list)
 
+    print(model_list)
     print(config)
 
     one_click_test(args, config)
@@ -155,3 +163,4 @@ if __name__ == '__main__':
                                     args.skip_accuracy,
                                     config)
     benchmarktools.run()
+

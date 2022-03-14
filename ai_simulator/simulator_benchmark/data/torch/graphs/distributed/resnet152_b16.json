@@ -24944,7 +24944,7 @@
             "AddmmBackward00"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_0"
         ],
         "input_types": [
             "torch.float32"
@@ -24992,7 +24992,7 @@
             "TBackward00"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_0"
         ],
         "input_types": [
             "torch.float32"
@@ -25205,7 +25205,7 @@
             "CudnnBatchNormBackward00"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_0"
         ],
         "input_types": [
             "torch.float32"
@@ -25225,7 +25225,7 @@
             "CudnnBatchNormBackward00"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_0"
         ],
         "input_types": [
             "torch.float32"
@@ -25313,7 +25313,7 @@
             "ConvolutionBackward00"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_0"
         ],
         "input_types": [
             "torch.float32"
@@ -25420,7 +25420,7 @@
             "CudnnBatchNormBackward01"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_0"
         ],
         "input_types": [
             "torch.float32"
@@ -25440,7 +25440,7 @@
             "CudnnBatchNormBackward01"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_0"
         ],
         "input_types": [
             "torch.float32"
@@ -25528,7 +25528,7 @@
             "ConvolutionBackward01"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_1"
         ],
         "input_types": [
             "torch.float32"
@@ -25635,7 +25635,7 @@
             "CudnnBatchNormBackward02"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_1"
         ],
         "input_types": [
             "torch.float32"
@@ -25655,7 +25655,7 @@
             "CudnnBatchNormBackward02"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_1"
         ],
         "input_types": [
             "torch.float32"
@@ -25743,7 +25743,7 @@
             "ConvolutionBackward02"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_1"
         ],
         "input_types": [
             "torch.float32"
@@ -25891,7 +25891,7 @@
             "CudnnBatchNormBackward03"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_1"
         ],
         "input_types": [
             "torch.float32"
@@ -25911,7 +25911,7 @@
             "CudnnBatchNormBackward03"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_1"
         ],
         "input_types": [
             "torch.float32"
@@ -25999,7 +25999,7 @@
             "ConvolutionBackward03"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_1"
         ],
         "input_types": [
             "torch.float32"
@@ -26106,7 +26106,7 @@
             "CudnnBatchNormBackward04"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_1"
         ],
         "input_types": [
             "torch.float32"
@@ -26126,7 +26126,7 @@
             "CudnnBatchNormBackward04"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_1"
         ],
         "input_types": [
             "torch.float32"
@@ -26214,7 +26214,7 @@
             "ConvolutionBackward04"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_1"
         ],
         "input_types": [
             "torch.float32"
@@ -26321,7 +26321,7 @@
             "CudnnBatchNormBackward05"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_1"
         ],
         "input_types": [
             "torch.float32"
@@ -26341,7 +26341,7 @@
             "CudnnBatchNormBackward05"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_1"
         ],
         "input_types": [
             "torch.float32"
@@ -26429,7 +26429,7 @@
             "ConvolutionBackward05"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_1"
         ],
         "input_types": [
             "torch.float32"
@@ -26577,7 +26577,7 @@
             "CudnnBatchNormBackward06"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_1"
         ],
         "input_types": [
             "torch.float32"
@@ -26597,7 +26597,7 @@
             "CudnnBatchNormBackward06"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_1"
         ],
         "input_types": [
             "torch.float32"
@@ -26685,7 +26685,7 @@
             "ConvolutionBackward06"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -26757,7 +26757,7 @@
             "CudnnBatchNormBackward07"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -26777,7 +26777,7 @@
             "CudnnBatchNormBackward07"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -26865,7 +26865,7 @@
             "ConvolutionBackward07"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -26972,7 +26972,7 @@
             "CudnnBatchNormBackward08"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -26992,7 +26992,7 @@
             "CudnnBatchNormBackward08"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -27080,7 +27080,7 @@
             "ConvolutionBackward08"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -27187,7 +27187,7 @@
             "CudnnBatchNormBackward09"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -27207,7 +27207,7 @@
             "CudnnBatchNormBackward09"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -27295,7 +27295,7 @@
             "ConvolutionBackward09"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -27443,7 +27443,7 @@
             "CudnnBatchNormBackward010"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -27463,7 +27463,7 @@
             "CudnnBatchNormBackward010"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -27551,7 +27551,7 @@
             "ConvolutionBackward010"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -27658,7 +27658,7 @@
             "CudnnBatchNormBackward011"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -27678,7 +27678,7 @@
             "CudnnBatchNormBackward011"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -27766,7 +27766,7 @@
             "ConvolutionBackward011"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -27873,7 +27873,7 @@
             "CudnnBatchNormBackward012"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -27893,7 +27893,7 @@
             "CudnnBatchNormBackward012"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -27981,7 +27981,7 @@
             "ConvolutionBackward012"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -28129,7 +28129,7 @@
             "CudnnBatchNormBackward013"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -28149,7 +28149,7 @@
             "CudnnBatchNormBackward013"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -28237,7 +28237,7 @@
             "ConvolutionBackward013"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -28344,7 +28344,7 @@
             "CudnnBatchNormBackward014"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -28364,7 +28364,7 @@
             "CudnnBatchNormBackward014"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -28452,7 +28452,7 @@
             "ConvolutionBackward014"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -28559,7 +28559,7 @@
             "CudnnBatchNormBackward015"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -28579,7 +28579,7 @@
             "CudnnBatchNormBackward015"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -28667,7 +28667,7 @@
             "ConvolutionBackward015"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -28815,7 +28815,7 @@
             "CudnnBatchNormBackward016"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -28835,7 +28835,7 @@
             "CudnnBatchNormBackward016"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -28923,7 +28923,7 @@
             "ConvolutionBackward016"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -29030,7 +29030,7 @@
             "CudnnBatchNormBackward017"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -29050,7 +29050,7 @@
             "CudnnBatchNormBackward017"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_2"
         ],
         "input_types": [
             "torch.float32"
@@ -29138,7 +29138,7 @@
             "ConvolutionBackward017"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -29245,7 +29245,7 @@
             "CudnnBatchNormBackward018"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -29265,7 +29265,7 @@
             "CudnnBatchNormBackward018"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -29353,7 +29353,7 @@
             "ConvolutionBackward018"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -29501,7 +29501,7 @@
             "CudnnBatchNormBackward019"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -29521,7 +29521,7 @@
             "CudnnBatchNormBackward019"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -29609,7 +29609,7 @@
             "ConvolutionBackward019"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -29716,7 +29716,7 @@
             "CudnnBatchNormBackward020"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -29736,7 +29736,7 @@
             "CudnnBatchNormBackward020"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -29824,7 +29824,7 @@
             "ConvolutionBackward020"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -29931,7 +29931,7 @@
             "CudnnBatchNormBackward021"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -29951,7 +29951,7 @@
             "CudnnBatchNormBackward021"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -30039,7 +30039,7 @@
             "ConvolutionBackward021"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -30187,7 +30187,7 @@
             "CudnnBatchNormBackward022"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -30207,7 +30207,7 @@
             "CudnnBatchNormBackward022"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -30295,7 +30295,7 @@
             "ConvolutionBackward022"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -30402,7 +30402,7 @@
             "CudnnBatchNormBackward023"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -30422,7 +30422,7 @@
             "CudnnBatchNormBackward023"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -30510,7 +30510,7 @@
             "ConvolutionBackward023"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -30617,7 +30617,7 @@
             "CudnnBatchNormBackward024"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -30637,7 +30637,7 @@
             "CudnnBatchNormBackward024"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -30725,7 +30725,7 @@
             "ConvolutionBackward024"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -30873,7 +30873,7 @@
             "CudnnBatchNormBackward025"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -30893,7 +30893,7 @@
             "CudnnBatchNormBackward025"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -30981,7 +30981,7 @@
             "ConvolutionBackward025"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -31088,7 +31088,7 @@
             "CudnnBatchNormBackward026"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -31108,7 +31108,7 @@
             "CudnnBatchNormBackward026"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -31196,7 +31196,7 @@
             "ConvolutionBackward026"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -31303,7 +31303,7 @@
             "CudnnBatchNormBackward027"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -31323,7 +31323,7 @@
             "CudnnBatchNormBackward027"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -31411,7 +31411,7 @@
             "ConvolutionBackward027"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -31559,7 +31559,7 @@
             "CudnnBatchNormBackward028"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -31579,7 +31579,7 @@
             "CudnnBatchNormBackward028"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -31667,7 +31667,7 @@
             "ConvolutionBackward028"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -31774,7 +31774,7 @@
             "CudnnBatchNormBackward029"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -31794,7 +31794,7 @@
             "CudnnBatchNormBackward029"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -31882,7 +31882,7 @@
             "ConvolutionBackward029"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -31989,7 +31989,7 @@
             "CudnnBatchNormBackward030"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -32009,7 +32009,7 @@
             "CudnnBatchNormBackward030"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -32097,7 +32097,7 @@
             "ConvolutionBackward030"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -32245,7 +32245,7 @@
             "CudnnBatchNormBackward031"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -32265,7 +32265,7 @@
             "CudnnBatchNormBackward031"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -32353,7 +32353,7 @@
             "ConvolutionBackward031"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -32460,7 +32460,7 @@
             "CudnnBatchNormBackward032"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -32480,7 +32480,7 @@
             "CudnnBatchNormBackward032"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -32568,7 +32568,7 @@
             "ConvolutionBackward032"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -32675,7 +32675,7 @@
             "CudnnBatchNormBackward033"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -32695,7 +32695,7 @@
             "CudnnBatchNormBackward033"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -32783,7 +32783,7 @@
             "ConvolutionBackward033"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -32931,7 +32931,7 @@
             "CudnnBatchNormBackward034"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -32951,7 +32951,7 @@
             "CudnnBatchNormBackward034"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -33039,7 +33039,7 @@
             "ConvolutionBackward034"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -33146,7 +33146,7 @@
             "CudnnBatchNormBackward035"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -33166,7 +33166,7 @@
             "CudnnBatchNormBackward035"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_3"
         ],
         "input_types": [
             "torch.float32"
@@ -33254,7 +33254,7 @@
             "ConvolutionBackward035"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -33361,7 +33361,7 @@
             "CudnnBatchNormBackward036"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -33381,7 +33381,7 @@
             "CudnnBatchNormBackward036"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -33469,7 +33469,7 @@
             "ConvolutionBackward036"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -33617,7 +33617,7 @@
             "CudnnBatchNormBackward037"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -33637,7 +33637,7 @@
             "CudnnBatchNormBackward037"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -33725,7 +33725,7 @@
             "ConvolutionBackward037"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -33832,7 +33832,7 @@
             "CudnnBatchNormBackward038"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -33852,7 +33852,7 @@
             "CudnnBatchNormBackward038"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -33940,7 +33940,7 @@
             "ConvolutionBackward038"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -34047,7 +34047,7 @@
             "CudnnBatchNormBackward039"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -34067,7 +34067,7 @@
             "CudnnBatchNormBackward039"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -34155,7 +34155,7 @@
             "ConvolutionBackward039"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -34303,7 +34303,7 @@
             "CudnnBatchNormBackward040"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -34323,7 +34323,7 @@
             "CudnnBatchNormBackward040"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -34411,7 +34411,7 @@
             "ConvolutionBackward040"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -34518,7 +34518,7 @@
             "CudnnBatchNormBackward041"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -34538,7 +34538,7 @@
             "CudnnBatchNormBackward041"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -34626,7 +34626,7 @@
             "ConvolutionBackward041"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -34733,7 +34733,7 @@
             "CudnnBatchNormBackward042"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -34753,7 +34753,7 @@
             "CudnnBatchNormBackward042"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -34841,7 +34841,7 @@
             "ConvolutionBackward042"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -34989,7 +34989,7 @@
             "CudnnBatchNormBackward043"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -35009,7 +35009,7 @@
             "CudnnBatchNormBackward043"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -35097,7 +35097,7 @@
             "ConvolutionBackward043"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -35204,7 +35204,7 @@
             "CudnnBatchNormBackward044"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -35224,7 +35224,7 @@
             "CudnnBatchNormBackward044"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -35312,7 +35312,7 @@
             "ConvolutionBackward044"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -35419,7 +35419,7 @@
             "CudnnBatchNormBackward045"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -35439,7 +35439,7 @@
             "CudnnBatchNormBackward045"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -35527,7 +35527,7 @@
             "ConvolutionBackward045"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -35675,7 +35675,7 @@
             "CudnnBatchNormBackward046"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -35695,7 +35695,7 @@
             "CudnnBatchNormBackward046"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -35783,7 +35783,7 @@
             "ConvolutionBackward046"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -35890,7 +35890,7 @@
             "CudnnBatchNormBackward047"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -35910,7 +35910,7 @@
             "CudnnBatchNormBackward047"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -35998,7 +35998,7 @@
             "ConvolutionBackward047"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -36105,7 +36105,7 @@
             "CudnnBatchNormBackward048"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -36125,7 +36125,7 @@
             "CudnnBatchNormBackward048"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -36213,7 +36213,7 @@
             "ConvolutionBackward048"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -36361,7 +36361,7 @@
             "CudnnBatchNormBackward049"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -36381,7 +36381,7 @@
             "CudnnBatchNormBackward049"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -36469,7 +36469,7 @@
             "ConvolutionBackward049"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -36576,7 +36576,7 @@
             "CudnnBatchNormBackward050"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -36596,7 +36596,7 @@
             "CudnnBatchNormBackward050"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -36684,7 +36684,7 @@
             "ConvolutionBackward050"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -36791,7 +36791,7 @@
             "CudnnBatchNormBackward051"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -36811,7 +36811,7 @@
             "CudnnBatchNormBackward051"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -36899,7 +36899,7 @@
             "ConvolutionBackward051"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -37047,7 +37047,7 @@
             "CudnnBatchNormBackward052"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -37067,7 +37067,7 @@
             "CudnnBatchNormBackward052"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -37155,7 +37155,7 @@
             "ConvolutionBackward052"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -37262,7 +37262,7 @@
             "CudnnBatchNormBackward053"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -37282,7 +37282,7 @@
             "CudnnBatchNormBackward053"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_4"
         ],
         "input_types": [
             "torch.float32"
@@ -37370,7 +37370,7 @@
             "ConvolutionBackward053"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -37477,7 +37477,7 @@
             "CudnnBatchNormBackward054"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -37497,7 +37497,7 @@
             "CudnnBatchNormBackward054"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -37585,7 +37585,7 @@
             "ConvolutionBackward054"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -37733,7 +37733,7 @@
             "CudnnBatchNormBackward055"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -37753,7 +37753,7 @@
             "CudnnBatchNormBackward055"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -37841,7 +37841,7 @@
             "ConvolutionBackward055"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -37948,7 +37948,7 @@
             "CudnnBatchNormBackward056"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -37968,7 +37968,7 @@
             "CudnnBatchNormBackward056"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -38056,7 +38056,7 @@
             "ConvolutionBackward056"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -38163,7 +38163,7 @@
             "CudnnBatchNormBackward057"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -38183,7 +38183,7 @@
             "CudnnBatchNormBackward057"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -38271,7 +38271,7 @@
             "ConvolutionBackward057"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -38419,7 +38419,7 @@
             "CudnnBatchNormBackward058"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -38439,7 +38439,7 @@
             "CudnnBatchNormBackward058"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -38527,7 +38527,7 @@
             "ConvolutionBackward058"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -38634,7 +38634,7 @@
             "CudnnBatchNormBackward059"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -38654,7 +38654,7 @@
             "CudnnBatchNormBackward059"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -38742,7 +38742,7 @@
             "ConvolutionBackward059"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -38849,7 +38849,7 @@
             "CudnnBatchNormBackward060"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -38869,7 +38869,7 @@
             "CudnnBatchNormBackward060"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -38957,7 +38957,7 @@
             "ConvolutionBackward060"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -39105,7 +39105,7 @@
             "CudnnBatchNormBackward061"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -39125,7 +39125,7 @@
             "CudnnBatchNormBackward061"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -39213,7 +39213,7 @@
             "ConvolutionBackward061"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -39320,7 +39320,7 @@
             "CudnnBatchNormBackward062"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -39340,7 +39340,7 @@
             "CudnnBatchNormBackward062"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -39428,7 +39428,7 @@
             "ConvolutionBackward062"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -39535,7 +39535,7 @@
             "CudnnBatchNormBackward063"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -39555,7 +39555,7 @@
             "CudnnBatchNormBackward063"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -39643,7 +39643,7 @@
             "ConvolutionBackward063"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -39791,7 +39791,7 @@
             "CudnnBatchNormBackward064"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -39811,7 +39811,7 @@
             "CudnnBatchNormBackward064"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -39899,7 +39899,7 @@
             "ConvolutionBackward064"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -40006,7 +40006,7 @@
             "CudnnBatchNormBackward065"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -40026,7 +40026,7 @@
             "CudnnBatchNormBackward065"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -40114,7 +40114,7 @@
             "ConvolutionBackward065"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -40221,7 +40221,7 @@
             "CudnnBatchNormBackward066"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -40241,7 +40241,7 @@
             "CudnnBatchNormBackward066"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -40329,7 +40329,7 @@
             "ConvolutionBackward066"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -40477,7 +40477,7 @@
             "CudnnBatchNormBackward067"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -40497,7 +40497,7 @@
             "CudnnBatchNormBackward067"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -40585,7 +40585,7 @@
             "ConvolutionBackward067"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -40692,7 +40692,7 @@
             "CudnnBatchNormBackward068"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -40712,7 +40712,7 @@
             "CudnnBatchNormBackward068"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -40800,7 +40800,7 @@
             "ConvolutionBackward068"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -40907,7 +40907,7 @@
             "CudnnBatchNormBackward069"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -40927,7 +40927,7 @@
             "CudnnBatchNormBackward069"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -41015,7 +41015,7 @@
             "ConvolutionBackward069"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -41163,7 +41163,7 @@
             "CudnnBatchNormBackward070"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -41183,7 +41183,7 @@
             "CudnnBatchNormBackward070"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -41271,7 +41271,7 @@
             "ConvolutionBackward070"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -41378,7 +41378,7 @@
             "CudnnBatchNormBackward071"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -41398,7 +41398,7 @@
             "CudnnBatchNormBackward071"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_5"
         ],
         "input_types": [
             "torch.float32"
@@ -41486,7 +41486,7 @@
             "ConvolutionBackward071"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -41593,7 +41593,7 @@
             "CudnnBatchNormBackward072"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -41613,7 +41613,7 @@
             "CudnnBatchNormBackward072"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -41701,7 +41701,7 @@
             "ConvolutionBackward072"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -41849,7 +41849,7 @@
             "CudnnBatchNormBackward073"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -41869,7 +41869,7 @@
             "CudnnBatchNormBackward073"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -41957,7 +41957,7 @@
             "ConvolutionBackward073"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -42064,7 +42064,7 @@
             "CudnnBatchNormBackward074"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -42084,7 +42084,7 @@
             "CudnnBatchNormBackward074"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -42172,7 +42172,7 @@
             "ConvolutionBackward074"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -42279,7 +42279,7 @@
             "CudnnBatchNormBackward075"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -42299,7 +42299,7 @@
             "CudnnBatchNormBackward075"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -42387,7 +42387,7 @@
             "ConvolutionBackward075"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -42535,7 +42535,7 @@
             "CudnnBatchNormBackward076"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -42555,7 +42555,7 @@
             "CudnnBatchNormBackward076"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -42643,7 +42643,7 @@
             "ConvolutionBackward076"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -42750,7 +42750,7 @@
             "CudnnBatchNormBackward077"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -42770,7 +42770,7 @@
             "CudnnBatchNormBackward077"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -42858,7 +42858,7 @@
             "ConvolutionBackward077"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -42965,7 +42965,7 @@
             "CudnnBatchNormBackward078"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -42985,7 +42985,7 @@
             "CudnnBatchNormBackward078"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -43073,7 +43073,7 @@
             "ConvolutionBackward078"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -43221,7 +43221,7 @@
             "CudnnBatchNormBackward079"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -43241,7 +43241,7 @@
             "CudnnBatchNormBackward079"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -43329,7 +43329,7 @@
             "ConvolutionBackward079"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -43436,7 +43436,7 @@
             "CudnnBatchNormBackward080"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -43456,7 +43456,7 @@
             "CudnnBatchNormBackward080"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -43544,7 +43544,7 @@
             "ConvolutionBackward080"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -43651,7 +43651,7 @@
             "CudnnBatchNormBackward081"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -43671,7 +43671,7 @@
             "CudnnBatchNormBackward081"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -43759,7 +43759,7 @@
             "ConvolutionBackward081"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -43907,7 +43907,7 @@
             "CudnnBatchNormBackward082"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -43927,7 +43927,7 @@
             "CudnnBatchNormBackward082"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -44015,7 +44015,7 @@
             "ConvolutionBackward082"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -44122,7 +44122,7 @@
             "CudnnBatchNormBackward083"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -44142,7 +44142,7 @@
             "CudnnBatchNormBackward083"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -44230,7 +44230,7 @@
             "ConvolutionBackward083"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -44337,7 +44337,7 @@
             "CudnnBatchNormBackward084"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -44357,7 +44357,7 @@
             "CudnnBatchNormBackward084"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -44445,7 +44445,7 @@
             "ConvolutionBackward084"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -44593,7 +44593,7 @@
             "CudnnBatchNormBackward085"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -44613,7 +44613,7 @@
             "CudnnBatchNormBackward085"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -44701,7 +44701,7 @@
             "ConvolutionBackward085"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -44808,7 +44808,7 @@
             "CudnnBatchNormBackward086"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -44828,7 +44828,7 @@
             "CudnnBatchNormBackward086"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -44916,7 +44916,7 @@
             "ConvolutionBackward086"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -45023,7 +45023,7 @@
             "CudnnBatchNormBackward087"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -45043,7 +45043,7 @@
             "CudnnBatchNormBackward087"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -45131,7 +45131,7 @@
             "ConvolutionBackward087"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -45279,7 +45279,7 @@
             "CudnnBatchNormBackward088"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -45299,7 +45299,7 @@
             "CudnnBatchNormBackward088"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -45387,7 +45387,7 @@
             "ConvolutionBackward088"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -45494,7 +45494,7 @@
             "CudnnBatchNormBackward089"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -45514,7 +45514,7 @@
             "CudnnBatchNormBackward089"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_6"
         ],
         "input_types": [
             "torch.float32"
@@ -45602,7 +45602,7 @@
             "ConvolutionBackward089"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -45709,7 +45709,7 @@
             "CudnnBatchNormBackward090"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -45729,7 +45729,7 @@
             "CudnnBatchNormBackward090"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -45817,7 +45817,7 @@
             "ConvolutionBackward090"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -45965,7 +45965,7 @@
             "CudnnBatchNormBackward091"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -45985,7 +45985,7 @@
             "CudnnBatchNormBackward091"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -46073,7 +46073,7 @@
             "ConvolutionBackward091"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -46180,7 +46180,7 @@
             "CudnnBatchNormBackward092"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -46200,7 +46200,7 @@
             "CudnnBatchNormBackward092"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -46288,7 +46288,7 @@
             "ConvolutionBackward092"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -46395,7 +46395,7 @@
             "CudnnBatchNormBackward093"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -46415,7 +46415,7 @@
             "CudnnBatchNormBackward093"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -46503,7 +46503,7 @@
             "ConvolutionBackward093"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -46651,7 +46651,7 @@
             "CudnnBatchNormBackward094"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -46671,7 +46671,7 @@
             "CudnnBatchNormBackward094"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -46759,7 +46759,7 @@
             "ConvolutionBackward094"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -46866,7 +46866,7 @@
             "CudnnBatchNormBackward095"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -46886,7 +46886,7 @@
             "CudnnBatchNormBackward095"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -46974,7 +46974,7 @@
             "ConvolutionBackward095"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -47081,7 +47081,7 @@
             "CudnnBatchNormBackward096"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -47101,7 +47101,7 @@
             "CudnnBatchNormBackward096"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -47189,7 +47189,7 @@
             "ConvolutionBackward096"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -47337,7 +47337,7 @@
             "CudnnBatchNormBackward097"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -47357,7 +47357,7 @@
             "CudnnBatchNormBackward097"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -47445,7 +47445,7 @@
             "ConvolutionBackward097"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -47552,7 +47552,7 @@
             "CudnnBatchNormBackward098"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -47572,7 +47572,7 @@
             "CudnnBatchNormBackward098"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -47660,7 +47660,7 @@
             "ConvolutionBackward098"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -47767,7 +47767,7 @@
             "CudnnBatchNormBackward099"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -47787,7 +47787,7 @@
             "CudnnBatchNormBackward099"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -47875,7 +47875,7 @@
             "ConvolutionBackward099"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -48023,7 +48023,7 @@
             "CudnnBatchNormBackward0100"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -48043,7 +48043,7 @@
             "CudnnBatchNormBackward0100"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -48131,7 +48131,7 @@
             "ConvolutionBackward0100"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -48238,7 +48238,7 @@
             "CudnnBatchNormBackward0101"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -48258,7 +48258,7 @@
             "CudnnBatchNormBackward0101"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -48346,7 +48346,7 @@
             "ConvolutionBackward0101"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -48453,7 +48453,7 @@
             "CudnnBatchNormBackward0102"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -48473,7 +48473,7 @@
             "CudnnBatchNormBackward0102"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -48561,7 +48561,7 @@
             "ConvolutionBackward0102"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -48709,7 +48709,7 @@
             "CudnnBatchNormBackward0103"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -48729,7 +48729,7 @@
             "CudnnBatchNormBackward0103"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -48817,7 +48817,7 @@
             "ConvolutionBackward0103"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -48924,7 +48924,7 @@
             "CudnnBatchNormBackward0104"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -48944,7 +48944,7 @@
             "CudnnBatchNormBackward0104"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -49032,7 +49032,7 @@
             "ConvolutionBackward0104"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -49139,7 +49139,7 @@
             "CudnnBatchNormBackward0105"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -49159,7 +49159,7 @@
             "CudnnBatchNormBackward0105"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -49247,7 +49247,7 @@
             "ConvolutionBackward0105"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -49395,7 +49395,7 @@
             "CudnnBatchNormBackward0106"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -49415,7 +49415,7 @@
             "CudnnBatchNormBackward0106"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -49503,7 +49503,7 @@
             "ConvolutionBackward0106"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -49610,7 +49610,7 @@
             "CudnnBatchNormBackward0107"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -49630,7 +49630,7 @@
             "CudnnBatchNormBackward0107"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_7"
         ],
         "input_types": [
             "torch.float32"
@@ -49718,7 +49718,7 @@
             "ConvolutionBackward0107"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -49825,7 +49825,7 @@
             "CudnnBatchNormBackward0108"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -49845,7 +49845,7 @@
             "CudnnBatchNormBackward0108"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -49933,7 +49933,7 @@
             "ConvolutionBackward0108"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -50081,7 +50081,7 @@
             "CudnnBatchNormBackward0109"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -50101,7 +50101,7 @@
             "CudnnBatchNormBackward0109"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -50189,7 +50189,7 @@
             "ConvolutionBackward0109"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -50296,7 +50296,7 @@
             "CudnnBatchNormBackward0110"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -50316,7 +50316,7 @@
             "CudnnBatchNormBackward0110"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -50404,7 +50404,7 @@
             "ConvolutionBackward0110"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -50511,7 +50511,7 @@
             "CudnnBatchNormBackward0111"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -50531,7 +50531,7 @@
             "CudnnBatchNormBackward0111"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -50619,7 +50619,7 @@
             "ConvolutionBackward0111"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -50767,7 +50767,7 @@
             "CudnnBatchNormBackward0112"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -50787,7 +50787,7 @@
             "CudnnBatchNormBackward0112"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -50875,7 +50875,7 @@
             "ConvolutionBackward0112"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -50982,7 +50982,7 @@
             "CudnnBatchNormBackward0113"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -51002,7 +51002,7 @@
             "CudnnBatchNormBackward0113"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -51090,7 +51090,7 @@
             "ConvolutionBackward0113"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -51197,7 +51197,7 @@
             "CudnnBatchNormBackward0114"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -51217,7 +51217,7 @@
             "CudnnBatchNormBackward0114"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -51305,7 +51305,7 @@
             "ConvolutionBackward0114"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -51453,7 +51453,7 @@
             "CudnnBatchNormBackward0115"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -51473,7 +51473,7 @@
             "CudnnBatchNormBackward0115"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -51561,7 +51561,7 @@
             "ConvolutionBackward0115"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -51633,7 +51633,7 @@
             "CudnnBatchNormBackward0116"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -51653,7 +51653,7 @@
             "CudnnBatchNormBackward0116"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -51741,7 +51741,7 @@
             "ConvolutionBackward0116"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -51848,7 +51848,7 @@
             "CudnnBatchNormBackward0117"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -51868,7 +51868,7 @@
             "CudnnBatchNormBackward0117"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -51956,7 +51956,7 @@
             "ConvolutionBackward0117"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -52063,7 +52063,7 @@
             "CudnnBatchNormBackward0118"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -52083,7 +52083,7 @@
             "CudnnBatchNormBackward0118"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -52171,7 +52171,7 @@
             "ConvolutionBackward0118"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -52319,7 +52319,7 @@
             "CudnnBatchNormBackward0119"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -52339,7 +52339,7 @@
             "CudnnBatchNormBackward0119"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -52427,7 +52427,7 @@
             "ConvolutionBackward0119"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -52534,7 +52534,7 @@
             "CudnnBatchNormBackward0120"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -52554,7 +52554,7 @@
             "CudnnBatchNormBackward0120"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -52642,7 +52642,7 @@
             "ConvolutionBackward0120"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -52749,7 +52749,7 @@
             "CudnnBatchNormBackward0121"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -52769,7 +52769,7 @@
             "CudnnBatchNormBackward0121"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -52857,7 +52857,7 @@
             "ConvolutionBackward0121"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -53005,7 +53005,7 @@
             "CudnnBatchNormBackward0122"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -53025,7 +53025,7 @@
             "CudnnBatchNormBackward0122"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -53113,7 +53113,7 @@
             "ConvolutionBackward0122"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -53220,7 +53220,7 @@
             "CudnnBatchNormBackward0123"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -53240,7 +53240,7 @@
             "CudnnBatchNormBackward0123"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -53328,7 +53328,7 @@
             "ConvolutionBackward0123"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -53435,7 +53435,7 @@
             "CudnnBatchNormBackward0124"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -53455,7 +53455,7 @@
             "CudnnBatchNormBackward0124"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -53543,7 +53543,7 @@
             "ConvolutionBackward0124"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -53691,7 +53691,7 @@
             "CudnnBatchNormBackward0125"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -53711,7 +53711,7 @@
             "CudnnBatchNormBackward0125"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -53799,7 +53799,7 @@
             "ConvolutionBackward0125"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -53906,7 +53906,7 @@
             "CudnnBatchNormBackward0126"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -53926,7 +53926,7 @@
             "CudnnBatchNormBackward0126"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -54014,7 +54014,7 @@
             "ConvolutionBackward0126"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -54121,7 +54121,7 @@
             "CudnnBatchNormBackward0127"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -54141,7 +54141,7 @@
             "CudnnBatchNormBackward0127"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -54229,7 +54229,7 @@
             "ConvolutionBackward0127"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -54377,7 +54377,7 @@
             "CudnnBatchNormBackward0128"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -54397,7 +54397,7 @@
             "CudnnBatchNormBackward0128"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -54485,7 +54485,7 @@
             "ConvolutionBackward0128"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -54592,7 +54592,7 @@
             "CudnnBatchNormBackward0129"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -54612,7 +54612,7 @@
             "CudnnBatchNormBackward0129"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -54700,7 +54700,7 @@
             "ConvolutionBackward0129"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -54807,7 +54807,7 @@
             "CudnnBatchNormBackward0130"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -54827,7 +54827,7 @@
             "CudnnBatchNormBackward0130"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -54915,7 +54915,7 @@
             "ConvolutionBackward0130"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -55063,7 +55063,7 @@
             "CudnnBatchNormBackward0131"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -55083,7 +55083,7 @@
             "CudnnBatchNormBackward0131"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -55171,7 +55171,7 @@
             "ConvolutionBackward0131"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -55278,7 +55278,7 @@
             "CudnnBatchNormBackward0132"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -55298,7 +55298,7 @@
             "CudnnBatchNormBackward0132"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -55386,7 +55386,7 @@
             "ConvolutionBackward0132"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -55493,7 +55493,7 @@
             "CudnnBatchNormBackward0133"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -55513,7 +55513,7 @@
             "CudnnBatchNormBackward0133"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -55601,7 +55601,7 @@
             "ConvolutionBackward0133"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -55749,7 +55749,7 @@
             "CudnnBatchNormBackward0134"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -55769,7 +55769,7 @@
             "CudnnBatchNormBackward0134"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -55857,7 +55857,7 @@
             "ConvolutionBackward0134"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -55964,7 +55964,7 @@
             "CudnnBatchNormBackward0135"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -55984,7 +55984,7 @@
             "CudnnBatchNormBackward0135"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -56072,7 +56072,7 @@
             "ConvolutionBackward0135"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -56179,7 +56179,7 @@
             "CudnnBatchNormBackward0136"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -56199,7 +56199,7 @@
             "CudnnBatchNormBackward0136"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -56287,7 +56287,7 @@
             "ConvolutionBackward0136"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -56435,7 +56435,7 @@
             "CudnnBatchNormBackward0137"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -56455,7 +56455,7 @@
             "CudnnBatchNormBackward0137"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -56543,7 +56543,7 @@
             "ConvolutionBackward0137"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -56650,7 +56650,7 @@
             "CudnnBatchNormBackward0138"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -56670,7 +56670,7 @@
             "CudnnBatchNormBackward0138"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -56758,7 +56758,7 @@
             "ConvolutionBackward0138"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -56865,7 +56865,7 @@
             "CudnnBatchNormBackward0139"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -56885,7 +56885,7 @@
             "CudnnBatchNormBackward0139"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -56973,7 +56973,7 @@
             "ConvolutionBackward0139"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -57121,7 +57121,7 @@
             "CudnnBatchNormBackward0140"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -57141,7 +57141,7 @@
             "CudnnBatchNormBackward0140"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -57229,7 +57229,7 @@
             "ConvolutionBackward0140"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -57301,7 +57301,7 @@
             "CudnnBatchNormBackward0141"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -57321,7 +57321,7 @@
             "CudnnBatchNormBackward0141"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -57409,7 +57409,7 @@
             "ConvolutionBackward0141"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -57516,7 +57516,7 @@
             "CudnnBatchNormBackward0142"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -57536,7 +57536,7 @@
             "CudnnBatchNormBackward0142"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_8"
         ],
         "input_types": [
             "torch.float32"
@@ -57624,7 +57624,7 @@
             "ConvolutionBackward0142"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -57731,7 +57731,7 @@
             "CudnnBatchNormBackward0143"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -57751,7 +57751,7 @@
             "CudnnBatchNormBackward0143"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -57839,7 +57839,7 @@
             "ConvolutionBackward0143"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -57987,7 +57987,7 @@
             "CudnnBatchNormBackward0144"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -58007,7 +58007,7 @@
             "CudnnBatchNormBackward0144"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -58095,7 +58095,7 @@
             "ConvolutionBackward0144"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -58202,7 +58202,7 @@
             "CudnnBatchNormBackward0145"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -58222,7 +58222,7 @@
             "CudnnBatchNormBackward0145"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -58310,7 +58310,7 @@
             "ConvolutionBackward0145"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -58417,7 +58417,7 @@
             "CudnnBatchNormBackward0146"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -58437,7 +58437,7 @@
             "CudnnBatchNormBackward0146"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -58525,7 +58525,7 @@
             "ConvolutionBackward0146"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -58673,7 +58673,7 @@
             "CudnnBatchNormBackward0147"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -58693,7 +58693,7 @@
             "CudnnBatchNormBackward0147"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -58781,7 +58781,7 @@
             "ConvolutionBackward0147"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -58888,7 +58888,7 @@
             "CudnnBatchNormBackward0148"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -58908,7 +58908,7 @@
             "CudnnBatchNormBackward0148"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -58996,7 +58996,7 @@
             "ConvolutionBackward0148"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -59103,7 +59103,7 @@
             "CudnnBatchNormBackward0149"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -59123,7 +59123,7 @@
             "CudnnBatchNormBackward0149"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -59211,7 +59211,7 @@
             "ConvolutionBackward0149"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -59359,7 +59359,7 @@
             "CudnnBatchNormBackward0150"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -59379,7 +59379,7 @@
             "CudnnBatchNormBackward0150"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -59467,7 +59467,7 @@
             "ConvolutionBackward0150"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -59539,7 +59539,7 @@
             "CudnnBatchNormBackward0151"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -59559,7 +59559,7 @@
             "CudnnBatchNormBackward0151"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -59647,7 +59647,7 @@
             "ConvolutionBackward0151"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -59754,7 +59754,7 @@
             "CudnnBatchNormBackward0152"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -59774,7 +59774,7 @@
             "CudnnBatchNormBackward0152"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -59862,7 +59862,7 @@
             "ConvolutionBackward0152"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -59969,7 +59969,7 @@
             "CudnnBatchNormBackward0153"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -59989,7 +59989,7 @@
             "CudnnBatchNormBackward0153"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -60077,7 +60077,7 @@
             "ConvolutionBackward0153"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -60225,7 +60225,7 @@
             "CudnnBatchNormBackward0154"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -60245,7 +60245,7 @@
             "CudnnBatchNormBackward0154"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -60327,7 +60327,7 @@
             "ConvolutionBackward0154"
         ],
         "output_nodes": [
-            "optimizer_step"
+            "ddp_pre_9"
         ],
         "input_types": [
             "torch.float32"
@@ -60342,6 +60342,812 @@
         ],
         "output_types": [],
         "output_shapes": []
+    },
+    {
+        "name": "ddp_pre_0",
+        "op": "ddp_pre",
+        "input_nodes": [
+            "AccumulateGrad0",
+            "AccumulateGrad1",
+            "AccumulateGrad2",
+            "AccumulateGrad3",
+            "AccumulateGrad4",
+            "AccumulateGrad5",
+            "AccumulateGrad6"
+        ],
+        "output_nodes": [
+            "ddp_Allreduce_0"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 3102696
+        }
+    },
+    {
+        "name": "ddp_Allreduce_0",
+        "op": "ddp_Allreduce",
+        "input_nodes": [
+            "ddp_pre_0"
+        ],
+        "output_nodes": [
+            "ddp_pre_1"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 3102696
+        }
+    },
+    {
+        "name": "ddp_pre_1",
+        "op": "ddp_pre",
+        "input_nodes": [
+            "AccumulateGrad7",
+            "AccumulateGrad8",
+            "AccumulateGrad9",
+            "AccumulateGrad10",
+            "AccumulateGrad11",
+            "AccumulateGrad12",
+            "AccumulateGrad13",
+            "AccumulateGrad14",
+            "AccumulateGrad15",
+            "AccumulateGrad16",
+            "AccumulateGrad17",
+            "AccumulateGrad18",
+            "AccumulateGrad19",
+            "AccumulateGrad20",
+            "AccumulateGrad21",
+            "ddp_Allreduce_0"
+        ],
+        "output_nodes": [
+            "ddp_Allreduce_1"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 7875584
+        }
+    },
+    {
+        "name": "ddp_Allreduce_1",
+        "op": "ddp_Allreduce",
+        "input_nodes": [
+            "ddp_pre_1"
+        ],
+        "output_nodes": [
+            "ddp_pre_2"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 7875584
+        }
+    },
+    {
+        "name": "ddp_pre_2",
+        "op": "ddp_pre",
+        "input_nodes": [
+            "AccumulateGrad22",
+            "AccumulateGrad23",
+            "AccumulateGrad24",
+            "AccumulateGrad25",
+            "AccumulateGrad26",
+            "AccumulateGrad27",
+            "AccumulateGrad28",
+            "AccumulateGrad29",
+            "AccumulateGrad30",
+            "AccumulateGrad31",
+            "AccumulateGrad32",
+            "AccumulateGrad33",
+            "AccumulateGrad34",
+            "AccumulateGrad35",
+            "AccumulateGrad36",
+            "AccumulateGrad37",
+            "AccumulateGrad38",
+            "AccumulateGrad39",
+            "AccumulateGrad40",
+            "AccumulateGrad41",
+            "AccumulateGrad42",
+            "AccumulateGrad43",
+            "AccumulateGrad44",
+            "AccumulateGrad45",
+            "AccumulateGrad46",
+            "AccumulateGrad47",
+            "AccumulateGrad48",
+            "AccumulateGrad49",
+            "AccumulateGrad50",
+            "AccumulateGrad51",
+            "AccumulateGrad52",
+            "AccumulateGrad53",
+            "AccumulateGrad54",
+            "ddp_Allreduce_1"
+        ],
+        "output_nodes": [
+            "ddp_Allreduce_2"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 8534528
+        }
+    },
+    {
+        "name": "ddp_Allreduce_2",
+        "op": "ddp_Allreduce",
+        "input_nodes": [
+            "ddp_pre_2"
+        ],
+        "output_nodes": [
+            "ddp_pre_3"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 8534528
+        }
+    },
+    {
+        "name": "ddp_pre_3",
+        "op": "ddp_pre",
+        "input_nodes": [
+            "AccumulateGrad55",
+            "AccumulateGrad56",
+            "AccumulateGrad57",
+            "AccumulateGrad58",
+            "AccumulateGrad59",
+            "AccumulateGrad60",
+            "AccumulateGrad61",
+            "AccumulateGrad62",
+            "AccumulateGrad63",
+            "AccumulateGrad64",
+            "AccumulateGrad65",
+            "AccumulateGrad66",
+            "AccumulateGrad67",
+            "AccumulateGrad68",
+            "AccumulateGrad69",
+            "AccumulateGrad70",
+            "AccumulateGrad71",
+            "AccumulateGrad72",
+            "AccumulateGrad73",
+            "AccumulateGrad74",
+            "AccumulateGrad75",
+            "AccumulateGrad76",
+            "AccumulateGrad77",
+            "AccumulateGrad78",
+            "AccumulateGrad79",
+            "AccumulateGrad80",
+            "AccumulateGrad81",
+            "AccumulateGrad82",
+            "AccumulateGrad83",
+            "AccumulateGrad84",
+            "AccumulateGrad85",
+            "AccumulateGrad86",
+            "AccumulateGrad87",
+            "AccumulateGrad88",
+            "AccumulateGrad89",
+            "AccumulateGrad90",
+            "AccumulateGrad91",
+            "AccumulateGrad92",
+            "AccumulateGrad93",
+            "AccumulateGrad94",
+            "AccumulateGrad95",
+            "AccumulateGrad96",
+            "AccumulateGrad97",
+            "AccumulateGrad98",
+            "AccumulateGrad99",
+            "AccumulateGrad100",
+            "AccumulateGrad101",
+            "AccumulateGrad102",
+            "AccumulateGrad103",
+            "AccumulateGrad104",
+            "AccumulateGrad105",
+            "AccumulateGrad106",
+            "AccumulateGrad107",
+            "AccumulateGrad108",
+            "ddp_Allreduce_2"
+        ],
+        "output_nodes": [
+            "ddp_Allreduce_3"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 6703104
+        }
+    },
+    {
+        "name": "ddp_Allreduce_3",
+        "op": "ddp_Allreduce",
+        "input_nodes": [
+            "ddp_pre_3"
+        ],
+        "output_nodes": [
+            "ddp_pre_4"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 6703104
+        }
+    },
+    {
+        "name": "ddp_pre_4",
+        "op": "ddp_pre",
+        "input_nodes": [
+            "AccumulateGrad109",
+            "AccumulateGrad110",
+            "AccumulateGrad111",
+            "AccumulateGrad112",
+            "AccumulateGrad113",
+            "AccumulateGrad114",
+            "AccumulateGrad115",
+            "AccumulateGrad116",
+            "AccumulateGrad117",
+            "AccumulateGrad118",
+            "AccumulateGrad119",
+            "AccumulateGrad120",
+            "AccumulateGrad121",
+            "AccumulateGrad122",
+            "AccumulateGrad123",
+            "AccumulateGrad124",
+            "AccumulateGrad125",
+            "AccumulateGrad126",
+            "AccumulateGrad127",
+            "AccumulateGrad128",
+            "AccumulateGrad129",
+            "AccumulateGrad130",
+            "AccumulateGrad131",
+            "AccumulateGrad132",
+            "AccumulateGrad133",
+            "AccumulateGrad134",
+            "AccumulateGrad135",
+            "AccumulateGrad136",
+            "AccumulateGrad137",
+            "AccumulateGrad138",
+            "AccumulateGrad139",
+            "AccumulateGrad140",
+            "AccumulateGrad141",
+            "AccumulateGrad142",
+            "AccumulateGrad143",
+            "AccumulateGrad144",
+            "AccumulateGrad145",
+            "AccumulateGrad146",
+            "AccumulateGrad147",
+            "AccumulateGrad148",
+            "AccumulateGrad149",
+            "AccumulateGrad150",
+            "AccumulateGrad151",
+            "AccumulateGrad152",
+            "AccumulateGrad153",
+            "AccumulateGrad154",
+            "AccumulateGrad155",
+            "AccumulateGrad156",
+            "AccumulateGrad157",
+            "AccumulateGrad158",
+            "AccumulateGrad159",
+            "AccumulateGrad160",
+            "AccumulateGrad161",
+            "AccumulateGrad162",
+            "ddp_Allreduce_3"
+        ],
+        "output_nodes": [
+            "ddp_Allreduce_4"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 6703104
+        }
+    },
+    {
+        "name": "ddp_Allreduce_4",
+        "op": "ddp_Allreduce",
+        "input_nodes": [
+            "ddp_pre_4"
+        ],
+        "output_nodes": [
+            "ddp_pre_5"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 6703104
+        }
+    },
+    {
+        "name": "ddp_pre_5",
+        "op": "ddp_pre",
+        "input_nodes": [
+            "AccumulateGrad163",
+            "AccumulateGrad164",
+            "AccumulateGrad165",
+            "AccumulateGrad166",
+            "AccumulateGrad167",
+            "AccumulateGrad168",
+            "AccumulateGrad169",
+            "AccumulateGrad170",
+            "AccumulateGrad171",
+            "AccumulateGrad172",
+            "AccumulateGrad173",
+            "AccumulateGrad174",
+            "AccumulateGrad175",
+            "AccumulateGrad176",
+            "AccumulateGrad177",
+            "AccumulateGrad178",
+            "AccumulateGrad179",
+            "AccumulateGrad180",
+            "AccumulateGrad181",
+            "AccumulateGrad182",
+            "AccumulateGrad183",
+            "AccumulateGrad184",
+            "AccumulateGrad185",
+            "AccumulateGrad186",
+            "AccumulateGrad187",
+            "AccumulateGrad188",
+            "AccumulateGrad189",
+            "AccumulateGrad190",
+            "AccumulateGrad191",
+            "AccumulateGrad192",
+            "AccumulateGrad193",
+            "AccumulateGrad194",
+            "AccumulateGrad195",
+            "AccumulateGrad196",
+            "AccumulateGrad197",
+            "AccumulateGrad198",
+            "AccumulateGrad199",
+            "AccumulateGrad200",
+            "AccumulateGrad201",
+            "AccumulateGrad202",
+            "AccumulateGrad203",
+            "AccumulateGrad204",
+            "AccumulateGrad205",
+            "AccumulateGrad206",
+            "AccumulateGrad207",
+            "AccumulateGrad208",
+            "AccumulateGrad209",
+            "AccumulateGrad210",
+            "AccumulateGrad211",
+            "AccumulateGrad212",
+            "AccumulateGrad213",
+            "AccumulateGrad214",
+            "AccumulateGrad215",
+            "AccumulateGrad216",
+            "ddp_Allreduce_4"
+        ],
+        "output_nodes": [
+            "ddp_Allreduce_5"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 6703104
+        }
+    },
+    {
+        "name": "ddp_Allreduce_5",
+        "op": "ddp_Allreduce",
+        "input_nodes": [
+            "ddp_pre_5"
+        ],
+        "output_nodes": [
+            "ddp_pre_6"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 6703104
+        }
+    },
+    {
+        "name": "ddp_pre_6",
+        "op": "ddp_pre",
+        "input_nodes": [
+            "AccumulateGrad217",
+            "AccumulateGrad218",
+            "AccumulateGrad219",
+            "AccumulateGrad220",
+            "AccumulateGrad221",
+            "AccumulateGrad222",
+            "AccumulateGrad223",
+            "AccumulateGrad224",
+            "AccumulateGrad225",
+            "AccumulateGrad226",
+            "AccumulateGrad227",
+            "AccumulateGrad228",
+            "AccumulateGrad229",
+            "AccumulateGrad230",
+            "AccumulateGrad231",
+            "AccumulateGrad232",
+            "AccumulateGrad233",
+            "AccumulateGrad234",
+            "AccumulateGrad235",
+            "AccumulateGrad236",
+            "AccumulateGrad237",
+            "AccumulateGrad238",
+            "AccumulateGrad239",
+            "AccumulateGrad240",
+            "AccumulateGrad241",
+            "AccumulateGrad242",
+            "AccumulateGrad243",
+            "AccumulateGrad244",
+            "AccumulateGrad245",
+            "AccumulateGrad246",
+            "AccumulateGrad247",
+            "AccumulateGrad248",
+            "AccumulateGrad249",
+            "AccumulateGrad250",
+            "AccumulateGrad251",
+            "AccumulateGrad252",
+            "AccumulateGrad253",
+            "AccumulateGrad254",
+            "AccumulateGrad255",
+            "AccumulateGrad256",
+            "AccumulateGrad257",
+            "AccumulateGrad258",
+            "AccumulateGrad259",
+            "AccumulateGrad260",
+            "AccumulateGrad261",
+            "AccumulateGrad262",
+            "AccumulateGrad263",
+            "AccumulateGrad264",
+            "AccumulateGrad265",
+            "AccumulateGrad266",
+            "AccumulateGrad267",
+            "AccumulateGrad268",
+            "AccumulateGrad269",
+            "AccumulateGrad270",
+            "ddp_Allreduce_5"
+        ],
+        "output_nodes": [
+            "ddp_Allreduce_6"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 6703104
+        }
+    },
+    {
+        "name": "ddp_Allreduce_6",
+        "op": "ddp_Allreduce",
+        "input_nodes": [
+            "ddp_pre_6"
+        ],
+        "output_nodes": [
+            "ddp_pre_7"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 6703104
+        }
+    },
+    {
+        "name": "ddp_pre_7",
+        "op": "ddp_pre",
+        "input_nodes": [
+            "AccumulateGrad271",
+            "AccumulateGrad272",
+            "AccumulateGrad273",
+            "AccumulateGrad274",
+            "AccumulateGrad275",
+            "AccumulateGrad276",
+            "AccumulateGrad277",
+            "AccumulateGrad278",
+            "AccumulateGrad279",
+            "AccumulateGrad280",
+            "AccumulateGrad281",
+            "AccumulateGrad282",
+            "AccumulateGrad283",
+            "AccumulateGrad284",
+            "AccumulateGrad285",
+            "AccumulateGrad286",
+            "AccumulateGrad287",
+            "AccumulateGrad288",
+            "AccumulateGrad289",
+            "AccumulateGrad290",
+            "AccumulateGrad291",
+            "AccumulateGrad292",
+            "AccumulateGrad293",
+            "AccumulateGrad294",
+            "AccumulateGrad295",
+            "AccumulateGrad296",
+            "AccumulateGrad297",
+            "AccumulateGrad298",
+            "AccumulateGrad299",
+            "AccumulateGrad300",
+            "AccumulateGrad301",
+            "AccumulateGrad302",
+            "AccumulateGrad303",
+            "AccumulateGrad304",
+            "AccumulateGrad305",
+            "AccumulateGrad306",
+            "AccumulateGrad307",
+            "AccumulateGrad308",
+            "AccumulateGrad309",
+            "AccumulateGrad310",
+            "AccumulateGrad311",
+            "AccumulateGrad312",
+            "AccumulateGrad313",
+            "AccumulateGrad314",
+            "AccumulateGrad315",
+            "AccumulateGrad316",
+            "AccumulateGrad317",
+            "AccumulateGrad318",
+            "AccumulateGrad319",
+            "AccumulateGrad320",
+            "AccumulateGrad321",
+            "AccumulateGrad322",
+            "AccumulateGrad323",
+            "AccumulateGrad324",
+            "ddp_Allreduce_6"
+        ],
+        "output_nodes": [
+            "ddp_Allreduce_7"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 6703104
+        }
+    },
+    {
+        "name": "ddp_Allreduce_7",
+        "op": "ddp_Allreduce",
+        "input_nodes": [
+            "ddp_pre_7"
+        ],
+        "output_nodes": [
+            "ddp_pre_8"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 6703104
+        }
+    },
+    {
+        "name": "ddp_pre_8",
+        "op": "ddp_pre",
+        "input_nodes": [
+            "AccumulateGrad325",
+            "AccumulateGrad326",
+            "AccumulateGrad327",
+            "AccumulateGrad328",
+            "AccumulateGrad329",
+            "AccumulateGrad330",
+            "AccumulateGrad331",
+            "AccumulateGrad332",
+            "AccumulateGrad333",
+            "AccumulateGrad334",
+            "AccumulateGrad335",
+            "AccumulateGrad336",
+            "AccumulateGrad337",
+            "AccumulateGrad338",
+            "AccumulateGrad339",
+            "AccumulateGrad340",
+            "AccumulateGrad341",
+            "AccumulateGrad342",
+            "AccumulateGrad343",
+            "AccumulateGrad344",
+            "AccumulateGrad345",
+            "AccumulateGrad346",
+            "AccumulateGrad347",
+            "AccumulateGrad348",
+            "AccumulateGrad349",
+            "AccumulateGrad350",
+            "AccumulateGrad351",
+            "AccumulateGrad352",
+            "AccumulateGrad353",
+            "AccumulateGrad354",
+            "AccumulateGrad355",
+            "AccumulateGrad356",
+            "AccumulateGrad357",
+            "AccumulateGrad358",
+            "AccumulateGrad359",
+            "AccumulateGrad360",
+            "AccumulateGrad361",
+            "AccumulateGrad362",
+            "AccumulateGrad363",
+            "AccumulateGrad364",
+            "AccumulateGrad365",
+            "AccumulateGrad366",
+            "AccumulateGrad367",
+            "AccumulateGrad368",
+            "AccumulateGrad369",
+            "AccumulateGrad370",
+            "AccumulateGrad371",
+            "AccumulateGrad372",
+            "AccumulateGrad373",
+            "AccumulateGrad374",
+            "AccumulateGrad375",
+            "AccumulateGrad376",
+            "AccumulateGrad377",
+            "AccumulateGrad378",
+            "AccumulateGrad379",
+            "AccumulateGrad380",
+            "AccumulateGrad381",
+            "AccumulateGrad382",
+            "AccumulateGrad383",
+            "AccumulateGrad384",
+            "AccumulateGrad385",
+            "AccumulateGrad386",
+            "AccumulateGrad387",
+            "AccumulateGrad388",
+            "AccumulateGrad389",
+            "AccumulateGrad390",
+            "AccumulateGrad391",
+            "AccumulateGrad392",
+            "AccumulateGrad393",
+            "AccumulateGrad394",
+            "AccumulateGrad395",
+            "AccumulateGrad396",
+            "AccumulateGrad397",
+            "AccumulateGrad398",
+            "AccumulateGrad399",
+            "AccumulateGrad400",
+            "AccumulateGrad401",
+            "AccumulateGrad402",
+            "AccumulateGrad403",
+            "AccumulateGrad404",
+            "AccumulateGrad405",
+            "AccumulateGrad406",
+            "AccumulateGrad407",
+            "AccumulateGrad408",
+            "AccumulateGrad409",
+            "AccumulateGrad410",
+            "AccumulateGrad411",
+            "AccumulateGrad412",
+            "AccumulateGrad413",
+            "AccumulateGrad414",
+            "AccumulateGrad415",
+            "AccumulateGrad416",
+            "AccumulateGrad417",
+            "AccumulateGrad418",
+            "AccumulateGrad419",
+            "AccumulateGrad420",
+            "AccumulateGrad421",
+            "AccumulateGrad422",
+            "AccumulateGrad423",
+            "AccumulateGrad424",
+            "AccumulateGrad425",
+            "AccumulateGrad426",
+            "AccumulateGrad427",
+            "AccumulateGrad428",
+            "AccumulateGrad429",
+            "ddp_Allreduce_7"
+        ],
+        "output_nodes": [
+            "ddp_Allreduce_8"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 6758656
+        }
+    },
+    {
+        "name": "ddp_Allreduce_8",
+        "op": "ddp_Allreduce",
+        "input_nodes": [
+            "ddp_pre_8"
+        ],
+        "output_nodes": [
+            "ddp_pre_9"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 6758656
+        }
+    },
+    {
+        "name": "ddp_pre_9",
+        "op": "ddp_pre",
+        "input_nodes": [
+            "AccumulateGrad430",
+            "AccumulateGrad431",
+            "AccumulateGrad432",
+            "AccumulateGrad433",
+            "AccumulateGrad434",
+            "AccumulateGrad435",
+            "AccumulateGrad436",
+            "AccumulateGrad437",
+            "AccumulateGrad438",
+            "AccumulateGrad439",
+            "AccumulateGrad440",
+            "AccumulateGrad441",
+            "AccumulateGrad442",
+            "AccumulateGrad443",
+            "AccumulateGrad444",
+            "AccumulateGrad445",
+            "AccumulateGrad446",
+            "AccumulateGrad447",
+            "AccumulateGrad448",
+            "AccumulateGrad449",
+            "AccumulateGrad450",
+            "AccumulateGrad451",
+            "AccumulateGrad452",
+            "AccumulateGrad453",
+            "AccumulateGrad454",
+            "AccumulateGrad455",
+            "AccumulateGrad456",
+            "AccumulateGrad457",
+            "AccumulateGrad458",
+            "AccumulateGrad459",
+            "AccumulateGrad460",
+            "AccumulateGrad461",
+            "AccumulateGrad462",
+            "AccumulateGrad463",
+            "AccumulateGrad464",
+            "AccumulateGrad465",
+            "AccumulateGrad466",
+            "ddp_Allreduce_8"
+        ],
+        "output_nodes": [
+            "ddp_Allreduce_9"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 405824
+        }
+    },
+    {
+        "name": "ddp_Allreduce_9",
+        "op": "ddp_Allreduce",
+        "input_nodes": [
+            "ddp_pre_9"
+        ],
+        "output_nodes": [
+            "optimizer_step"
+        ],
+        "input_types": [],
+        "input_shapes": [],
+        "output_types": [],
+        "output_shapes": [],
+        "attrs": {
+            "bucket_size": 405824
+        }
     },
     {
         "name": "optimizer_zero",
@@ -62703,473 +63509,7 @@
         "name": "optimizer_step",
         "op": "optimizer_step",
         "input_nodes": [
-            "AccumulateGrad0",
-            "AccumulateGrad1",
-            "AccumulateGrad2",
-            "AccumulateGrad3",
-            "AccumulateGrad4",
-            "AccumulateGrad5",
-            "AccumulateGrad6",
-            "AccumulateGrad7",
-            "AccumulateGrad8",
-            "AccumulateGrad9",
-            "AccumulateGrad10",
-            "AccumulateGrad11",
-            "AccumulateGrad12",
-            "AccumulateGrad13",
-            "AccumulateGrad14",
-            "AccumulateGrad15",
-            "AccumulateGrad16",
-            "AccumulateGrad17",
-            "AccumulateGrad18",
-            "AccumulateGrad19",
-            "AccumulateGrad20",
-            "AccumulateGrad21",
-            "AccumulateGrad22",
-            "AccumulateGrad23",
-            "AccumulateGrad24",
-            "AccumulateGrad25",
-            "AccumulateGrad26",
-            "AccumulateGrad27",
-            "AccumulateGrad28",
-            "AccumulateGrad29",
-            "AccumulateGrad30",
-            "AccumulateGrad31",
-            "AccumulateGrad32",
-            "AccumulateGrad33",
-            "AccumulateGrad34",
-            "AccumulateGrad35",
-            "AccumulateGrad36",
-            "AccumulateGrad37",
-            "AccumulateGrad38",
-            "AccumulateGrad39",
-            "AccumulateGrad40",
-            "AccumulateGrad41",
-            "AccumulateGrad42",
-            "AccumulateGrad43",
-            "AccumulateGrad44",
-            "AccumulateGrad45",
-            "AccumulateGrad46",
-            "AccumulateGrad47",
-            "AccumulateGrad48",
-            "AccumulateGrad49",
-            "AccumulateGrad50",
-            "AccumulateGrad51",
-            "AccumulateGrad52",
-            "AccumulateGrad53",
-            "AccumulateGrad54",
-            "AccumulateGrad55",
-            "AccumulateGrad56",
-            "AccumulateGrad57",
-            "AccumulateGrad58",
-            "AccumulateGrad59",
-            "AccumulateGrad60",
-            "AccumulateGrad61",
-            "AccumulateGrad62",
-            "AccumulateGrad63",
-            "AccumulateGrad64",
-            "AccumulateGrad65",
-            "AccumulateGrad66",
-            "AccumulateGrad67",
-            "AccumulateGrad68",
-            "AccumulateGrad69",
-            "AccumulateGrad70",
-            "AccumulateGrad71",
-            "AccumulateGrad72",
-            "AccumulateGrad73",
-            "AccumulateGrad74",
-            "AccumulateGrad75",
-            "AccumulateGrad76",
-            "AccumulateGrad77",
-            "AccumulateGrad78",
-            "AccumulateGrad79",
-            "AccumulateGrad80",
-            "AccumulateGrad81",
-            "AccumulateGrad82",
-            "AccumulateGrad83",
-            "AccumulateGrad84",
-            "AccumulateGrad85",
-            "AccumulateGrad86",
-            "AccumulateGrad87",
-            "AccumulateGrad88",
-            "AccumulateGrad89",
-            "AccumulateGrad90",
-            "AccumulateGrad91",
-            "AccumulateGrad92",
-            "AccumulateGrad93",
-            "AccumulateGrad94",
-            "AccumulateGrad95",
-            "AccumulateGrad96",
-            "AccumulateGrad97",
-            "AccumulateGrad98",
-            "AccumulateGrad99",
-            "AccumulateGrad100",
-            "AccumulateGrad101",
-            "AccumulateGrad102",
-            "AccumulateGrad103",
-            "AccumulateGrad104",
-            "AccumulateGrad105",
-            "AccumulateGrad106",
-            "AccumulateGrad107",
-            "AccumulateGrad108",
-            "AccumulateGrad109",
-            "AccumulateGrad110",
-            "AccumulateGrad111",
-            "AccumulateGrad112",
-            "AccumulateGrad113",
-            "AccumulateGrad114",
-            "AccumulateGrad115",
-            "AccumulateGrad116",
-            "AccumulateGrad117",
-            "AccumulateGrad118",
-            "AccumulateGrad119",
-            "AccumulateGrad120",
-            "AccumulateGrad121",
-            "AccumulateGrad122",
-            "AccumulateGrad123",
-            "AccumulateGrad124",
-            "AccumulateGrad125",
-            "AccumulateGrad126",
-            "AccumulateGrad127",
-            "AccumulateGrad128",
-            "AccumulateGrad129",
-            "AccumulateGrad130",
-            "AccumulateGrad131",
-            "AccumulateGrad132",
-            "AccumulateGrad133",
-            "AccumulateGrad134",
-            "AccumulateGrad135",
-            "AccumulateGrad136",
-            "AccumulateGrad137",
-            "AccumulateGrad138",
-            "AccumulateGrad139",
-            "AccumulateGrad140",
-            "AccumulateGrad141",
-            "AccumulateGrad142",
-            "AccumulateGrad143",
-            "AccumulateGrad144",
-            "AccumulateGrad145",
-            "AccumulateGrad146",
-            "AccumulateGrad147",
-            "AccumulateGrad148",
-            "AccumulateGrad149",
-            "AccumulateGrad150",
-            "AccumulateGrad151",
-            "AccumulateGrad152",
-            "AccumulateGrad153",
-            "AccumulateGrad154",
-            "AccumulateGrad155",
-            "AccumulateGrad156",
-            "AccumulateGrad157",
-            "AccumulateGrad158",
-            "AccumulateGrad159",
-            "AccumulateGrad160",
-            "AccumulateGrad161",
-            "AccumulateGrad162",
-            "AccumulateGrad163",
-            "AccumulateGrad164",
-            "AccumulateGrad165",
-            "AccumulateGrad166",
-            "AccumulateGrad167",
-            "AccumulateGrad168",
-            "AccumulateGrad169",
-            "AccumulateGrad170",
-            "AccumulateGrad171",
-            "AccumulateGrad172",
-            "AccumulateGrad173",
-            "AccumulateGrad174",
-            "AccumulateGrad175",
-            "AccumulateGrad176",
-            "AccumulateGrad177",
-            "AccumulateGrad178",
-            "AccumulateGrad179",
-            "AccumulateGrad180",
-            "AccumulateGrad181",
-            "AccumulateGrad182",
-            "AccumulateGrad183",
-            "AccumulateGrad184",
-            "AccumulateGrad185",
-            "AccumulateGrad186",
-            "AccumulateGrad187",
-            "AccumulateGrad188",
-            "AccumulateGrad189",
-            "AccumulateGrad190",
-            "AccumulateGrad191",
-            "AccumulateGrad192",
-            "AccumulateGrad193",
-            "AccumulateGrad194",
-            "AccumulateGrad195",
-            "AccumulateGrad196",
-            "AccumulateGrad197",
-            "AccumulateGrad198",
-            "AccumulateGrad199",
-            "AccumulateGrad200",
-            "AccumulateGrad201",
-            "AccumulateGrad202",
-            "AccumulateGrad203",
-            "AccumulateGrad204",
-            "AccumulateGrad205",
-            "AccumulateGrad206",
-            "AccumulateGrad207",
-            "AccumulateGrad208",
-            "AccumulateGrad209",
-            "AccumulateGrad210",
-            "AccumulateGrad211",
-            "AccumulateGrad212",
-            "AccumulateGrad213",
-            "AccumulateGrad214",
-            "AccumulateGrad215",
-            "AccumulateGrad216",
-            "AccumulateGrad217",
-            "AccumulateGrad218",
-            "AccumulateGrad219",
-            "AccumulateGrad220",
-            "AccumulateGrad221",
-            "AccumulateGrad222",
-            "AccumulateGrad223",
-            "AccumulateGrad224",
-            "AccumulateGrad225",
-            "AccumulateGrad226",
-            "AccumulateGrad227",
-            "AccumulateGrad228",
-            "AccumulateGrad229",
-            "AccumulateGrad230",
-            "AccumulateGrad231",
-            "AccumulateGrad232",
-            "AccumulateGrad233",
-            "AccumulateGrad234",
-            "AccumulateGrad235",
-            "AccumulateGrad236",
-            "AccumulateGrad237",
-            "AccumulateGrad238",
-            "AccumulateGrad239",
-            "AccumulateGrad240",
-            "AccumulateGrad241",
-            "AccumulateGrad242",
-            "AccumulateGrad243",
-            "AccumulateGrad244",
-            "AccumulateGrad245",
-            "AccumulateGrad246",
-            "AccumulateGrad247",
-            "AccumulateGrad248",
-            "AccumulateGrad249",
-            "AccumulateGrad250",
-            "AccumulateGrad251",
-            "AccumulateGrad252",
-            "AccumulateGrad253",
-            "AccumulateGrad254",
-            "AccumulateGrad255",
-            "AccumulateGrad256",
-            "AccumulateGrad257",
-            "AccumulateGrad258",
-            "AccumulateGrad259",
-            "AccumulateGrad260",
-            "AccumulateGrad261",
-            "AccumulateGrad262",
-            "AccumulateGrad263",
-            "AccumulateGrad264",
-            "AccumulateGrad265",
-            "AccumulateGrad266",
-            "AccumulateGrad267",
-            "AccumulateGrad268",
-            "AccumulateGrad269",
-            "AccumulateGrad270",
-            "AccumulateGrad271",
-            "AccumulateGrad272",
-            "AccumulateGrad273",
-            "AccumulateGrad274",
-            "AccumulateGrad275",
-            "AccumulateGrad276",
-            "AccumulateGrad277",
-            "AccumulateGrad278",
-            "AccumulateGrad279",
-            "AccumulateGrad280",
-            "AccumulateGrad281",
-            "AccumulateGrad282",
-            "AccumulateGrad283",
-            "AccumulateGrad284",
-            "AccumulateGrad285",
-            "AccumulateGrad286",
-            "AccumulateGrad287",
-            "AccumulateGrad288",
-            "AccumulateGrad289",
-            "AccumulateGrad290",
-            "AccumulateGrad291",
-            "AccumulateGrad292",
-            "AccumulateGrad293",
-            "AccumulateGrad294",
-            "AccumulateGrad295",
-            "AccumulateGrad296",
-            "AccumulateGrad297",
-            "AccumulateGrad298",
-            "AccumulateGrad299",
-            "AccumulateGrad300",
-            "AccumulateGrad301",
-            "AccumulateGrad302",
-            "AccumulateGrad303",
-            "AccumulateGrad304",
-            "AccumulateGrad305",
-            "AccumulateGrad306",
-            "AccumulateGrad307",
-            "AccumulateGrad308",
-            "AccumulateGrad309",
-            "AccumulateGrad310",
-            "AccumulateGrad311",
-            "AccumulateGrad312",
-            "AccumulateGrad313",
-            "AccumulateGrad314",
-            "AccumulateGrad315",
-            "AccumulateGrad316",
-            "AccumulateGrad317",
-            "AccumulateGrad318",
-            "AccumulateGrad319",
-            "AccumulateGrad320",
-            "AccumulateGrad321",
-            "AccumulateGrad322",
-            "AccumulateGrad323",
-            "AccumulateGrad324",
-            "AccumulateGrad325",
-            "AccumulateGrad326",
-            "AccumulateGrad327",
-            "AccumulateGrad328",
-            "AccumulateGrad329",
-            "AccumulateGrad330",
-            "AccumulateGrad331",
-            "AccumulateGrad332",
-            "AccumulateGrad333",
-            "AccumulateGrad334",
-            "AccumulateGrad335",
-            "AccumulateGrad336",
-            "AccumulateGrad337",
-            "AccumulateGrad338",
-            "AccumulateGrad339",
-            "AccumulateGrad340",
-            "AccumulateGrad341",
-            "AccumulateGrad342",
-            "AccumulateGrad343",
-            "AccumulateGrad344",
-            "AccumulateGrad345",
-            "AccumulateGrad346",
-            "AccumulateGrad347",
-            "AccumulateGrad348",
-            "AccumulateGrad349",
-            "AccumulateGrad350",
-            "AccumulateGrad351",
-            "AccumulateGrad352",
-            "AccumulateGrad353",
-            "AccumulateGrad354",
-            "AccumulateGrad355",
-            "AccumulateGrad356",
-            "AccumulateGrad357",
-            "AccumulateGrad358",
-            "AccumulateGrad359",
-            "AccumulateGrad360",
-            "AccumulateGrad361",
-            "AccumulateGrad362",
-            "AccumulateGrad363",
-            "AccumulateGrad364",
-            "AccumulateGrad365",
-            "AccumulateGrad366",
-            "AccumulateGrad367",
-            "AccumulateGrad368",
-            "AccumulateGrad369",
-            "AccumulateGrad370",
-            "AccumulateGrad371",
-            "AccumulateGrad372",
-            "AccumulateGrad373",
-            "AccumulateGrad374",
-            "AccumulateGrad375",
-            "AccumulateGrad376",
-            "AccumulateGrad377",
-            "AccumulateGrad378",
-            "AccumulateGrad379",
-            "AccumulateGrad380",
-            "AccumulateGrad381",
-            "AccumulateGrad382",
-            "AccumulateGrad383",
-            "AccumulateGrad384",
-            "AccumulateGrad385",
-            "AccumulateGrad386",
-            "AccumulateGrad387",
-            "AccumulateGrad388",
-            "AccumulateGrad389",
-            "AccumulateGrad390",
-            "AccumulateGrad391",
-            "AccumulateGrad392",
-            "AccumulateGrad393",
-            "AccumulateGrad394",
-            "AccumulateGrad395",
-            "AccumulateGrad396",
-            "AccumulateGrad397",
-            "AccumulateGrad398",
-            "AccumulateGrad399",
-            "AccumulateGrad400",
-            "AccumulateGrad401",
-            "AccumulateGrad402",
-            "AccumulateGrad403",
-            "AccumulateGrad404",
-            "AccumulateGrad405",
-            "AccumulateGrad406",
-            "AccumulateGrad407",
-            "AccumulateGrad408",
-            "AccumulateGrad409",
-            "AccumulateGrad410",
-            "AccumulateGrad411",
-            "AccumulateGrad412",
-            "AccumulateGrad413",
-            "AccumulateGrad414",
-            "AccumulateGrad415",
-            "AccumulateGrad416",
-            "AccumulateGrad417",
-            "AccumulateGrad418",
-            "AccumulateGrad419",
-            "AccumulateGrad420",
-            "AccumulateGrad421",
-            "AccumulateGrad422",
-            "AccumulateGrad423",
-            "AccumulateGrad424",
-            "AccumulateGrad425",
-            "AccumulateGrad426",
-            "AccumulateGrad427",
-            "AccumulateGrad428",
-            "AccumulateGrad429",
-            "AccumulateGrad430",
-            "AccumulateGrad431",
-            "AccumulateGrad432",
-            "AccumulateGrad433",
-            "AccumulateGrad434",
-            "AccumulateGrad435",
-            "AccumulateGrad436",
-            "AccumulateGrad437",
-            "AccumulateGrad438",
-            "AccumulateGrad439",
-            "AccumulateGrad440",
-            "AccumulateGrad441",
-            "AccumulateGrad442",
-            "AccumulateGrad443",
-            "AccumulateGrad444",
-            "AccumulateGrad445",
-            "AccumulateGrad446",
-            "AccumulateGrad447",
-            "AccumulateGrad448",
-            "AccumulateGrad449",
-            "AccumulateGrad450",
-            "AccumulateGrad451",
-            "AccumulateGrad452",
-            "AccumulateGrad453",
-            "AccumulateGrad454",
-            "AccumulateGrad455",
-            "AccumulateGrad456",
-            "AccumulateGrad457",
-            "AccumulateGrad458",
-            "AccumulateGrad459",
-            "AccumulateGrad460",
-            "AccumulateGrad461",
-            "AccumulateGrad462",
-            "AccumulateGrad463",
-            "AccumulateGrad464",
-            "AccumulateGrad465",
-            "AccumulateGrad466"
+            "ddp_Allreduce_9"
         ],
         "output_nodes": [],
         "input_types": [
