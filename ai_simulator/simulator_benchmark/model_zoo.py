@@ -53,7 +53,7 @@ class ModelZoo():
                 for line in f:
                     if 'sum' in line:
                         data = line.split()
-                        self.__nccl_dataset[gpu][int(data[1])] = float(data[-3])
+                        self.__nccl_dataset[gpu][int(data[1])] = float(data[-4])
 
         for model in config['tasks']:
             if model in self.__models:

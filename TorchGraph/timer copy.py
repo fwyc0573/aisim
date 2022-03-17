@@ -8,6 +8,8 @@ sys.setrecursionlimit(1500)
 class Timer():
 
     def __init__(self, profiling_steps: int, name: str):
+        self.warming = 10
+        self.steps = 10
         self.profiling_steps = 1
         self.name = name
         self.database = dict()
@@ -27,11 +29,20 @@ class Timer():
             if name in self.database:
                 raise RuntimeError(f"Node {name} repeat in {self.name} graph")
             else:
-                with torch_profiler.profile(use_cuda=True) as prof:
+                for i in range(self.warming):
                     var(*outputs)
-                cuda_total = sum([e.self_cuda_time_total for e in prof.function_events])
-                self.database[name] = cuda_total
-                self.variance[name] = 0
+    
+                data_list = []
+                for _ in range(self.steps):
+                    torch.cuda.synchronize()
+                    ss = time.perf_counter()
+                    for i in range(self.profiling_steps):
+                        var(*outputs)
+                    torch.cuda.synchronize()
+                    ee = time.perf_counter()
+                    data_list.append((ee-ss))
+                self.database[name] = statistics.mean(data_list) / self.profiling_steps
+                self.variance[name] = statistics.variance(data_list) / self.steps / self.profiling_steps
 
     def _get_bp_node_op(self, var):
         return type(var).__name__
@@ -48,11 +59,20 @@ class Timer():
             if name in self.database:
                 raise RuntimeError(f"Node {name} repeat in {self.name} graph")
             else:
-                with torch_profiler.profile(use_cuda=True) as prof:
+                for i in range(self.warming):
                     var(*outputs)
-                cuda_total = sum([e.self_cuda_time_total for e in prof.function_events])
-                self.database[name] = cuda_total
-                self.variance[name] = 0
+                
+                data_list = []
+                for _ in range(self.steps):
+                    torch.cuda.synchronize()
+                    ss = time.perf_counter()
+                    for i in range(self.profiling_steps):
+                        var(*outputs)
+                    torch.cuda.synchronize()
+                    ee = time.perf_counter()
+                    data_list.append((ee-ss))
+                self.database[name] = statistics.mean(data_list) / self.profiling_steps
+                self.variance[name] = statistics.variance(data_list) / self.steps / self.profiling_steps
             
             # self.grad_fn_list.append({'var':var, 'name':self._get_bp_node_op(var) +str(self.backward_op_dict[self._get_bp_node_op(var)])})
             # self.grad_fn_input_list.append(outputs)
@@ -65,28 +85,47 @@ class Timer():
         return hook
 
     def _call_function(self, function, node, args, kwargs):
-        with torch_profiler.profile(use_cuda=True) as prof:
+        for i in range(self.warming):
             output = function(node.target, args, kwargs)
-        cuda_total = sum([e.self_cuda_time_total for e in prof.function_events])
-        self.database[node.name] = cuda_total
-        self.variance[node.name] = 0
+        data_list = []
+        for _ in range(self.steps):
+            torch.cuda.synchronize()
+            ss = time.perf_counter()
+            for i in range(self.profiling_steps):
+                output = function(node.target, args, kwargs)
+            torch.cuda.synchronize()
+            ee = time.perf_counter()
+            data_list.append((ee-ss))
+        self.database[node.name] = statistics.mean(data_list) / self.profiling_steps
+        self.variance[node.name] = statistics.variance(data_list) / self.steps / self.profiling_steps
         return output
 
 
     def _call_function_once(self, function, node, args, kwargs):
+        torch.cuda.synchronize()
+        ss = time.perf_counter()
         output = function(node.target, args, kwargs)
+        torch.cuda.synchronize()
+        ee = time.perf_counter()
         self.database[node.name] = 0
         self.variance[node.name] = 0
         return output
 
 
     def _call_optimizer(self, function, name):
-        
-        with torch_profiler.profile(use_cuda=True) as prof:
+        for i in range(self.warming):
             function()
-        cuda_total = sum([e.self_cuda_time_total for e in prof.function_events])
-        self.database[name] = cuda_total
-        self.variance[name] = 0
+        data_list = []
+        for _ in range(self.steps):
+            torch.cuda.synchronize()
+            ss = time.perf_counter()
+            for i in range(self.profiling_steps):
+                function()
+            torch.cuda.synchronize()
+            ee = time.perf_counter()
+            data_list.append((ee-ss))
+        self.database[name] = statistics.mean(data_list) / self.profiling_steps
+        self.variance[name] = statistics.variance(data_list) / self.steps / self.profiling_steps
     
     def _get_database(self):
         return self.database

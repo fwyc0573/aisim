@@ -51,7 +51,7 @@ parser.add_argument('--skip-op',
                     help='skip testing the op')
 
 
-nccl_meta_command = '/nccl-tests/build/all_reduce_perf -b 8 -e 1024M -f 2 -g {} > nccl_{}.log'
+nccl_meta_command = '/opt/superbench/bin/all_reduce_perf -b 8 -e 1024M -f 2 -g {} > nccl_{}.log'
 ddp_meta_command = 'python3 -m torch.distributed.launch --nproc_per_node {} \
     --nnodes 1 \
     --node_rank 0 \
@@ -78,7 +78,7 @@ def baseline_test(args, config):
             cmd = ddp_meta_command.format(value,
                                           args.model_zoo.get_sub_models(model), 
                                           args.model_zoo.get_batch_size(model))
-            time = os.popen(cmd).read()
+            time = os.popen(cmd).read().split('\n')[0]
             args.model_zoo.set_baseline_time(value, model, float(time))
     args.model_zoo.dump_baseline()
     print(args.model_zoo.get_baseline())
@@ -109,6 +109,10 @@ def op_test(args, config):
         db = (g._get_overall_database())
         json.dump(db,
                   open('ai_simulator/simulator_benchmark/data/torch/database/' + model + "_db.json", 'w'),
+                  indent=4)
+        var = (g._get_overall_variance())
+        json.dump(var,
+                  open('ai_simulator/simulator_benchmark/data/torch/database/' + model + "_var.json", 'w'),
                   indent=4)
 
 def one_click_test(args, config):
@@ -163,4 +167,3 @@ if __name__ == '__main__':
                                     args.skip_accuracy,
                                     config)
     benchmarktools.run()
-
