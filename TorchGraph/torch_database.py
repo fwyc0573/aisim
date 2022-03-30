@@ -12,6 +12,7 @@ from transformers import PreTrainedModel
 import time
 from .timer import Timer, make_dot
 import torch.optim as optim
+import torch.autograd.profiler as torch_profiler
 
 
 class TorchDatabase(torch.fx.Interpreter):
@@ -48,9 +49,11 @@ class TorchDatabase(torch.fx.Interpreter):
         self._optimizer_variance = {}
         self._overall_variance = {}
         
+        # y = self.module(self.example)
         self._get_fp_node_time()
         del self.env
         self._get_bp_node_time()
+        self._get_all_node_time()
         self._get_optimizer_node_time()
 
     def _fp_node_run(self, node: torch.fx.node.Node, *args):
@@ -83,7 +86,7 @@ class TorchDatabase(torch.fx.Interpreter):
     def _get_fp_node_time(self, initial_env = None):
         self.env = initial_env if initial_env else {}
         self.attr = {}
-        self.timer._init_database()
+        # self.timer._init_database()
 
         for node in self._symbolic_traced_module.graph.nodes:
 
@@ -95,16 +98,25 @@ class TorchDatabase(torch.fx.Interpreter):
             else:
                 self._fp_node_run(node, self.example)
 
+        # self.timer._call_function_profile(self.module, self.example)
 
     def _get_bp_node_time(self):
-        self.timer._init_database()
+        # self.timer._init_database()
         y = self.module(self.example)
         make_dot(y, self.module.named_parameters(), self.timer._make_hook)
         y.backward(y)
-        self.timer._bp_profiling()
+        # self.timer._bp_profiling(y.backward, y)
         # make_dot(y, self.module.named_parameters(), self.timer._empty_hook)
         self._backward_database = self.timer._get_database()
         self._backward_variance = self.timer._get_variance()
+
+    def _get_all_node_time(self):
+        # self.timer._init_database()
+        self.timer._all_profiling(self.module,self.example)
+        self._forward_database = self.timer._get_database()
+        self._forward_variance = self.timer._get_variance()
+        self._backward_database = {}
+        self._backward_variance = {}
 
     def _get_optimizer_node_time(self):
         self.timer._init_database()

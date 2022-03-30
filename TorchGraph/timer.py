@@ -8,6 +8,7 @@ sys.setrecursionlimit(1500)
 class Timer():
 
     def __init__(self, profiling_steps: int, name: str):
+        self.count = 0
         self.profiling_steps = 1
         self.name = name
         self.database = dict()
@@ -16,22 +17,69 @@ class Timer():
         self.grad_fn_input_list = []
         self.backward_op_dict = dict()
 
+        self.id_list = []
+        self.id_list_bp = []
+
     def _init_database(self):
         self.database = dict()
         self.variance = dict()
 
-    def _bp_profiling(self):
-        for var_name, outputs in zip(self.grad_fn_list, self.grad_fn_input_list):
-            name = var_name['name']
-            var = var_name['var']
-            if name in self.database:
-                raise RuntimeError(f"Node {name} repeat in {self.name} graph")
-            else:
-                with torch_profiler.profile(use_cuda=True) as prof:
-                    var(*outputs)
-                cuda_total = sum([e.self_cuda_time_total for e in prof.function_events])
-                self.database[name] = cuda_total
-                self.variance[name] = 0
+    # def _bp_profiling(self):
+    #     # self.count = 0
+    #     for var_name, outputs in zip(self.grad_fn_list, self.grad_fn_input_list):
+    #         name = var_name['name']
+    #         var = var_name['var']
+    #         # if name in self.database:
+    #         #     raise RuntimeError(f"Node {name} repeat in {self.name} graph")
+    #         # else:
+    #         # with torch_profiler.profile(use_cuda=True) as prof:
+    #         #     var(*outputs)
+    #         # cuda_total = float(sum([e.self_cuda_time_total for e in prof.function_events]))
+            
+    #         # for e in prof.function_events:
+    #         #     if e.self_cuda_time_total != 0:
+    #         #         self.count += 1
+    #         #         print(e.name)
+    #         # self.database[name] = cuda_total / 1e6
+    #         # self.variance[name] = 0
+    #     print(self.count)
+
+    def _bp_profiling(self, function, args):
+        with torch_profiler.profile(use_cuda=True) as prof:
+            function(args)
+        count = -1
+        result = 0
+        for e in prof.function_events:
+            if e.self_cuda_time_total != 0 and e.cpu_parent is None:
+                count += 1
+            if e.self_cuda_time_total != 0:
+                self.database[self.id_list_bp[count]] += e.self_cuda_time_total  / 1e6
+                result += e.self_cuda_time_total
+        # print(result, count, self.count)
+
+    def _all_profiling(self, module, example):
+
+        id_list = self.id_list + self.id_list_bp
+        for i in range(5):
+            y = module(example)
+            y.backward(y)
+        with torch_profiler.profile(use_cuda=True) as prof:
+            y = module(example)
+            y.backward(y)
+        count = -1
+        result = 0
+        for e in prof.function_events:
+            if e.self_cuda_time_total != 0 and e.cpu_parent is None:
+                count += 1
+                # print(e.name, id_list[count], e.cpu_parent)
+                self.database[id_list[count]] = 0
+            if e.self_cuda_time_total != 0:
+                if id_list[count] not in self.database:
+                    self.database[id_list[count]] = e.self_cuda_time_total  / 1e6
+                else:
+                    self.database[id_list[count]] += e.self_cuda_time_total  / 1e6
+                result += e.self_cuda_time_total
+        # print(result, count, self.count, len(id_list))
 
     def _get_bp_node_op(self, var):
         return type(var).__name__
@@ -44,15 +92,38 @@ class Timer():
                 self.backward_op_dict[self._get_bp_node_op(var)] += 1
 
             name = self._get_bp_node_op(var) + str(self.backward_op_dict[self._get_bp_node_op(var)])
+            self.id_list_bp.append(name)
 
             if name in self.database:
                 raise RuntimeError(f"Node {name} repeat in {self.name} graph")
             else:
-                with torch_profiler.profile(use_cuda=True) as prof:
-                    var(*outputs)
-                cuda_total = sum([e.self_cuda_time_total for e in prof.function_events])
-                self.database[name] = cuda_total
-                self.variance[name] = 0
+                self.count += 1
+                # with torch_profiler.profile(use_cuda=True) as prof:
+                #     var(*outputs)
+                # torch.cuda.synchronize()
+                # cuda_total = float(sum([e.self_cuda_time_total for e in prof.function_events]))
+                
+                # for e in prof.function_events:
+                #     if e.self_cuda_time_total != 0:
+                #         self.count += 1
+                #         print(e.name, e.self_cuda_time_total)
+                # for i in range(10):
+                #     var(*outputs)
+    
+                # data_list = []
+                # for _ in range(10):
+                #     torch.cuda.synchronize()
+                #     ss = time.perf_counter()
+                #     for i in range(10):
+                #         var(*outputs)
+                #     torch.cuda.synchronize()
+                #     ee = time.perf_counter()
+                #     data_list.append((ee-ss))
+                # self.database[name] = statistics.mean(data_list) / 10
+                # self.variance[name] = statistics.variance(data_list) / 100
+
+                # self.database[name] = 0 #cuda_total / 1e6
+                # self.variance[name] = 0
             
             # self.grad_fn_list.append({'var':var, 'name':self._get_bp_node_op(var) +str(self.backward_op_dict[self._get_bp_node_op(var)])})
             # self.grad_fn_input_list.append(outputs)
@@ -67,11 +138,26 @@ class Timer():
     def _call_function(self, function, node, args, kwargs):
         with torch_profiler.profile(use_cuda=True) as prof:
             output = function(node.target, args, kwargs)
-        cuda_total = sum([e.self_cuda_time_total for e in prof.function_events])
-        self.database[node.name] = cuda_total
+        cuda_total = float(sum([e.self_cuda_time_total for e in prof.function_events]))
+        for e in prof.function_events:
+            if e.self_cuda_time_total != 0  and e.cpu_parent is None:
+                self.count += 1
+                self.id_list.append(node.name)
+        self.database[node.name] = 0
         self.variance[node.name] = 0
         return output
 
+    def _call_function_profile(self, function, args):
+        function(args)
+        with torch_profiler.profile(use_cuda=True) as prof:
+            function(args)
+        count = 0
+        result = 0
+        for e in prof.function_events:
+            if e.self_cuda_time_total != 0:
+                self.database[self.id_list[count]] += e.self_cuda_time_total  / 1e6
+                result += e.self_cuda_time_total
+                count += 1
 
     def _call_function_once(self, function, node, args, kwargs):
         output = function(node.target, args, kwargs)
@@ -82,10 +168,16 @@ class Timer():
 
     def _call_optimizer(self, function, name):
         
+        function()
         with torch_profiler.profile(use_cuda=True) as prof:
             function()
-        cuda_total = sum([e.self_cuda_time_total for e in prof.function_events])
-        self.database[name] = cuda_total
+        cuda_total = 0
+        for e in prof.function_events:
+            if e.self_cuda_time_total != 0  and e.cpu_parent is None:
+                # print(e.name, e.self_cuda_time_total)
+                cuda_total += e.self_cuda_time_total
+        # cuda_total = float(sum([e.self_cuda_time_total for e in prof.function_events]))
+        self.database[name] = cuda_total / 1e6
         self.variance[name] = 0
     
     def _get_database(self):

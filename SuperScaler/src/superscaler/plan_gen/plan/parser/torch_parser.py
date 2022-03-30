@@ -78,7 +78,7 @@ class TorchParser(DAGParser):
             return fake_time
 
     def extract_attrs(self, node, device, gpu):
-        #print(node)
+        # print(node)
         if 'attrs' in node:
             attrs = node['attrs']
         else:

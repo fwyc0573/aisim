@@ -22,8 +22,7 @@ from torch.nn.parallel import DistributedDataParallel as DDP
 # DDP：从外部得到local_rank参数
 parser = argparse.ArgumentParser()
 parser.add_argument("--local_rank", default=-1, type=int)
-parser.add_argument("--batchsize", default=-1, type=int)
-parser.add_argument("--repeat", default=50, type=int)
+parser.add_argument("--repeat", default=20, type=int)
 parser.add_argument('--model', type=str, default='resnet50',
                     help='model to benchmark')
 parser.add_argument('--bucket_cap_mb', type=int, default=25,
@@ -44,7 +43,7 @@ dist.init_process_group(backend='nccl')  # nccl是GPU设备上最快、最推荐
 from torchvision import models
 
 module = getattr(models, FLAGS.model)().cuda()
-example = torch.rand(FLAGS.batchsize, 3, 224, 224).cuda()
+example = torch.rand(32, 3, 224, 224).cuda()
 optimizer = optim.SGD(module.parameters(), lr=0.01)
 
 module = DDP(module, device_ids=[local_rank], output_device=local_rank, bucket_cap_mb=bucket_cap_mb)
@@ -53,10 +52,10 @@ test = torch.ones_like(y)
 y.backward(test)
 
 def benchmark_step():
-    optimizer.zero_grad()
+    # optimizer.zero_grad()
     output = module(example)
-    output.backward(test)
-    optimizer.step()
+    output.backward(output)
+    # optimizer.step()
 
 for i in range(10):
     benchmark_step()
