@@ -27,7 +27,8 @@ import warnings
 import copy
 
 RET_SIMULATION_FINISH = -1
-
+NCCL_MUL = 2
+COMP_MUL = 1.3
 
 class Simulator():
     def __init__(self, nodemetadata_list, device_info):
@@ -58,6 +59,9 @@ class Simulator():
         # Init devices list
         self.__init_device(device_info)
 
+        self.__network_device = None
+        self.__compute_device = None
+
         # Check the coherence of nodemetadata_list and device_info
         for node_metadata in self.__nodes_metadata:
             device_name = node_metadata.device_name
@@ -68,9 +72,30 @@ class Simulator():
             new_node = Node(node_metadata, self.__devices[device_name])
             self.__nodes.append(new_node)
 
+            if 'GPU' in device_name:
+                self.__compute_device = device_name
+            if 'CPU' in device_name:
+                self.__network_device = device_name
+
         # Init edges in nodes
         for node in self.__nodes:
             node.renew_successor_nodes(self.__nodes)
+
+    def __check_counter_part(self, device_name):
+        if device_name == self.__compute_device:
+            if self.__network_device != None:
+                counter_device_name = self.__network_device
+            else:
+                return False
+        if device_name == self.__network_device:
+            if self.__compute_device != None:
+                counter_device_name = self.__compute_device
+            else:
+                return False
+        device = self.__devices[counter_device_name]
+        if device.is_idle():
+            return False
+        return True
 
     def __start_all_ready_nodes(self):
         '''Start all node in ready list.
@@ -116,6 +141,13 @@ class Simulator():
 
         if not isinstance(device, FIFODevice) and device in self.__sorted_Device_set:
             self.__sorted_Device_set.remove(device)
+
+        if self.__check_counter_part(device_name):
+            if device_name == self.__compute_device:
+                exec_node.set_execution_time(exec_node.get_execution_time() * COMP_MUL)
+            if device_name == self.__network_device:
+                exec_node.set_execution_time(exec_node.get_execution_time() * NCCL_MUL)
+
 
         node_id = exec_node.get_index()
         self.__execution_enqueue_time.append((node_id, self.__time_now))
@@ -170,6 +202,15 @@ class Simulator():
             suc_node.decrease_remain_dependency_cnt(1)
             if suc_node.is_ready():
                 self.__start_node_with_SortedSet(suc_node)
+
+        device_name = earliest_device.name()
+        if self.__check_counter_part(device_name) and earliest_device.is_idle():
+            if device_name == self.__compute_device:
+                counter_device = self.__devices[self.__network_device]
+                counter_device._next_finish_time = (counter_device._next_finish_time - self.__time_now) / NCCL_MUL + self.__time_now
+            if device_name == self.__network_device:
+                counter_device = self.__devices[self.__compute_device]
+                counter_device._next_finish_time = (counter_device._next_finish_time - self.__time_now) / COMP_MUL + self.__time_now
 
         return earliest_complete_time
 

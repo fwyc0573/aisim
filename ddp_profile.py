@@ -27,6 +27,7 @@ parser.add_argument('--model', type=str, default='resnet50',
                     help='model to benchmark')
 parser.add_argument('--bucket_cap_mb', type=int, default=25,
                     help='ddp bucket_cap_mb')
+parser.add_argument("--batchsize", default=32, type=int)
 FLAGS = parser.parse_args()
 local_rank = FLAGS.local_rank
 bucket_cap_mb = FLAGS.bucket_cap_mb
@@ -43,7 +44,7 @@ dist.init_process_group(backend='nccl')  # nccl是GPU设备上最快、最推荐
 from torchvision import models
 
 module = getattr(models, FLAGS.model)().cuda()
-example = torch.rand(32, 3, 224, 224).cuda()
+example = torch.rand(FLAGS.batchsize, 3, 224, 224).cuda()
 optimizer = optim.SGD(module.parameters(), lr=0.01)
 
 module = DDP(module, device_ids=[local_rank], output_device=local_rank, bucket_cap_mb=bucket_cap_mb)

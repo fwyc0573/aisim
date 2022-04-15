@@ -60,7 +60,7 @@ import pandas as pd
 
 results = {}
 
-for i in range(11):
+for i in range(2):
     for j in range(5):
         y = module(example)
         y.backward(y)
@@ -81,25 +81,27 @@ for i in range(11):
             if key not in results:
                 results[key] = []
             results[key].append(e.self_cuda_time_total)
+            results[key].append(str(e))
             self_cuda_time_total += e.self_cuda_time_total
-            # print(e.name, e.self_cuda_time_total)
+            print(e.name, e.self_cuda_time_total)
             count += 1
     if 'average_step_time' not in results:
         results['average_step_time'] = []
     results['average_step_time'].append(self_cuda_time_total / 1000)
+    # results['average_step_time'].append(self_cuda_time_total / 1000)
     # self_cuda_time_total = (sum([e.self_cuda_time_total for e in event_list])) / 1000
     print(local_rank, self_cuda_time_total / 1000)
     # print(count)
 # print(results)
 df = pd.DataFrame(results)
 df.to_csv('log' + str(local_rank) + '.csv')
-# result = []
-# for e in event_list:
-#     if e.self_cuda_time_total != 0 and e.cpu_parent is None:
-#         result.append(e.name)
-#         count += 1
+result = []
+for e in event_list:
+    if e.self_cuda_time_total != 0:
+        result.append(e.name)
+        count += 1
 
 # for result in results:
 #     print(result)
-# json.dump(results, open('log' + str(FLAGS.local_rank) + '.json', 'w'))
+json.dump(results, open('event' + str(FLAGS.local_rank) + '.json', 'w'), indent=4)
 

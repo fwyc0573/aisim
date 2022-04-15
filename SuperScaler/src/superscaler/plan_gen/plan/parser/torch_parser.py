@@ -71,9 +71,9 @@ class TorchParser(DAGParser):
         # print(bucket_size,fake_time,lower_size,lower_time,higher_size,higher_time)
 
         if attrs['op'] == 'ddp_Allreduce':
-            return fake_time * 0
-        elif attrs['op'] == 'ddp_pre':
             return fake_time * 1
+        elif attrs['op'] == 'ddp_pre':
+            return fake_time * 0
         else:
             return fake_time
 

@@ -1,8 +1,8 @@
 enviroments:
     '1 Host X 1 V100': 1
     '1 Host X 2 V100': 2
-    # '1 Host X 4 V100': 4
-    # '1 Host X 8 V100': 8
+    '1 Host X 4 V100': 4
+    '1 Host X 8 V100': 8
     # '2 Host X 8 V100': 16
     # '4 Host X 8 V100': 32
     # '8 Host X 8 V100': 64
@@ -35,14 +35,14 @@ tasks:
            'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/vgg19_b32.json'
         database_path:
            'ai_simulator/simulator_benchmark/data/torch/database/vgg19_b32_db.json'
-    resnet152_b32:
+    resnet152_b64:
         model:
             'resnet152'
         batch_size:
-            32
+            64
         graph_path:
-            'ai_simulator/simulator_benchmark/data/torch/graphs/resnet152_b32.json'
+            'ai_simulator/simulator_benchmark/data/torch/graphs/resnet152_b64.json'
         graph_path_multi_gpu:
-            'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/resnet152_b32.json'
+            'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/resnet152_b64.json'
         database_path:
-            'ai_simulator/simulator_benchmark/data/torch/database/resnet152_b32_db.json'
+            'ai_simulator/simulator_benchmark/data/torch/database/resnet152_b64_db.json'

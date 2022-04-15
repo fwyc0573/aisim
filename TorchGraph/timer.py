@@ -71,7 +71,7 @@ class Timer():
         for e in prof.function_events:
             if e.self_cuda_time_total != 0 and e.cpu_parent is None:
                 count += 1
-                # print(e.name, id_list[count], e.cpu_parent)
+                # print(e.name, id_list[count])
                 self.database[id_list[count]] = 0
             if e.self_cuda_time_total != 0:
                 if id_list[count] not in self.database:

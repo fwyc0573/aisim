@@ -102,7 +102,7 @@ class BenchmarkTools():
         nodelist = parser.parse_graph(graph_path, gpu=gpu)
 
         new_nodelist = []
-        for device_num in range(gpu):
+        for device_num in range(1):
             for i in nodelist:
                 item = i.copy()
                 if "network" in item['device']:
