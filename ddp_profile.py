@@ -21,11 +21,15 @@ from torch.nn.parallel import DistributedDataParallel as DDP
 ### 2. 初始化我们的模型、数据、各种配置  ####
 # DDP：从外部得到local_rank参数
 parser = argparse.ArgumentParser()
+parser.add_argument("--local_rank", default=-1, type=int)
+parser.add_argument("--repeat", default=20, type=int)
 parser.add_argument("--batchsize", default=32, type=int)
 parser.add_argument('--model', type=str, default='resnet50',
                     help='model to benchmark')
 parser.add_argument('--path', type=str, default='DDP.json',
                     help='path')
+parser.add_argument('--bucket_cap_mb', type=int, default=25,
+                    help='ddp bucket_cap_mb')
 parser.add_argument('--type', type=str, default='CV',
                     help='model types')
 FLAGS = parser.parse_args()
@@ -55,7 +59,7 @@ elif FLAGS.type == 'NLP':
 
 module = DDP(module, device_ids=[local_rank], output_device=local_rank, bucket_cap_mb=bucket_cap_mb)
 def benchmark_step():
-    # optimizer.zero_grad()
+    optimizer.zero_grad()
     output = module(example)
     if FLAGS.type == 'CV':
         output.backward(output)
@@ -64,7 +68,7 @@ def benchmark_step():
             output.pooler_output.backward(output.pooler_output)
         else:
             output.last_hidden_state.backward(output.last_hidden_state)
-    # optimizer.step()
+    optimizer.step()
 
 for i in range(10):
     benchmark_step()
@@ -77,3 +81,4 @@ ee = time.perf_counter()
 
 if FLAGS.local_rank == 0:
     print((ee - ss)/FLAGS.repeat*1000)
+

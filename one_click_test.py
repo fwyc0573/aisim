@@ -53,7 +53,7 @@ parser.add_argument('--skip-op',
                     help='skip testing the op')
 
 
-nccl_meta_command = '/opt/superbench/bin/all_reduce_perf -b 8 -e 1024M -f 2 -g {} > nccl_{}.log'
+nccl_meta_command = '/opt2/nccl-tests/build/all_reduce_perf -b 8 -e 1024M -f 2 -g {} > nccl_{}.log'
 ddp_meta_command = 'python3 -m torch.distributed.launch --nproc_per_node {} \
     --nnodes 1 \
     --node_rank 0 \

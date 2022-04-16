@@ -71,9 +71,9 @@ for i in range(2):
     if i == 0:
         continue
 
-    # print(prof)
+    print(prof)
 
-    print(prof.table(top_level_events_only=True, sort_by="cuda_time_total"))
+    #print(prof.table(top_level_events_only=True, sort_by="cuda_time_total"))
     event_list = prof.function_events
     count = 0
     self_cuda_time_total = 0

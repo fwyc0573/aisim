@@ -15,6 +15,8 @@ parser.add_argument('--model', type=str, default='resnet50',
 parser.add_argument('--type', type=str, default='CV',
                     help='model types')
 parser.add_argument("--batchsize", default=32, type=int)
+parser.add_argument('--path', type=str, default='DDP.json',
+                    help='path')
 args = parser.parse_args()
 
 from torchvision import models
@@ -31,3 +33,4 @@ elif args.type == 'NLP':
 
 g = TorchGraph(module, example, optimizer, 'GPT2')
 g.dump_graph(args.path)
+

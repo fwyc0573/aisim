@@ -54,7 +54,6 @@ class TorchDatabase(torch.fx.Interpreter):
         self._get_fp_node_time()
         del self.env
         self._get_bp_node_time()
-        self._get_all_node_time()
         self._get_optimizer_node_time()
 
     def _fp_node_run(self, node: torch.fx.node.Node, *args):
@@ -119,13 +118,13 @@ class TorchDatabase(torch.fx.Interpreter):
         self._backward_database = self.timer._get_database()
         self._backward_variance = self.timer._get_variance()
 
-    def _get_all_node_time(self):
-        # self.timer._init_database()
-        self.timer._all_profiling(self.module,self.example)
-        self._forward_database = self.timer._get_database()
-        self._forward_variance = self.timer._get_variance()
-        self._backward_database = {}
-        self._backward_variance = {}
+    # def _get_all_node_time(self):
+    #     # self.timer._init_database()
+    #     self.timer._all_profiling(self.module,self.example)
+    #     self._forward_database = self.timer._get_database()
+    #     self._forward_variance = self.timer._get_variance()
+    #     self._backward_database = {}
+    #     self._backward_variance = {}
 
     def _get_optimizer_node_time(self):
         self.timer._init_database()
@@ -141,3 +140,4 @@ class TorchDatabase(torch.fx.Interpreter):
     def _get_overall_variance(self):
         self._overall_variance = {**self._forward_variance, **self._backward_variance, **self._optimizer_variance}
         return self._overall_variance
+
