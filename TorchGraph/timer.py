@@ -4,6 +4,7 @@ import torch
 import statistics 
 import torch.autograd.profiler as torch_profiler
 sys.setrecursionlimit(1500)
+from transformers import PreTrainedModel
 
 class Timer():
 
@@ -61,10 +62,24 @@ class Timer():
 
         id_list = self.id_list + self.id_list_bp
         for i in range(5):
-            y = module(example)
+            if isinstance(module, PreTrainedModel):
+                y = module(example)
+                if 'pooler_output' in y.__dict__:
+                    y = y.pooler_output
+                else:
+                    y = y.last_hidden_state
+            else:
+                y = module(example)
             y.backward(y)
         with torch_profiler.profile(use_cuda=True) as prof:
-            y = module(example)
+            if isinstance(module, PreTrainedModel):
+                y = module(example)
+                if 'pooler_output' in y.__dict__:
+                    y = y.pooler_output
+                else:
+                    y = y.last_hidden_state
+            else:
+                y = module(example)
             y.backward(y)
         count = -1
         result = 0
@@ -223,4 +238,4 @@ def make_dot(var, params, hook):
                 for t in var.saved_tensors:
                     add_nodes(t)
 
-    add_nodes(var[0].grad_fn)
+    add_nodes(var.grad_fn)

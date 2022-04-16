@@ -9,6 +9,7 @@ from TorchGraph.DDP_graph import DDPGraph
 from TorchGraph.torch_database import TorchDatabase
 from TorchGraph.timer import Timer
 from torchvision import models
+import transformer
 from ai_simulator.simulator_benchmark.model_zoo import ModelZoo
 from ai_simulator.simulator_benchmark.benchmark_tools import BenchmarkTools
 
@@ -25,6 +26,7 @@ parser.add_argument("--local_rank", default=-1, type=int)
 parser.add_argument("--batchsize", default=32, type=int)
 parser.add_argument('--model', type=str, default='resnet50',
                     help='model to benchmark')
+parser.add_argument("--sequencelength", default=512, type=int)
 parser.add_argument('--skip-coverage',
                     dest='skip_coverage', action='store_true',
                     help='skip testing the databse coverage')
@@ -57,14 +59,22 @@ ddp_meta_command = 'python3 -m torch.distributed.launch --nproc_per_node {} \
     --node_rank 0 \
     ddp_profile.py \
     --model {} \
-    --batchsize {}'
+    --batchsize {} \
+    --type {}'
+graph_command = 'python3 \
+    torch_graph_test.py \
+    --model {} \
+    --path ai_simulator/simulator_benchmark/data/torch/graphs/{}.json \
+    --batchsize {} \
+    --type {}'
 ddp_graph_command = 'python3 -m torch.distributed.launch --nproc_per_node 1 \
     --nnodes 1 \
     --node_rank 0 \
     ddp_test.py \
     --model {} \
     --path ai_simulator/simulator_benchmark/data/torch/graphs/distributed/{}.json \
-    --batchsize {} '
+    --batchsize {} \
+    --type {}'
 
 def nccl_test(args, config):
     for _, value in config['enviroments'].items():
@@ -77,7 +87,8 @@ def baseline_test(args, config):
         for _, value in config['enviroments'].items():
             cmd = ddp_meta_command.format(value,
                                           args.model_zoo.get_sub_models(model), 
-                                          args.model_zoo.get_batch_size(model))
+                                          args.model_zoo.get_batch_size(model),
+                                          args.model_zoo.get_type(model))
             time = os.popen(cmd).read().split('\n')[0]
             args.model_zoo.set_baseline_time(value, model, float(time))
     args.model_zoo.dump_baseline()
@@ -85,25 +96,47 @@ def baseline_test(args, config):
 
 def TorchGraph_test(args, config):
     for model in args.model_list:
-        module = getattr(models, args.model_zoo.get_sub_models(model))().cuda()
-        example = torch.rand(args.model_zoo.get_batch_size(model), 3, 224, 224).cuda()
-        optimizer = optim.SGD(module.parameters(), lr=0.01)
-        g = TorchGraph(module, example, optimizer, model)
-        g.dump_graph('ai_simulator/simulator_benchmark/data/torch/graphs/' + model + ".json")
+        cmd = graph_command.format(args.model_zoo.get_sub_models(model),
+                                   model,
+                                   args.model_zoo.get_batch_size(model),
+                                   args.model_zoo.get_type(model))
+        print(cmd)
+        os.system(cmd)
+    # for model in args.model_list:
+    #     if args.model_zoo.get_type(model) == 'CV':
+    #         module = getattr(models, args.model_zoo.get_sub_models(model))().cuda()
+    #         example = torch.rand(args.model_zoo.get_batch_size(model), 3, 224, 224).cuda()
+    #         optimizer = optim.SGD(module.parameters(), lr=0.01)
+    #     elif args.model_zoo.get_type(model) == 'NLP':
+    #         module = getattr(transformer, args.model_zoo.get_sub_models(model))().cuda()
+    #         example = (torch.LongTensor(args.model_zoo.get_batch_size(model),512).random_() % 1000).cuda()
+    #         optimizer = optim.SGD(module.parameters(), lr=0.01)
+    #     g = TorchGraph(module, example, optimizer, model)
+    #     g.dump_graph('ai_simulator/simulator_benchmark/data/torch/graphs/' + model + ".json")
+
+    #     del(module)
+    #     del(g)
 
 def ddpgraph_test(args, config):
     for model in args.model_list:
         cmd = ddp_graph_command.format(args.model_zoo.get_sub_models(model),
                                        model,
-                                       args.model_zoo.get_batch_size(model))
+                                       args.model_zoo.get_batch_size(model),
+                                       args.model_zoo.get_type(model))
+        print(cmd)
         os.system(cmd)
 
 def op_test(args, config):
     for model in args.model_list:
         timer = Timer(100, args.model)
-        module = getattr(models, args.model_zoo.get_sub_models(model))().cuda()
-        example = torch.rand(args.model_zoo.get_batch_size(model), 3, 224, 224).cuda()
-        optimizer = optim.SGD(module.parameters(), lr=0.01)
+        if args.model_zoo.get_type(model) == 'CV':
+            module = getattr(models, args.model_zoo.get_sub_models(model))().cuda()
+            example = torch.rand(args.model_zoo.get_batch_size(model), 3, 224, 224).cuda()
+            optimizer = optim.SGD(module.parameters(), lr=0.01)
+        elif args.model_zoo.get_type(model) == 'NLP':
+            module = getattr(transformer, args.model_zoo.get_sub_models(model))().cuda()
+            example = (torch.LongTensor(args.model_zoo.get_batch_size(model),512).random_() % 1000).cuda()
+            optimizer = optim.SGD(module.parameters(), lr=0.01)
         
         g = TorchDatabase(module, example, model, timer, optimizer)
         db = (g._get_overall_database())
@@ -129,9 +162,6 @@ def one_click_test(args, config):
     # baseline test
     if not args.skip_baseline:
         baseline_test(args, config)
-        for _, value in config['enviroments'].items():
-            cmd = ddp_meta_command.format(value, args.model, args.batchsize)
-            time = os.popen(cmd).read()
 
     # TorchGraph test
     if not args.skip_graph:

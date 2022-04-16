@@ -7,6 +7,7 @@ from .shape_prop import ShapeProp, TensorMetadata, extract_tensor_metadata
 from .typename import typename
 from . import Node
 from transformers import PreTrainedModel
+from transformers.utils.fx import symbolic_trace as transformers_symbolic_trace
 from .torch_graph import TorchGraph
 
 import torch.distributed as dist
@@ -84,7 +85,6 @@ class DDPGraph(TorchGraph):
 
     def __init__(self, module: torch.nn.Module, example: torch.tensor, optimizer: torch.optim, name: str):
     
-    
         local_rank = 0
 
         torch.cuda.set_device(local_rank)
@@ -111,8 +111,12 @@ class DDPGraph(TorchGraph):
 
         self._NodeEngineer = Node.NodeEngineer()
 
-        self._symbolic_traced_module = symbolic_trace(self._module)
-        ShapeProp(self._symbolic_traced_module).propagate(example)
+        if isinstance(self._module, PreTrainedModel):
+            self._symbolic_traced_module = transformers_symbolic_trace(self._module)
+            ShapeProp(self._symbolic_traced_module).propagate(example)
+        else:
+            self._symbolic_traced_module = symbolic_trace(self._module)
+            ShapeProp(self._symbolic_traced_module).propagate(example)
 
         self._graph_dict = {}
         self._grad_fn_list = []

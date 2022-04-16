@@ -4,7 +4,7 @@ import torch
 import torch.fx
 from torch.fx import symbolic_trace, Interpreter
 from torch.optim.optimizer import Optimizer
-#from transformers.utils.fx import symbolic_trace as transformers_symbolic_trace
+from transformers.utils.fx import symbolic_trace as transformers_symbolic_trace
 from .shape_prop import ShapeProp, TensorMetadata
 from .typename import typename
 from . import Node
@@ -36,8 +36,10 @@ class TorchDatabase(torch.fx.Interpreter):
         self.name = name
         self.timer = timer
         self.optimizer = optimizer
-        self._symbolic_traced_module = symbolic_trace(module)
-            # ShapeProp(self._symbolic_traced_module).propagate(example)
+        if isinstance(self.module, PreTrainedModel):
+            self._symbolic_traced_module = transformers_symbolic_trace(self.module)
+        else:
+            self._symbolic_traced_module = symbolic_trace(self.module)
 
         self._forward_database = {}
         self._backward_database = {}
@@ -49,7 +51,6 @@ class TorchDatabase(torch.fx.Interpreter):
         self._optimizer_variance = {}
         self._overall_variance = {}
         
-        # y = self.module(self.example)
         self._get_fp_node_time()
         del self.env
         self._get_bp_node_time()
@@ -102,7 +103,15 @@ class TorchDatabase(torch.fx.Interpreter):
 
     def _get_bp_node_time(self):
         # self.timer._init_database()
-        y = self.module(self.example)
+        if isinstance(self.module, PreTrainedModel):
+            y = self.module(self.example)
+            if 'pooler_output' in y.__dict__:
+                y = y.pooler_output
+            else:
+                y = y.last_hidden_state
+        else:
+            y = self.module(self.example)
+        
         make_dot(y, self.module.named_parameters(), self.timer._make_hook)
         y.backward(y)
         # self.timer._bp_profiling(y.backward, y)

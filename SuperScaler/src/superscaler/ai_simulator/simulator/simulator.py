@@ -27,7 +27,7 @@ import warnings
 import copy
 
 RET_SIMULATION_FINISH = -1
-NCCL_MUL = 2
+NCCL_MUL = 2.2
 COMP_MUL = 1.3
 
 class Simulator():

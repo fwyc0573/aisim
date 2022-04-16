@@ -24,9 +24,37 @@ nccl_path:
     './'
 
 tasks:
+    bert_large_b4:
+        model:
+            'bert_large'
+        type:
+            'NLP'
+        batch_size:
+            4
+        graph_path:
+           'ai_simulator/simulator_benchmark/data/torch/graphs/bert_large_b4.json'
+        graph_path_multi_gpu:
+           'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/bert_large_b4.json'
+        database_path:
+           'ai_simulator/simulator_benchmark/data/torch/database/bert_large_b4_db.json'
+    GPT2_b4:
+        model:
+            'gpt2'
+        type:
+            'NLP'
+        batch_size:
+            4
+        graph_path:
+           'ai_simulator/simulator_benchmark/data/torch/graphs/GPT2_b4.json'
+        graph_path_multi_gpu:
+           'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/GPT2_b4.json'
+        database_path:
+           'ai_simulator/simulator_benchmark/data/torch/database/GPT2_b4_db.json'
     vgg19_b32:
         model:
             'vgg19'
+        type:
+            'CV'
         batch_size:
             32
         graph_path:
@@ -38,6 +66,8 @@ tasks:
     resnet152_b64:
         model:
             'resnet152'
+        type:
+            'CV'
         batch_size:
             64
         graph_path:

@@ -35,6 +35,7 @@ class ModelZoo():
         self.config = config
         self.__models = []
         self.__sub_models = {}
+        self.__types = {}
         self.__batch_sizes = {}
         self.__graph_path = {}
         self.__graph_path_multi_gpu = {}
@@ -67,6 +68,11 @@ class ModelZoo():
                 else:
                     self.set_sub_models(model, task['model'])
     
+                if 'type' not in task:
+                    self.set_type(model, 'CV')
+                else:
+                    self.set_type(model, task['type'])
+
                 if 'batch_size' not in task:
                     raise ValueError("Task \"{}\" are ininlized without batch_size".format(task))
                 else:
@@ -107,6 +113,12 @@ class ModelZoo():
 
     def get_sub_models(self, model):
         return self.__sub_models[model]
+
+    def set_type(self, model, type):
+        self.__types[model] = type
+
+    def get_type(self, model):
+        return self.__types[model]
 
     def set_batch_size(self, model, batch_size):
         self.__batch_sizes[model] = batch_size
