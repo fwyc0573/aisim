@@ -1,5 +1,5 @@
 
-NNRANK=N
+NNRANK=0
 
 NNODES=$1
 model=$2
@@ -8,7 +8,7 @@ type=$4
 
 export  PYTHONPATH=/mnt/aisim/SuperScaler/src/
 export LD_PRELOAD=/opt/hpcx/nccl_rdma_sharp_plugin/lib/libnccl-net.so
-export LD_LIBRARY_PATH=/opt2/mellanox/sharp/lib:/opt/hpcx/nccl_rdma_sharp_plugin/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/opt2/mellanox/sharp/lib:/opt/hpcx/nccl_rdma_sharp_plugin/lib
 export NCCL_UCX_TLS=rc_x,cuda_copy,cuda_ipc
 export NCCL_UCX_RNDV_THRESH=0
 export NCCL_UCX_RNDV_SCHEME=get_zcopy
