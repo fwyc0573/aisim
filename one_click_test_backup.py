@@ -18,14 +18,20 @@ parser.add_argument("--batchsize", default=32, type=int)
 parser.add_argument('--model', type=str, default='resnet50',
                     help='model to benchmark')
 
-ddp_meta_command = "pdsh -N -R ssh -w ^host2 'sudo docker exec --workdir /mnt/aisim lc bash /mnt/aisim/ddp_profile.sh {} {} {} {}'"
+host_dict = {2:'host2',
+             4:'host4',
+             8:'host8',
+             16:'host16'}
+
+ddp_meta_command = "pdsh -N -R ssh -w ^{} 'sudo docker exec --workdir /mnt/aisim lc bash /mnt/aisim/ddp_profile.sh {} {} {} {}'"
 
 def baseline_test(args, config):
     for model in args.model_list:
         print(model, args.model_list)
         for _, value in config['enviroments'].items():
             node = value//8
-            cmd = ddp_meta_command.format(node,
+            cmd = ddp_meta_command.format(host_dict[node],
+                                          node,
                                           args.model_zoo.get_sub_models(model), 
                                           args.model_zoo.get_batch_size(model),
                                           args.model_zoo.get_type(model))

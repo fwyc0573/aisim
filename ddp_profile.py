@@ -22,7 +22,7 @@ from torch.nn.parallel import DistributedDataParallel as DDP
 # DDP：从外部得到local_rank参数
 parser = argparse.ArgumentParser()
 parser.add_argument("--local_rank", default=-1, type=int)
-parser.add_argument("--repeat", default=20, type=int)
+parser.add_argument("--repeat", default=10, type=int)
 parser.add_argument("--batchsize", default=32, type=int)
 parser.add_argument('--model', type=str, default='resnet50',
                     help='model to benchmark')
@@ -70,7 +70,7 @@ def benchmark_step():
             output.last_hidden_state.backward(output.last_hidden_state)
     optimizer.step()
 
-for i in range(10):
+for i in range(5):
     benchmark_step()
 torch.cuda.synchronize()
 ss = time.perf_counter()

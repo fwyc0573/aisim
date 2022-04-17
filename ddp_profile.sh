@@ -1,5 +1,5 @@
 
-NNRANK=N
+NNRANK=0
 
 NNODES=$1
 model=$2
