@@ -1,5 +1,5 @@
 
-NNRANK=N
+NNRANK=0
 
 NNODES=$1
 model=$2
@@ -19,7 +19,6 @@ export UCX_IB_PCI_RELAXED_ORDERING=on
 export NCCL_NET_GDR_LEVEL=5
 export CUDA_DEVICE_ORDER=PCI_BUS_ID
 export NCCL_SOCKET_IFNAME=eth0
-export NCCL_DEBUG=VERSION
 export NCCL_PLUGIN_P2P=ib
 export NCCL_TOPO_FILE=/opt/microsoft/ndv4-topo.xml
 export NCCL_DEBUG_SUBSYS=INIT
