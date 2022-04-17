@@ -222,3 +222,4 @@ class Node():
                 '[ERROR] Finish a non-execute node: %s' % self.__metadata.name)
         self.__status = NodeStatus.done
         self.__device.dequeue_node()
+
