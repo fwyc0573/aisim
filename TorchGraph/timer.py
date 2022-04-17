@@ -9,8 +9,8 @@ from transformers import PreTrainedModel
 class Timer():
 
     def __init__(self, profiling_steps: int, name: str):
-        self.warming = 10
-        self.steps = 10
+        self.warming = 5
+        self.steps = 5
         self.profiling_steps = 10
         self.name = name
         self.database = dict()
@@ -87,19 +87,21 @@ class Timer():
 
     def _call_function(self, function, node, args, kwargs):
         for i in range(self.warming):
-            output = function(node.target, args, kwargs)
+            function(node.target, args, kwargs)
         data_list = []
         for _ in range(self.steps):
             torch.cuda.synchronize()
             ss = time.perf_counter()
             for i in range(self.profiling_steps):
-                output = function(node.target, args, kwargs)
+                function(node.target, args, kwargs)
             torch.cuda.synchronize()
             ee = time.perf_counter()
             data_list.append((ee-ss))
         self.database[node.name] = statistics.mean(data_list) / self.profiling_steps
         self.variance[node.name] = statistics.variance(data_list) / self.steps / self.profiling_steps
-        return output
+
+        
+        return function(node.target, args, kwargs)
 
     def _call_function_profile(self, function, args):
         function(args)

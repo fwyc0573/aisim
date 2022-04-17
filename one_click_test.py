@@ -52,18 +52,15 @@ parser.add_argument('--skip-op',
                     dest='skip_op', action='store_true',
                     help='skip testing the op')
 
-my_node_rank = 0 
 
-nccl_meta_command = '/opt/superbench/bin/all_reduce_perf -b 8 -e 1024M -f 2 -g {} > nccl_{}.log'
+nccl_meta_command = '/nccl-tests-master/build/all_reduce_perf -b 8 -e 1024M -f 2 -g {} > nccl_{}.log'
 ddp_meta_command = 'python3 -m torch.distributed.launch --nproc_per_node {} \
-    --nnodes {} \
-    --node_rank {} \
-    --master_addr msrhpc-msccl-000000 \
+    --nnodes 1 \
+    --node_rank 0 \
     ddp_profile.py \
     --model {} \
     --batchsize {} \
     --type {}'
-
 graph_command = 'python3 \
     torch_graph_test.py \
     --model {} \
@@ -79,6 +76,15 @@ ddp_graph_command = 'python3 -m torch.distributed.launch --nproc_per_node 1 \
     --batchsize {} \
     --type {}'
 
+op_command = 'python3 \
+    torch_dataset_test.py \
+    --model {} \
+    --path ai_simulator/simulator_benchmark/data/torch/database/{}_db.json \
+    --path_var ai_simulator/simulator_benchmark/data/torch/database/{}_var.json \
+    --batchsize {} \
+    --type {}'
+
+
 def nccl_test(args, config):
     for _, value in config['enviroments'].items():
         cmd = nccl_meta_command.format(value, value)
@@ -88,11 +94,7 @@ def baseline_test(args, config):
     for model in args.model_list:
         print(model, args.model_list)
         for _, value in config['enviroments'].items():
-            nproc_per_node = 8 if value >= 8 else value
-            nnodes = value //8 if value >= 8 else 1
-            cmd = ddp_meta_command.format(nproc_per_node,
-                                          nnodes,
-                                          my_node_rank,
+            cmd = ddp_meta_command.format(value,
                                           args.model_zoo.get_sub_models(model), 
                                           args.model_zoo.get_batch_size(model),
                                           args.model_zoo.get_type(model))
@@ -135,25 +137,33 @@ def ddpgraph_test(args, config):
 
 def op_test(args, config):
     for model in args.model_list:
-        timer = Timer(100, args.model)
-        if args.model_zoo.get_type(model) == 'CV':
-            module = getattr(models, args.model_zoo.get_sub_models(model))().cuda()
-            example = torch.rand(args.model_zoo.get_batch_size(model), 3, 224, 224).cuda()
-            optimizer = optim.SGD(module.parameters(), lr=0.01)
-        elif args.model_zoo.get_type(model) == 'NLP':
-            module = getattr(transformer, args.model_zoo.get_sub_models(model))().cuda()
-            example = (torch.LongTensor(args.model_zoo.get_batch_size(model),512).random_() % 1000).cuda()
-            optimizer = optim.SGD(module.parameters(), lr=0.01)
+        print('op_test + ',model)
+        cmd = op_command.format(args.model_zoo.get_sub_models(model),
+                                model,
+                                model,
+                                args.model_zoo.get_batch_size(model),
+                                args.model_zoo.get_type(model))
+        print(cmd)
+        os.system(cmd)
+        # timer = Timer(100, args.model)
+        # if args.model_zoo.get_type(model) == 'CV':
+        #     module = getattr(models, args.model_zoo.get_sub_models(model))().cuda()
+        #     example = torch.rand(args.model_zoo.get_batch_size(model), 3, 224, 224).cuda()
+        #     optimizer = optim.SGD(module.parameters(), lr=0.01)
+        # elif args.model_zoo.get_type(model) == 'NLP':
+        #     module = getattr(transformer, args.model_zoo.get_sub_models(model))().cuda()
+        #     example = (torch.LongTensor(args.model_zoo.get_batch_size(model),512).random_() % 1000).cuda()
+        #     optimizer = optim.SGD(module.parameters(), lr=0.01)
         
-        g = TorchDatabase(module, example, model, timer, optimizer)
-        db = (g._get_overall_database())
-        json.dump(db,
-                  open('ai_simulator/simulator_benchmark/data/torch/database/' + model + "_db.json", 'w'),
-                  indent=4)
-        var = (g._get_overall_variance())
-        json.dump(var,
-                  open('ai_simulator/simulator_benchmark/data/torch/database/' + model + "_var.json", 'w'),
-                  indent=4)
+        # g = TorchDatabase(module, example, model, timer, optimizer)
+        # db = (g._get_overall_database())
+        # json.dump(db,
+        #           open('ai_simulator/simulator_benchmark/data/torch/database/' + model + "_db.json", 'w'),
+        #           indent=4)
+        # var = (g._get_overall_variance())
+        # json.dump(var,
+        #           open('ai_simulator/simulator_benchmark/data/torch/database/' + model + "_var.json", 'w'),
+        #           indent=4)
 
 def one_click_test(args, config):
 

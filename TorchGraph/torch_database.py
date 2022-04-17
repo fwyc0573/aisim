@@ -2,6 +2,7 @@ import json
 from typing import Tuple
 import torch
 import torch.fx
+from torch.fx.node import Argument, Node, Target, map_arg, map_aggregate
 from torch.fx import symbolic_trace, Interpreter
 from torch.optim.optimizer import Optimizer
 from transformers.utils.fx import symbolic_trace as transformers_symbolic_trace
@@ -41,6 +42,21 @@ class TorchDatabase(torch.fx.Interpreter):
         else:
             self._symbolic_traced_module = symbolic_trace(self.module)
 
+        self.submodules = dict(self._symbolic_traced_module.named_modules())
+
+        node_to_last_use : Dict[Node, Node] = {}
+        self.user_to_last_uses : Dict[Node, List[Node]] = {}
+
+        def register_last_uses(n : Node, user : Node):
+            if n not in node_to_last_use:
+                node_to_last_use[n] = user
+                self.user_to_last_uses.setdefault(user, []).append(n)
+
+        for node in reversed(self._symbolic_traced_module.graph.nodes):
+            map_arg(node.args, lambda n: register_last_uses(n, node))
+            map_arg(node.kwargs, lambda n: register_last_uses(n, node))
+
+
         self._forward_database = {}
         self._backward_database = {}
         self._optimizer_database = {}
@@ -72,12 +88,14 @@ class TorchDatabase(torch.fx.Interpreter):
         if node.name in self._forward_database:
             raise RuntimeError(f"Node {node} repeat in {self.name} graph")
         else:
-            
             if node.op == "placeholder":
                 #placeholder optime is fixed, thus only need once profiling
                 self.env[node] = self.timer._call_function_once(attr, node, args, kwargs)
             else:
                 self.env[node] = self.timer._call_function(attr, node, args, kwargs)
+
+            for to_delete in self.user_to_last_uses.get(node, []):
+                del self.env[to_delete]
 
         self._forward_database = self.timer._get_database()
         self._forward_variance = self.timer._get_variance()
