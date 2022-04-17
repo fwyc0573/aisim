@@ -1,0 +1,50 @@
+{
+    "1":{
+        "alexnet": 5.53,
+        "vgg16": 270.38,
+        "resnet50": 111.72,
+        "inception3": 145.03,
+        "nasnet": 72.03,
+        "deepspeech": 138.51,
+        "seq2seq": 224.26,
+        "lstm": 381.79,
+        "bert": 0,
+        "bert_large": 0 
+    },
+    "2":{
+        "alexnet": 6.70,
+        "vgg16": 302.69,
+        "resnet50": 124.48,
+        "inception3": 155.88,
+        "nasnet": 0,
+        "deepspeech": 140.83,
+        "seq2seq": 197.43,
+        "lstm": 400.05,
+        "bert": 0,
+        "bert_large": 0 
+    },
+    "4":{
+        "alexnet": 7.03,
+        "vgg16": 318.34,
+        "resnet50": 130.50,
+        "inception3": 163.75,
+        "nasnet": 0,
+        "deepspeech": 160.32,
+        "seq2seq": 234.63,
+        "lstm": 466.95,
+        "bert": 0,
+        "bert_large": 0 
+    },
+    "8":{
+        "alexnet": 6.98,
+        "vgg16": 334.09,
+        "resnet50": 132.98,
+        "inception3": 166.33,
+        "nasnet": 0,
+        "deepspeech": 174.56,
+        "seq2seq": 262.27,
+        "lstm": 523.16,
+        "bert": 0,
+        "bert_large": 0 
+    }
+}
