@@ -1,9 +1,9 @@
 enviroments:
-    '1 Host X 1 V100': 1
-    '1 Host X 2 V100': 2
-    '1 Host X 4 V100': 4
-    '1 Host X 8 V100': 8
-    # '2 Host X 8 V100': 16
+    #'1 Host X 1 V100': 1
+    #'1 Host X 2 V100': 2
+    #'1 Host X 4 V100': 4
+    #'1 Host X 8 V100': 8
+    '2 Host X 8 V100': 16
     # '4 Host X 8 V100': 32
     # '8 Host X 8 V100': 64
     # '32 Host X 8 V100': 256

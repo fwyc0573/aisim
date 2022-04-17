@@ -52,15 +52,18 @@ parser.add_argument('--skip-op',
                     dest='skip_op', action='store_true',
                     help='skip testing the op')
 
+my_node_rank = 0 
 
-nccl_meta_command = '/opt2/nccl-tests/build/all_reduce_perf -b 8 -e 1024M -f 2 -g {} > nccl_{}.log'
+nccl_meta_command = '/opt/superbench/bin/all_reduce_perf -b 8 -e 1024M -f 2 -g {} > nccl_{}.log'
 ddp_meta_command = 'python3 -m torch.distributed.launch --nproc_per_node {} \
-    --nnodes 1 \
-    --node_rank 0 \
+    --nnodes {} \
+    --node_rank {} \
+    --master_addr msrhpc-msccl-000000 \
     ddp_profile.py \
     --model {} \
     --batchsize {} \
     --type {}'
+
 graph_command = 'python3 \
     torch_graph_test.py \
     --model {} \
@@ -85,7 +88,11 @@ def baseline_test(args, config):
     for model in args.model_list:
         print(model, args.model_list)
         for _, value in config['enviroments'].items():
-            cmd = ddp_meta_command.format(value,
+            nproc_per_node = 8 if value >= 8 else value
+            nnodes = value //8 if value >= 8 else 1
+            cmd = ddp_meta_command.format(nproc_per_node,
+                                          nnodes,
+                                          my_node_rank,
                                           args.model_zoo.get_sub_models(model), 
                                           args.model_zoo.get_batch_size(model),
                                           args.model_zoo.get_type(model))
@@ -197,3 +204,4 @@ if __name__ == '__main__':
                                     args.skip_accuracy,
                                     config)
     benchmarktools.run()
+
