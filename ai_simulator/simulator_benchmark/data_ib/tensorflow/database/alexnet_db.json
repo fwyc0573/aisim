@@ -1,0 +1,322 @@
+{
+    "Const%dtype%3%value%[3,[2]]": {
+        "avg": 16.472101,
+        "std_err": 0.21206
+    },
+    "Const%dtype%1%value%[1,[128,1]]": {
+        "avg": 16.68191,
+        "std_err": 0.346629
+    },
+    "Const%dtype%3%value%[3,[4]]": {
+        "avg": 16.692638,
+        "std_err": 0.338365
+    },
+    "Const%dtype%1%value%[1,[]]": {
+        "avg": 16.925037,
+        "std_err": 1.172804
+    },
+    "VariableV2%dtype%1%shape%[64]": {
+        "avg": 17.346859,
+        "std_err": 0.280133
+    },
+    "VariableV2%dtype%1%shape%[5,5,64,64]": {
+        "avg": 17.308712,
+        "std_err": 0.32461
+    },
+    "VariableV2%dtype%1%shape%[5,5,3,64]": {
+        "avg": 17.370939,
+        "std_err": 0.232754
+    },
+    "Const%dtype%1%value%[1,[128,3,32,32]]": {
+        "avg": 16.871691,
+        "std_err": 0.557082
+    },
+    "Const%dtype%9%value%[9,[128]]": {
+        "avg": 16.650915,
+        "std_err": 0.232025
+    },
+    "VariableV2%dtype%1%shape%[10]": {
+        "avg": 17.591953,
+        "std_err": 0.242815
+    },
+    "VariableV2%dtype%1%shape%[192,10]": {
+        "avg": 17.399311,
+        "std_err": 0.654598
+    },
+    "VariableV2%dtype%1%shape%[192]": {
+        "avg": 17.246246,
+        "std_err": 0.347856
+    },
+    "VariableV2%dtype%1%shape%[384,192]": {
+        "avg": 17.307997,
+        "std_err": 0.348659
+    },
+    "VariableV2%dtype%1%shape%[384]": {
+        "avg": 17.863274,
+        "std_err": 0.904255
+    },
+    "VariableV2%dtype%1%shape%[4096,384]": {
+        "avg": 17.890453,
+        "std_err": 0.827117
+    },
+    "Identity%input%[64]%T%1": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "Identity%input%[5,5,64,64]%T%1": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "Identity%input%[5,5,3,64]%T%1": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "Identity%input%[10]%T%1": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "Identity%input%[192,10]%T%1": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "Identity%input%[192]%T%1": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "Identity%input%[384,192]%T%1": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "Identity%input%[384]%T%1": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "Identity%input%[4096,384]%T%1": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "Conv2D%input%[128,3,32,32]%input%[5,5,3,64]%T%1%dilations%[1,1,1,1]%strides%[1,1,1,1]%use_cudnn_on_gpu%1": {
+        "avg": 151.64566,
+        "std_err": 5.896822
+    },
+    "BiasAdd%input%[128,64,32,32]%input%[64]%T%1": {
+        "avg": 123.640776,
+        "std_err": 0.96639
+    },
+    "Relu%input%[128,64,32,32]%T%1": {
+        "avg": 102.581978,
+        "std_err": 0.281911
+    },
+    "MaxPool%input%[128,64,32,32]%T%1%ksize%[1,1,3,3]%strides%[1,1,2,2]": {
+        "avg": 93.911886,
+        "std_err": 0.146239
+    },
+    "Transpose%input%[128,64,16,16]%input%[4]%T%1%Tperm%3": {
+        "avg": 40.437698,
+        "std_err": 0.225173
+    },
+    "LRN%input%[128,16,16,64]%T%1%alpha%0.00011111111234640703%beta%0.75%bias%1.0%depth_radius%4": {
+        "avg": 221.719742,
+        "std_err": 0.601099
+    },
+    "Transpose%input%[128,16,16,64]%input%[4]%T%1%Tperm%3": {
+        "avg": 40.484667,
+        "std_err": 0.255776
+    },
+    "Conv2D%input%[128,64,16,16]%input%[5,5,64,64]%T%1%dilations%[1,1,1,1]%strides%[1,1,1,1]%use_cudnn_on_gpu%1": {
+        "avg": 258.898735,
+        "std_err": 0.373848
+    },
+    "BiasAdd%input%[128,64,16,16]%input%[64]%T%1": {
+        "avg": 47.228866,
+        "std_err": 0.256794
+    },
+    "Relu%input%[128,64,16,16]%T%1": {
+        "avg": 40.429115,
+        "std_err": 0.300392
+    },
+    "MaxPool%input%[128,64,16,16]%T%1%ksize%[1,1,3,3]%strides%[1,1,2,2]": {
+        "avg": 39.754152,
+        "std_err": 0.329897
+    },
+    "Transpose%input%[128,64,8,8]%input%[4]%T%1%Tperm%3": {
+        "avg": 22.566319,
+        "std_err": 0.403362
+    },
+    "Reshape%input%[128,8,8,64]%input%[2]%T%1%Tshape%3": {
+        "avg": 17.447233,
+        "std_err": 0.379115
+    },
+    "MatMul%input%[128,4096]%input%[4096,384]%T%1%transpose_a%0%transpose_b%0": {
+        "avg": 86.38978,
+        "std_err": 0.916025
+    },
+    "BiasAdd%input%[128,384]%input%[384]%T%1": {
+        "avg": 21.966934,
+        "std_err": 0.960005
+    },
+    "Relu%input%[128,384]%T%1": {
+        "avg": 21.580935,
+        "std_err": 0.240522
+    },
+    "MatMul%input%[128,384]%input%[384,192]%T%1%transpose_a%0%transpose_b%0": {
+        "avg": 28.717995,
+        "std_err": 0.926725
+    },
+    "BiasAdd%input%[128,192]%input%[192]%T%1": {
+        "avg": 21.824121,
+        "std_err": 0.175581
+    },
+    "Relu%input%[128,192]%T%1": {
+        "avg": 21.954298,
+        "std_err": 0.530698
+    },
+    "MatMul%input%[128,192]%input%[192,10]%T%1%transpose_a%0%transpose_b%0": {
+        "avg": 30.609846,
+        "std_err": 1.090319
+    },
+    "BiasAdd%input%[128,10]%input%[10]%T%1": {
+        "avg": 21.753788,
+        "std_err": 0.182495
+    },
+    "SparseSoftmaxCrossEntropyWithLogits%input%[128,10]%input%[128]%T%1%Tlabels%9": {
+        "avg": 44.685364,
+        "std_err": 0.922882
+    },
+    "Mul%input%[128,1]%input%[128,10]%T%1": {
+        "avg": 22.072077,
+        "std_err": 0.413343
+    },
+    "BiasAddGrad%input%[128,10]%T%1": {
+        "avg": 24.525404,
+        "std_err": 0.64734
+    },
+    "MatMul%input%[128,192]%input%[128,10]%T%1%transpose_a%1%transpose_b%0": {
+        "avg": 26.6819,
+        "std_err": 0.130037
+    },
+    "MatMul%input%[128,10]%input%[192,10]%T%1%transpose_a%0%transpose_b%1": {
+        "avg": 24.266005,
+        "std_err": 0.38241
+    },
+    "ApplyGradientDescent%input%[10]%input%[]%input%[10]%T%1%use_locking%0": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "ReluGrad%input%[128,192]%input%[128,192]%T%1": {
+        "avg": 22.190094,
+        "std_err": 0.609223
+    },
+    "ApplyGradientDescent%input%[192,10]%input%[]%input%[192,10]%T%1%use_locking%0": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "BiasAddGrad%input%[128,192]%T%1": {
+        "avg": 23.826122,
+        "std_err": 0.303787
+    },
+    "MatMul%input%[128,384]%input%[128,192]%T%1%transpose_a%1%transpose_b%0": {
+        "avg": 25.216579,
+        "std_err": 0.952988
+    },
+    "MatMul%input%[128,192]%input%[384,192]%T%1%transpose_a%0%transpose_b%1": {
+        "avg": 26.52812,
+        "std_err": 0.864513
+    },
+    "ApplyGradientDescent%input%[192]%input%[]%input%[192]%T%1%use_locking%0": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "ReluGrad%input%[128,384]%input%[128,384]%T%1": {
+        "avg": 23.414135,
+        "std_err": 1.298317
+    },
+    "ApplyGradientDescent%input%[384,192]%input%[]%input%[384,192]%T%1%use_locking%0": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "BiasAddGrad%input%[128,384]%T%1": {
+        "avg": 23.983955,
+        "std_err": 0.343171
+    },
+    "MatMul%input%[128,4096]%input%[128,384]%T%1%transpose_a%1%transpose_b%0": {
+        "avg": 63.318676,
+        "std_err": 7.377819
+    },
+    "MatMul%input%[128,384]%input%[4096,384]%T%1%transpose_a%0%transpose_b%1": {
+        "avg": 77.089071,
+        "std_err": 3.307479
+    },
+    "ApplyGradientDescent%input%[384]%input%[]%input%[384]%T%1%use_locking%0": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "Reshape%input%[128,4096]%input%[4]%T%1%Tshape%3": {
+        "avg": 17.618656,
+        "std_err": 0.334894
+    },
+    "ApplyGradientDescent%input%[4096,384]%input%[]%input%[4096,384]%T%1%use_locking%0": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "Transpose%input%[128,8,8,64]%input%[4]%T%1%Tperm%3": {
+        "avg": 23.190737,
+        "std_err": 0.240095
+    },
+    "MaxPoolGrad%input%[128,64,16,16]%input%[128,64,8,8]%input%[128,64,8,8]%T%1%ksize%[1,1,3,3]%strides%[1,1,2,2]": {
+        "avg": 57.794571,
+        "std_err": 0.822171
+    },
+    "LRNGrad%input%[128,16,16,64]%input%[128,16,16,64]%input%[128,16,16,64]%T%1%alpha%0.00011111111234640703%beta%0.75%bias%1.0%depth_radius%4": {
+        "avg": 673.678637,
+        "std_err": 1.343866
+    },
+    "ReluGrad%input%[128,64,16,16]%input%[128,64,16,16]%T%1": {
+        "avg": 53.990602,
+        "std_err": 1.05686
+    },
+    "BiasAddGrad%input%[128,64,16,16]%T%1": {
+        "avg": 36.983728,
+        "std_err": 0.882899
+    },
+    "Conv2DBackpropInput%input%[4]%input%[5,5,64,64]%input%[128,64,16,16]%T%1%dilations%[1,1,1,1]%strides%[1,1,1,1]%use_cudnn_on_gpu%1": {
+        "avg": 262.376785,
+        "std_err": 3.25411
+    },
+    "Conv2DBackpropFilter%input%[128,64,16,16]%input%[4]%input%[128,64,16,16]%T%1%dilations%[1,1,1,1]%strides%[1,1,1,1]%use_cudnn_on_gpu%1": {
+        "avg": 318.781853,
+        "std_err": 0.561784
+    },
+    "ApplyGradientDescent%input%[64]%input%[]%input%[64]%T%1%use_locking%0": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "ApplyGradientDescent%input%[5,5,64,64]%input%[]%input%[5,5,64,64]%T%1%use_locking%0": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "MaxPoolGrad%input%[128,64,32,32]%input%[128,64,16,16]%input%[128,64,16,16]%T%1%ksize%[1,1,3,3]%strides%[1,1,2,2]": {
+        "avg": 124.855757,
+        "std_err": 1.376056
+    },
+    "ReluGrad%input%[128,64,32,32]%input%[128,64,32,32]%T%1": {
+        "avg": 142.561197,
+        "std_err": 0.938296
+    },
+    "BiasAddGrad%input%[128,64,32,32]%T%1": {
+        "avg": 78.879197,
+        "std_err": 4.254421
+    },
+    "Conv2DBackpropFilter%input%[128,3,32,32]%input%[4]%input%[128,64,32,32]%T%1%dilations%[1,1,1,1]%strides%[1,1,1,1]%use_cudnn_on_gpu%1": {
+        "avg": 307.688951,
+        "std_err": 3.039106
+    },
+    "ApplyGradientDescent%input%[5,5,3,64]%input%[]%input%[5,5,3,64]%T%1%use_locking%0": {
+        "avg": 10.0,
+        "std_err": 0.0
+    },
+    "NoOp": {
+        "avg": 17.045736,
+        "std_err": 0.845528
+    }
+}
