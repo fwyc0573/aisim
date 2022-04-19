@@ -169,18 +169,23 @@ class BenchmarkTools():
             self.__percent_model['MAP'].append(mean(self.__percent_model[env]))
 
             print('%-20s' % env, end='')
-            # for model in self.__models:
-            #     accuracy = '%.1f/%.1f=%.1f%%' %\
-            #         (self.__sim_time[env][model],
-            #             self.__baseline_time[env][model],
-            #             self.__percent[env][model])
-            #     print('%-20s' % accuracy, end='')
             for model in self.__models:
-                accuracy = '%.1f/%.1f=%.1f%%' %\
-                    (self.__sim_time[env][model],
-                        self.__baseline_time[env][model],
-                        self.__percent[env][model])
+                accuracy = '%.1f' %\
+                    (self.__sim_time[env][model])
                 print('%-20s' % accuracy, end='')
+            print()
+            print('%-20s' % env, end='')
+            for model in self.__models:
+                accuracy = '%.1f' %\
+                    (self.__baseline_time[env][model])
+                print('%-20s' % accuracy, end='')
+            print()
+            print('%-20s' % env, end='')
+            for model in self.__models:
+                accuracy = '%.1f%%' %\
+                    (self.__percent[env][model])
+                print('%-20s' % accuracy, end='')
+
             print()
             # print('%.1f%%' % mean(self.__percent_model[env]))
 
