@@ -1,12 +1,12 @@
 enviroments:
-     '1 Host X 1 V100': 1
-     '1 Host X 2 V100': 2
-     '1 Host X 4 V100': 4
-     '1 Host X 8 V100': 8
-    #'2 Host X 8 V100': 16
-    #'4 Host X 8 V100': 32
-    #'8 Host X 8 V100': 64
-    #'16 Host X 8 V100': 128
+    '1 Host X 1 V100': 1
+    '1 Host X 2 V100': 2
+    '1 Host X 4 V100': 4
+    '1 Host X 8 V100': 8
+    # '2 Host X 8 V100': 16
+    # '4 Host X 8 V100': 32
+    # '8 Host X 8 V100': 64
+    # '16 Host X 8 V100': 128
 
 device:
     'TeslaV100'
@@ -24,62 +24,6 @@ nccl_path:
     './'
 
 tasks:
-    bert_large_b1:
-        model:
-            'bert_large'
-        type:
-            'NLP'
-        batch_size:
-            1
-        graph_path:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/bert_large_b1.json'
-        graph_path_multi_gpu:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/bert_large_b1.json'
-        database_path:
-           'ai_simulator/simulator_benchmark/data/torch/database/bert_large_b1_db.json'
-
-    bert_large_b2:
-        model:
-            'bert_large'
-        type:
-            'NLP'
-        batch_size:
-            2
-        graph_path:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/bert_large_b2.json'
-        graph_path_multi_gpu:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/bert_large_b2.json'
-        database_path:
-           'ai_simulator/simulator_benchmark/data/torch/database/bert_large_b2_db.json'
-
-    bert_large_b4:
-        model:
-            'bert_large'
-        type:
-            'NLP'
-        batch_size:
-            4
-        graph_path:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/bert_large_b4.json'
-        graph_path_multi_gpu:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/bert_large_b4.json'
-        database_path:
-           'ai_simulator/simulator_benchmark/data/torch/database/bert_large_b4_db.json'
-
-    bert_large_b8:
-        model:
-            'bert_large'
-        type:
-            'NLP'
-        batch_size:
-            8
-        graph_path:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/bert_large_b8.json'
-        graph_path_multi_gpu:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/bert_large_b8.json'
-        database_path:
-           'ai_simulator/simulator_benchmark/data/torch/database/bert_large_b8_db.json'
-
     bert_large_b16:
         model:
             'bert_large'
@@ -93,62 +37,6 @@ tasks:
            'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/bert_large_b16.json'
         database_path:
            'ai_simulator/simulator_benchmark/data/torch/database/bert_large_b16_db.json'
-
-    GPT2_b1:
-        model:
-            'gpt2'
-        type:
-            'NLP'
-        batch_size:
-            1
-        graph_path:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/GPT2_b1.json'
-        graph_path_multi_gpu:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/GPT2_b1.json'
-        database_path:
-           'ai_simulator/simulator_benchmark/data/torch/database/GPT2_b1_db.json'
-
-    GPT2_b2:
-        model:
-            'gpt2'
-        type:
-            'NLP'
-        batch_size:
-            2
-        graph_path:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/GPT2_b2.json'
-        graph_path_multi_gpu:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/GPT2_b2.json'
-        database_path:
-           'ai_simulator/simulator_benchmark/data/torch/database/GPT2_b2_db.json'
-
-    GPT2_b4:
-        model:
-            'gpt2'
-        type:
-            'NLP'
-        batch_size:
-            4
-        graph_path:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/GPT2_b4.json'
-        graph_path_multi_gpu:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/GPT2_b4.json'
-        database_path:
-           'ai_simulator/simulator_benchmark/data/torch/database/GPT2_b4_db.json'
-
-    GPT2_b8:
-        model:
-            'gpt2'
-        type:
-            'NLP'
-        batch_size:
-            8
-        graph_path:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/GPT2_b8.json'
-        graph_path_multi_gpu:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/GPT2_b8.json'
-        database_path:
-           'ai_simulator/simulator_benchmark/data/torch/database/GPT2_b8_db.json'
 
     GPT2_b16:
         model:
@@ -164,62 +52,6 @@ tasks:
         database_path:
            'ai_simulator/simulator_benchmark/data/torch/database/GPT2_b16_db.json'
 
-    vgg19_b16:
-        model:
-            'vgg19'
-        type:
-            'CV'
-        batch_size:
-            16
-        graph_path:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/vgg19_b16.json'
-        graph_path_multi_gpu:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/vgg19_b16.json'
-        database_path:
-           'ai_simulator/simulator_benchmark/data/torch/database/vgg19_b16_db.json'
-
-    vgg19_b32:
-        model:
-            'vgg19'
-        type:
-            'CV'
-        batch_size:
-            32
-        graph_path:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/vgg19_b32.json'
-        graph_path_multi_gpu:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/vgg19_b32.json'
-        database_path:
-           'ai_simulator/simulator_benchmark/data/torch/database/vgg19_b32_db.json'
-
-    vgg19_b64:
-        model:
-            'vgg19'
-        type:
-            'CV'
-        batch_size:
-            64
-        graph_path:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/vgg19_b64.json'
-        graph_path_multi_gpu:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/vgg19_b64.json'
-        database_path:
-           'ai_simulator/simulator_benchmark/data/torch/database/vgg19_b64_db.json'
-    
-    vgg19_b128:
-        model:
-            'vgg19'
-        type:
-            'CV'
-        batch_size:
-            128
-        graph_path:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/vgg19_b128.json'
-        graph_path_multi_gpu:
-           'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/vgg19_b128.json'
-        database_path:
-           'ai_simulator/simulator_benchmark/data/torch/database/vgg19_b128_db.json'
-
     vgg19_b256:
         model:
             'vgg19'
@@ -233,62 +65,6 @@ tasks:
            'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/vgg19_b256.json'
         database_path:
            'ai_simulator/simulator_benchmark/data/torch/database/vgg19_b256_db.json'
-
-    resnet152_b8:
-        model:
-            'resnet152'
-        type:
-            'CV'
-        batch_size:
-            8
-        graph_path:
-            'ai_simulator/simulator_benchmark/data/torch/graphs/resnet152_b8.json'
-        graph_path_multi_gpu:
-            'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/resnet152_b8.json'
-        database_path:
-            'ai_simulator/simulator_benchmark/data/torch/database/resnet152_b8_db.json'
-
-    resnet152_b16:
-        model:
-            'resnet152'
-        type:
-            'CV'
-        batch_size:
-            16
-        graph_path:
-            'ai_simulator/simulator_benchmark/data/torch/graphs/resnet152_b16.json'
-        graph_path_multi_gpu:
-            'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/resnet152_b16.json'
-        database_path:
-            'ai_simulator/simulator_benchmark/data/torch/database/resnet152_b16_db.json'
-
-    resnet152_b32:
-        model:
-            'resnet152'
-        type:
-            'CV'
-        batch_size:
-            32
-        graph_path:
-            'ai_simulator/simulator_benchmark/data/torch/graphs/resnet152_b32.json'
-        graph_path_multi_gpu:
-            'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/resnet152_b32.json'
-        database_path:
-            'ai_simulator/simulator_benchmark/data/torch/database/resnet152_b32_db.json'
-
-    resnet152_b64:
-        model:
-            'resnet152'
-        type:
-            'CV'
-        batch_size:
-            64
-        graph_path:
-            'ai_simulator/simulator_benchmark/data/torch/graphs/resnet152_b64.json'
-        graph_path_multi_gpu:
-            'ai_simulator/simulator_benchmark/data/torch/graphs/distributed/resnet152_b64.json'
-        database_path:
-            'ai_simulator/simulator_benchmark/data/torch/database/resnet152_b64_db.json'
 
     resnet152_b128:
         model:
