@@ -1,157 +1,161 @@
 [1,0]<stdout>:# nThread 1 nGpus 1 minBytes 1024 maxBytes 4294967296 step: 2(factor) warmup iters: 20 iters: 50 validation: 0 
 [1,0]<stdout>:#
 [1,0]<stdout>:# Using devices
-[1,0]<stdout>:#   Rank  0 Pid  25558 on msrhpc-msccl-000000 device  0 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank  1 Pid  25559 on msrhpc-msccl-000000 device  1 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank  2 Pid  25560 on msrhpc-msccl-000000 device  2 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank  3 Pid  25561 on msrhpc-msccl-000000 device  3 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank  4 Pid  25562 on msrhpc-msccl-000000 device  4 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank  5 Pid  25563 on msrhpc-msccl-000000 device  5 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank  6 Pid  25568 on msrhpc-msccl-000000 device  6 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank  7 Pid  25572 on msrhpc-msccl-000000 device  7 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank  8 Pid  26168 on msrhpc-msccl-000002 device  0 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank  9 Pid  26169 on msrhpc-msccl-000002 device  1 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 10 Pid  26170 on msrhpc-msccl-000002 device  2 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 11 Pid  26171 on msrhpc-msccl-000002 device  3 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 12 Pid  26172 on msrhpc-msccl-000002 device  4 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 13 Pid  26173 on msrhpc-msccl-000002 device  5 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 14 Pid  26175 on msrhpc-msccl-000002 device  6 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 15 Pid  26177 on msrhpc-msccl-000002 device  7 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 16 Pid   4777 on msrhpc-msccl-00005H device  0 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 17 Pid   4778 on msrhpc-msccl-00005H device  1 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 18 Pid   4779 on msrhpc-msccl-00005H device  2 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 19 Pid   4780 on msrhpc-msccl-00005H device  3 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 20 Pid   4781 on msrhpc-msccl-00005H device  4 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 21 Pid   4788 on msrhpc-msccl-00005H device  5 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 22 Pid   4790 on msrhpc-msccl-00005H device  6 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 23 Pid   4792 on msrhpc-msccl-00005H device  7 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 24 Pid   4126 on msrhpc-msccl-00005I device  0 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 25 Pid   4127 on msrhpc-msccl-00005I device  1 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 26 Pid   4128 on msrhpc-msccl-00005I device  2 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 27 Pid   4129 on msrhpc-msccl-00005I device  3 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 28 Pid   4130 on msrhpc-msccl-00005I device  4 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 29 Pid   4133 on msrhpc-msccl-00005I device  5 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 30 Pid   4137 on msrhpc-msccl-00005I device  6 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 31 Pid   4140 on msrhpc-msccl-00005I device  7 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 32 Pid   3616 on msrhpc-msccl-00005J device  0 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 33 Pid   3617 on msrhpc-msccl-00005J device  1 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 34 Pid   3618 on msrhpc-msccl-00005J device  2 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 35 Pid   3619 on msrhpc-msccl-00005J device  3 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 36 Pid   3620 on msrhpc-msccl-00005J device  4 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 37 Pid   3626 on msrhpc-msccl-00005J device  5 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 38 Pid   3628 on msrhpc-msccl-00005J device  6 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 39 Pid   3631 on msrhpc-msccl-00005J device  7 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 40 Pid   3538 on msrhpc-msccl-00005K device  0 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 41 Pid   3539 on msrhpc-msccl-00005K device  1 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 42 Pid   3540 on msrhpc-msccl-00005K device  2 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 43 Pid   3541 on msrhpc-msccl-00005K device  3 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 44 Pid   3542 on msrhpc-msccl-00005K device  4 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 45 Pid   3545 on msrhpc-msccl-00005K device  5 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 46 Pid   3550 on msrhpc-msccl-00005K device  6 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 47 Pid   3553 on msrhpc-msccl-00005K device  7 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 48 Pid   3204 on msrhpc-msccl-00005L device  0 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 49 Pid   3205 on msrhpc-msccl-00005L device  1 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 50 Pid   3206 on msrhpc-msccl-00005L device  2 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 51 Pid   3207 on msrhpc-msccl-00005L device  3 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 52 Pid   3208 on msrhpc-msccl-[1,0]<stdout>:00005L device  4 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 53 Pid   3211 on msrhpc-msccl-00005L device  5 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 54 Pid   3217 on msrhpc-msccl-00005L device  6 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 55 Pid   3220 on msrhpc-msccl-00005L device  7 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 56 Pid   3110 on msrhpc-msccl-00005M device  0 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 57 Pid   3111 on msrhpc-msccl-00005M device  1 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 58 Pid   3112 on msrhpc-msccl-00005M device  2 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 59 Pid   3113 on msrhpc-msccl-00005M device  3 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 60 Pid   3114 on msrhpc-msccl-00005M device  4 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 61 Pid   3121 on msrhpc-msccl-00005M device  5 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 62 Pid   3124 on msrhpc-msccl-00005M device  6 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 63 Pid   3125 on msrhpc-msccl-00005M device  7 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 64 Pid   2586 on msrhpc-msccl-00005P device  0 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 65 Pid   2587 on msrhpc-msccl-00005P device  1 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 66 Pid   2588 on msrhpc-msccl-00005P device  2 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 67 Pid   2589 on msrhpc-msccl-00005P device  3 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 68 Pid   2590 on msrhpc-msccl-00005P device  4 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 69 Pid   2593 on msrhpc-msccl-00005P device  5 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 70 Pid   2599 on msrhpc-msccl-00005P device  6 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 71 Pid   2602 on msrhpc-msccl-00005P device  7 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 72 Pid   1495 on msrhpc-msccl-00005Q device  0 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 73 Pid   1496 on msrhpc-msccl-00005Q device  1 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 74 Pid   1497 on msrhpc-msccl-00005Q device  2 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 75 Pid   1498 on msrhpc-msccl-00005Q device  3 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 76 Pid   1499 on msrhpc-msccl-00005Q device  4 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 77 Pid   1502 on msrhpc-msccl-00005Q device  5 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 78 Pid   1505 on msrhpc-msccl-00005Q device  6 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 79 Pid   1511 on msrhpc-msccl-00005Q device  7 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 80 Pid   1439 on msrhpc-msccl-00005R device  0 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 81 Pid   1440 on msrhpc-msccl-00005R device  1 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 82 Pid   1441 on msrhpc-msccl-00005R device  2 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 83 Pid   1442 on msrhpc-msccl-00005R device  3 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 84 Pid   1443 on msrhpc-msccl-00005R device  4 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 85 Pid   1446 on msrhpc-msccl-00005R device  5 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 86 Pid   1448 on msrhpc-msccl-00005R device  6 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 87 Pid   1455 on msrhpc-msccl-00005R device  7 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 88 Pid   1493 on msrhpc-msccl-00005T device  0 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 89 Pid   1494 on msrhpc-msccl-00005T device  1 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 90 Pid   1495 on msrhpc-msccl-00005T device  2 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 91 Pid   1496 on msrhpc-msccl-00005T device  3 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 92 Pid   1497 on msrhpc-msccl-00005T device  4 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 93 Pid   1504 on msrhpc-msccl-00005T device  5 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 94 Pid   1506 on msrhpc-msccl-00005T device  6 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 95 Pid   1508 on msrhpc-msccl-00005T device  7 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 96 Pid   1493 on msrhpc-msccl-00005U device  0 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 97 Pid   1494 on msrhpc-msccl-00005U device  1 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 98 Pid   1495 on msrhpc-msccl-00005U device  2 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 99 Pid   1496 on msrhpc-msccl-00005U device  3 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 100 Pid   1497 on msrhpc-msccl-00005U device  4 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 101 Pid   1503 on msrhpc-msccl-00005U device  5 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 102 Pid   1506 on msrhpc-msccl-00005U device  6 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 103 Pid   1508 on msrhpc-msccl-00005U device  7 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 104 Pid   1439 on msrhpc-msccl-00005V device  0 [0x00] A100-SXM4-[1,0]<stdout>:40GB
-[1,0]<stdout>:#   Rank 105 Pid   1440 on msrhpc-msccl-00005V device  1 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 106 Pid   1441 on msrhpc-msccl-00005V device  2 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 107 Pid   1442 on msrhpc-msccl-00005V device  3 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 108 Pid   1443 on msrhpc-msccl-00005V device  4 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 109 Pid   1450 on msrhpc-msccl-00005V device  5 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 110 Pid   1452 on msrhpc-msccl-00005V device  6 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 111 Pid   1454 on msrhpc-msccl-00005V device  7 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 112 Pid   1439 on msrhpc-msccl-00005W device  0 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 113 Pid   1440 on msrhpc-msccl-00005W device  1 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 114 Pid   1441 on msrhpc-msccl-00005W device  2 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 115 Pid   1442 on msrhpc-msccl-00005W device  3 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 116 Pid   1443 on msrhpc-msccl-00005W device  4 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 117 Pid   1449 on msrhpc-msccl-00005W device  5 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 118 Pid   1451 on msrhpc-msccl-00005W device  6 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 119 Pid   1454 on msrhpc-msccl-00005W device  7 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 120 Pid   1495 on msrhpc-msccl-00005X device  0 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 121 Pid   1496 on msrhpc-msccl-00005X device  1 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 122 Pid   1497 on msrhpc-msccl-00005X device  2 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 123 Pid   1498 on msrhpc-msccl-00005X device  3 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 124 Pid   1499 on msrhpc-msccl-00005X device  4 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 125 Pid   1504 on msrhpc-msccl-00005X device  5 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 126 Pid   1507 on msrhpc-msccl-00005X device  6 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 127 Pid   1510 on msrhpc-msccl-00005X device  7 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank  0 Pid  26308 on msrhpc-msccl-000000 device  0 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank  1 Pid  26309 on msrhpc-msccl-000000 device  1 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank  2 Pid  26310 on msrhpc-msccl-000000 device  2 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank  3 Pid  26311 on msrhpc-msccl-000000 device  3 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank  4 Pid  26312 on msrhpc-msccl-000000 device  4 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank  5 Pid  26319 on msrhpc-msccl-000000 device  5 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank  6 Pid  26321 on msrhpc-msccl-000000 device  6 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank  7 Pid  26323 on msrhpc-msccl-000000 device  7 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank  8 Pid  26985 on msrhpc-msccl-000002 device  0 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank  9 Pid  26986 on msrhpc-msccl-000002 device  1 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 10 Pid  26987 on msrhpc-msccl-000002 device  2 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 11 Pid  26988 on msrhpc-msccl-000002 device  3 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 12 Pid  26989 on msrhpc-msccl-000002 device  4 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 13 Pid  26990 on msrhpc-msccl-000002 device  5 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 14 Pid  26991 on msrhpc-msccl-000002 device  6 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 15 Pid  26992 on msrhpc-msccl-000002 device  7 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 16 Pid   5413 on msrhpc-msccl-00005H device  0 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 17 Pid   5414 on msrhpc-msccl-00005H device  1 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 18 Pid   5415 on msrhpc-msccl-00005H device  2 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 19 Pid   5416 on msrhpc-msccl-00005H device  3 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 20 Pid   5417 on msrhpc-msccl-00005H device  4 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 21 Pid   5420 on msrhpc-msccl-00005H device  5 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 22 Pid   5425 on msrhpc-msccl-00005H device  6 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 23 Pid   5427 on msrhpc-msccl-00005H device  7 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 24 Pid   4762 on msrhpc-msccl-00005I device  0 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 25 Pid   4763 on msrhpc-msccl-00005I device  1 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 26 Pid   4764 on msrhpc-msccl-00005I device  2 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 27 Pid   4765 on msrhpc-msccl-00005I device  3 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 28 Pid   4766 on msrhpc-msccl-00005I device  4 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 29 Pid   4772 on msrhpc-msccl-00005I device  5 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 30 Pid   4774 on msrhpc-msccl-00005I device  6 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 31 Pid   4777 on msrhpc-msccl-00005I device  7 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 32 Pid   4069 on msrhpc-msccl-00005J device  0 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 33 Pid   4070 on msrhpc-msccl-00005J device  1 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 34 Pid   4071 on msrhpc-msccl-00005J device  2 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 35 Pid   4072 on msrhpc-msccl-00005J device  3 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 36 Pid   4073 on msrhpc-msccl-00005J device  4 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 37 Pid   4076 on msrhpc-msccl-00005J device  5 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 38 Pid   4080 on msrhpc-msccl-00005J device  6 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 39 Pid   4085 on msrhpc-msccl-00005J device  7 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 40 Pid   4015 on msrhpc-msccl-00005K device  0 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 41 Pid   4016 on msrhpc-msccl-00005K device  1 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 42 Pid   4017 on msrhpc-msccl-00005K device  2 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 43 Pid   4018 on msrhpc-msccl-00005K device  3 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 44 Pid   4019 on msrhpc-msccl-00005K device  4 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 45 Pid   4022 on msrhpc-msccl-00005K device  5 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 46 Pid   4026 on msrhpc-msccl-00005K device  6 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 47 Pid   4029 on msrhpc-msccl-00005K device  7 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 48 Pid   3657 on msrhpc-msccl-00005L device  0 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 49 Pid   3658 on msrhpc-msccl-00005L device  1 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 50 Pid   3659 on msrhpc-msccl-00005L device  2 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 51 Pid   3660 on msrhpc-msccl-00005L device  3 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 52 Pid   3661 on msrhpc-msccl-[1,0]<stdout>:00005L device  4 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 53 Pid   3663 on msrhpc-msccl-00005L device  5 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 54 Pid   3669 on msrhpc-msccl-00005L device  6 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 55 Pid   3673 on msrhpc-msccl-00005L device  7 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 56 Pid   3587 on msrhpc-msccl-00005M device  0 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 57 Pid   3588 on msrhpc-msccl-00005M device  1 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 58 Pid   3589 on msrhpc-msccl-00005M device  2 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 59 Pid   3590 on msrhpc-msccl-00005M device  3 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 60 Pid   3591 on msrhpc-msccl-00005M device  4 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 61 Pid   3594 on msrhpc-msccl-00005M device  5 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 62 Pid   3600 on msrhpc-msccl-00005M device  6 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 63 Pid   3603 on msrhpc-msccl-00005M device  7 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 64 Pid   2888 on msrhpc-msccl-00005P device  0 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 65 Pid   2889 on msrhpc-msccl-00005P device  1 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 66 Pid   2890 on msrhpc-msccl-00005P device  2 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 67 Pid   2891 on msrhpc-msccl-00005P device  3 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 68 Pid   2892 on msrhpc-msccl-00005P device  4 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 69 Pid   2899 on msrhpc-msccl-00005P device  5 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 70 Pid   2902 on msrhpc-msccl-00005P device  6 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 71 Pid   2903 on msrhpc-msccl-00005P device  7 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 72 Pid   1813 on msrhpc-msccl-00005Q device  0 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 73 Pid   1814 on msrhpc-msccl-00005Q device  1 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 74 Pid   1815 on msrhpc-msccl-00005Q device  2 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 75 Pid   1816 on msrhpc-msccl-00005Q device  3 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 76 Pid   1817 on msrhpc-msccl-00005Q device  4 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 77 Pid   1820 on msrhpc-msccl-00005Q device  5 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 78 Pid   1825 on msrhpc-msccl-00005Q device  6 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 79 Pid   1829 on msrhpc-msccl-00005Q device  7 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 80 Pid   1741 on msrhpc-msccl-00005R device  0 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 81 Pid   1742 on msrhpc-msccl-00005R device  1 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 82 Pid   1743 on msrhpc-msccl-00005R device  2 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 83 Pid   1744 on msrhpc-msccl-00005R device  3 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 84 Pid   1745 on msrhpc-msccl-00005R device  4 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 85 Pid   1748 on msrhpc-msccl-00005R device  5 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 86 Pid   1752 on msrhpc-msccl-00005R device  6 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 87 Pid   1757 on msrhpc-msccl-00005R device  7 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 88 Pid   1811 on msrhpc-msccl-00005T device  0 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 89 Pid   1812 on msrhpc-msccl-00005T device  1 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 90 Pid   1813 on msrhpc-msccl-00005T device  2 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 91 Pid   1814 on msrhpc-msccl-00005T device  3 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 92 Pid   1815 on msrhpc-msccl-00005T device  4 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 93 Pid   1819 on msrhpc-msccl-00005T device  5 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 94 Pid   1824 on msrhpc-msccl-00005T device  6 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 95 Pid   1827 on msrhpc-msccl-00005T device  7 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 96 Pid   1811 on msrhpc-msccl-00005U device  0 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 97 Pid   1812 on msrhpc-msccl-00005U device  1 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 98 Pid   1813 on msrhpc-msccl-00005U device  2 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 99 Pid   1814 on msrhpc-msccl-00005U device  3 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 100 Pid   1815 on msrhpc-msccl-00005U device  4 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 101 Pid   1818 on msrhpc-msccl-00005U device  5 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 102 Pid   1823 on msrhpc-msccl-00005U device  6 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 103 Pid   1826 on msrhpc-msccl-00005U device  7 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 104 Pid   1741 on msrhpc-msccl-00005V device  0 [0x00] A100-SXM4-[1,0]<stdout>:40GB
+[1,0]<stdout>:#   Rank 105 Pid   1742 on msrhpc-msccl-00005V device  1 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 106 Pid   1743 on msrhpc-msccl-00005V device  2 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 107 Pid   1744 on msrhpc-msccl-00005V device  3 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 108 Pid   1745 on msrhpc-msccl-00005V device  4 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 109 Pid   1748 on msrhpc-msccl-00005V device  5 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 110 Pid   1753 on msrhpc-msccl-00005V device  6 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 111 Pid   1756 on msrhpc-msccl-00005V device  7 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 112 Pid   1741 on msrhpc-msccl-00005W device  0 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 113 Pid   1742 on msrhpc-msccl-00005W device  1 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 114 Pid   1743 on msrhpc-msccl-00005W device  2 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 115 Pid   1744 on msrhpc-msccl-00005W device  3 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 116 Pid   1745 on msrhpc-msccl-00005W device  4 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 117 Pid   1748 on msrhpc-msccl-00005W device  5 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 118 Pid   1752 on msrhpc-msccl-00005W device  6 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 119 Pid   1756 on msrhpc-msccl-00005W device  7 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 120 Pid   1813 on msrhpc-msccl-00005X device  0 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 121 Pid   1814 on msrhpc-msccl-00005X device  1 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 122 Pid   1815 on msrhpc-msccl-00005X device  2 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 123 Pid   1816 on msrhpc-msccl-00005X device  3 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 124 Pid   1817 on msrhpc-msccl-00005X device  4 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 125 Pid   1820 on msrhpc-msccl-00005X device  5 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 126 Pid   1825 on msrhpc-msccl-00005X device  6 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 127 Pid   1829 on msrhpc-msccl-00005X device  7 [0x00] A100-SXM4-40GB
 [1,0]<stdout>:#
 [1,0]<stdout>:#                                                       out-of-place                       in-place          
 [1,0]<stdout>:#       size         count      type   redop     time   algbw   busbw  error     time   algbw   busbw  error
 [1,0]<stdout>:#        (B)    (elements)                       (us)  (GB/s)  (GB/s)            (us)  (GB/s)  (GB/s)       
-[1,0]<stdout>:        1024           256     float     sum    480.0    0.00    0.00    N/A   1577.5    0.00    0.00    N/A
-[1,0]<stdout>:        2048           512     float     sum    140.0    0.01    0.03    N/A    124.8    0.02    0.03    N/A
-[1,0]<stdout>:        4096          1024     float     sum    131.1    0.03    0.06    N/A    130.0    0.03    0.06    N/A
-[1,0]<stdout>:        8192          2048     float     sum    132.9    0.06    0.12    N/A    131.8    0.06    0.12    N/A
-[1,0]<stdout>:       16384          4096     float     sum    176.0    0.09    0.18    N/A    174.6    0.09    0.19    N/A
-[1,0]<stdout>:       32768          8192     float     sum    255.1    0.13    0.25    N/A    256.1    0.13    0.25    N/A
-[1,0]<stdout>:       65536         16384     float     sum    416.7    0.16    0.31    N/A    418.5    0.16    0.31    N/A
-[1,0]<stdout>:      131072         32768     float     sum    492.1    0.27    0.53    N/A    488.4    0.27    0.53    N/A
-[1,0]<stdout>:      262144         65536     float     sum    588.3    0.45    0.88    N/A    589.9    0.44    0.88    N/A
-[1,0]<stdout>:      524288        131072     float     sum    754.0    0.70    1.38    N/A    753.4    0.70    1.38    N/A
-[1,0]<stdout>:     1048576        262144     float     sum   1148.1    0.91    1.81    N/A   1158.9    0.90    1.80    N/A
-[1,0]<stdout>:     2097152        524288     float     sum   1498.4    1.40    2.78    N/A   1502.7    1.40    2.77    N/A
-[1,0]<stdout>:     4194304       1048576     float     sum   2562.2    1.64    3.25    N/A   2570.5    1.63    3.24    N/A
-[1,0]<stdout>:     8388608       2097152     float     sum   4739.4    1.77    3.51    N/A   4732.9    1.77    3.52    N/A
-[1,0]<stdout>:    16777216       4194304     float     sum   9378.5    1.79    3.55    N/A   9403.0    1.78    3.54    N/A
-[1,0]<stdout>:    33554432       8388608     float     sum    17363    1.93    3.83    N/A    17373    1.93    3.83    N/A
-[1,0]<stdout>:    67108864      16777216     float     sum    34478    1.95    3.86    N/A    34456    1.95    3.86    N/A
-[1,0]<stdout>:   134217728      33554432     float     sum    68963    1.95    3.86    N/A    68891    1.95    3.87    N/A
-[1,0]<stdout>:   268435456      67108864     float     sum   141561    1.90    3.76    N/A   141446    1.90    3.77    N/A
-[1,0]<stdout>:   536870912     134217728     float     sum   292696    1.83    3.64    N/A   293160    1.83    3.63    N/A
-[1,0]<stdout>:  1073741824     268435456     float     sum   586233    1.83    3.63    N/A   586009    1.83    3.64    N/A
-[1,0]<stdout>:  2147483648     536870912     float     sum  1171658    1.83    3.64    N/A  1170878    1.83    3.64    N/A
+[1,0]<stdout>:        1024           256     float     sum    461.5    0.00    0.00    N/A   1024.9    0.00    0.00    N/A
+[1,0]<stdout>:        2048           512     float     sum    140.1    0.01    0.03    N/A    125.7    0.02    0.03    N/A
+[1,0]<stdout>:        4096          1024     float     sum    131.2    0.03    0.06    N/A    131.6    0.03    0.06    N/A
+[1,0]<stdout>:        8192          2048     float     sum    132.9    0.06    0.12    N/A    132.2    0.06    0.12    N/A
+[1,0]<stdout>:       16384          4096     float     sum    175.4    0.09    0.19    N/A    175.4    0.09    0.19    N/A
+[1,0]<stdout>:       32768          8192     float     sum    257.5    0.13    0.25    N/A    254.2    0.13    0.26    N/A
+[1,0]<stdout>:       65536         16384     float     sum    425.0    0.15    0.31    N/A    418.2    0.16    0.31    N/A
+[1,0]<stdout>:      131072         32768     float     sum    487.0    0.27    0.53    N/A    488.1    0.27    0.53    N/A
+[1,0]<stdout>:      262144         65536     float     sum    588.9    0.45    0.88    N/A    591.6    0.44    0.88    N/A
+[1,0]<stdout>:      524288        131072     float     sum    768.2    0.68    1.35    N/A    777.5    0.67    1.34    N/A
+[1,0]<stdout>:     1048576        262144     float     sum   1188.9    0.88    1.75    N/A   1185.6    0.88    1.76    N/A
+[1,0]<stdout>:     2097152        524288     float     sum   1499.8    1.40    2.77    N/A   1496.8    1.40    2.78    N/A
+[1,0]<stdout>:     4194304       1048576     float     sum   2577.7    1.63    3.23    N/A   2587.9    1.62    3.22    N/A
+[1,0]<stdout>:     8388608       2097152     float     sum   4741.8    1.77    3.51    N/A   4728.7    1.77    3.52    N/A
+[1,0]<stdout>:    16777216       4194304     float     sum   9390.6    1.79    3.55    N/A   9395.3    1.79    3.54    N/A
+[1,0]<stdout>:    33554432       8388608     float     sum    17379    1.93    3.83    N/A    17382    1.93    3.83    N/A
+[1,0]<stdout>:    67108864      16777216     float     sum    34547    1.94    3.85    N/A    34570    1.94    3.85    N/A
+[1,0]<stdout>:   134217728      33554432     float     sum    69127    1.94    3.85    N/A    69134    1.94    3.85    N/A
+[1,0]<stdout>:   268435456      67108864     float     sum   141296    1.90    3.77    N/A   141168    1.90    3.77    N/A
+[1,0]<stdout>:   536870912     134217728     float     sum   291421    1.84    3.66    N/A   291175    1.84    3.66    N/A
+[1,0]<stdout>:  1073741824     268435456     float     sum   582674    1.84    3.66    N/A   582506    1.84    3.66    N/A
+[1,0]<stdout>:  2147483648     536870912     float     sum  1165987    1.84    3.65    N/A  1165609    1.84    3.66    N/A
+[1,0]<stdout>:  4294967296    1073741824     float     sum  2332091    1.84    3.65    N/A  2331839    1.84    3.65    N/A
+[1,0]<stdout>:# Out of bounds values : 0 OK
+[1,0]<stdout>:# Avg bus bandwidth    : 2.10753 
+[1,0]<stdout>:#

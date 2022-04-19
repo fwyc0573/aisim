@@ -1,52 +1,49 @@
-[1,0]<stdout>:# nThread 1 nGpus 1 minBytes 1024 maxBytes 17179869184 step: 2(factor) warmup iters: 20 iters: 50 validation: 0 
+[1,0]<stdout>:# nThread 1 nGpus 1 minBytes 1024 maxBytes 4294967296 step: 2(factor) warmup iters: 20 iters: 50 validation: 0 
 [1,0]<stdout>:#
 [1,0]<stdout>:# Using devices
-[1,0]<stdout>:#   Rank  0 Pid  65741 on msrhpc-msccl-000000 device  0 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank  1 Pid  65742 on msrhpc-msccl-000000 device  1 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank  2 Pid  65743 on msrhpc-msccl-000000 device  2 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank  3 Pid  65744 on msrhpc-msccl-000000 device  3 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank  4 Pid  65745 on msrhpc-msccl-000000 device  4 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank  5 Pid  65748 on msrhpc-msccl-000000 device  5 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank  6 Pid  65753 on msrhpc-msccl-000000 device  6 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank  7 Pid  65756 on msrhpc-msccl-000000 device  7 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank  8 Pid  12115 on msrhpc-msccl-000002 device  0 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank  9 Pid  12116 on msrhpc-msccl-000002 device  1 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 10 Pid  12117 on msrhpc-msccl-000002 device  2 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 11 Pid  12118 on msrhpc-msccl-000002 device  3 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 12 Pid  12119 on msrhpc-msccl-000002 device  4 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 13 Pid  12122 on msrhpc-msccl-000002 device  5 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 14 Pid  12128 on msrhpc-msccl-000002 device  6 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:#   Rank 15 Pid  12130 on msrhpc-msccl-000002 device  7 [0x00] A100-SXM4-40GB
-[1,0]<stdout>:NCCL version 2.10.3+cuda11.1
+[1,0]<stdout>:#   Rank  0 Pid  25862 on msrhpc-msccl-000000 device  0 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank  1 Pid  25863 on msrhpc-msccl-000000 device  1 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank  2 Pid  25864 on msrhpc-msccl-000000 device  2 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank  3 Pid  25865 on msrhpc-msccl-000000 device  3 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank  4 Pid  25866 on msrhpc-msccl-000000 device  4 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank  5 Pid  25873 on msrhpc-msccl-000000 device  5 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank  6 Pid  25875 on msrhpc-msccl-000000 device  6 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank  7 Pid  25877 on msrhpc-msccl-000000 device  7 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank  8 Pid  26486 on msrhpc-msccl-000002 device  0 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank  9 Pid  26487 on msrhpc-msccl-000002 device  1 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 10 Pid  26488 on msrhpc-msccl-000002 device  2 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 11 Pid  26489 on msrhpc-msccl-000002 device  3 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 12 Pid  26490 on msrhpc-msccl-000002 device  4 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 13 Pid  26491 on msrhpc-msccl-000002 device  5 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 14 Pid  26493 on msrhpc-msccl-000002 device  6 [0x00] A100-SXM4-40GB
+[1,0]<stdout>:#   Rank 15 Pid  26497 on msrhpc-msccl-000002 device  7 [0x00] A100-SXM4-40GB
 [1,0]<stdout>:#
 [1,0]<stdout>:#                                                       out-of-place                       in-place          
 [1,0]<stdout>:#       size         count      type   redop     time   algbw   busbw  error     time   algbw   busbw  error
 [1,0]<stdout>:#        (B)    (elements)                       (us)  (GB/s)  (GB/s)            (us)  (GB/s)  (GB/s)       
-[1,0]<stdout>:        1024           256     float     sum    34.66    0.03    0.06    N/A    34.47    0.03    0.06    N/A
-[1,0]<stdout>:        2048           512     float     sum    36.05    0.06    0.11    N/A    35.59    0.06    0.11    N/A
-[1,0]<stdout>:        4096          1024     float     sum    38.22    0.11    0.20    N/A    38.18    0.11    0.20    N/A
-[1,0]<stdout>:        8192          2048     float     sum    41.21    0.20    0.37    N/A    40.25    0.20    0.38    N/A
-[1,0]<stdout>:       16384          4096     float     sum    50.34    0.33    0.61    N/A    46.35    0.35    0.66    N/A
-[1,0]<stdout>:       32768          8192     float     sum    55.79    0.59    1.10    N/A    54.79    0.60    1.12    N/A
-[1,0]<stdout>:       65536         16384     float     sum    73.08    0.90    1.68    N/A    70.98    0.92    1.73    N/A
-[1,0]<stdout>:      131072         32768     float     sum    74.33    1.76    3.31    N/A    72.91    1.80    3.37    N/A
-[1,0]<stdout>:      262144         65536     float     sum    77.45    3.38    6.35    N/A    77.63    3.38    6.33    N/A
-[1,0]<stdout>:      524288        131072     float     sum    85.77    6.11   11.46    N/A    86.64    6.05   11.35    N/A
-[1,0]<stdout>:     1048576        262144     float     sum    100.1   10.47   19.64    N/A    99.93   10.49   19.67    N/A
-[1,0]<stdout>:     2097152        524288     float     sum    123.6   16.97   31.82    N/A    125.2   16.75   31.40    N/A
-[1,0]<stdout>:     4194304       1048576     float     sum    147.2   28.50   53.44    N/A    145.9   28.74   53.89    N/A
-[1,0]<stdout>:     8388608       2097152     float     sum    201.0   41.73   78.24    N/A    199.2   42.11   78.95    N/A
-[1,0]<stdout>:    16777216       4194304     float     sum    367.2   45.68   85.66    N/A    382.6   43.85   82.21    N/A
-[1,0]<stdout>:    33554432       8388608     float     sum    580.1   57.85  108.46    N/A    594.3   56.46  105.87    N/A
-[1,0]<stdout>:    67108864      16777216     float     sum   1124.3   59.69  111.92    N/A   1141.9   58.77  110.19    N/A
-[1,0]<stdout>:   134217728      33554432     float     sum   2039.8   65.80  123.37    N/A   2036.7   65.90  123.56    N/A
-[1,0]<stdout>:   268435456      67108864     float     sum   4159.2   64.54  121.01    N/A   4173.6   64.32  120.60    N/A
-[1,0]<stdout>:   536870912     134217728     float     sum   8060.3   66.61  124.89    N/A   8043.9   66.74  125.14    N/A
-[1,0]<stdout>:  1073741824     268435456     float     sum    16170   66.40  124.50    N/A    16166   66.42  124.53    N/A
-[1,0]<stdout>:  2147483648     536870912     float     sum    31509   68.15  127.79    N/A    32136   66.82  125.30    N/A
-[1,0]<stdout>:  4294967296    1073741824     float     sum    63345   67.80  127.13    N/A    63435   67.71  126.95    N/A
-[1,0]<stdout>:  8589934592    2147483648     float     sum   126496   67.91  127.33    N/A   125720   68.33  128.11    N/A
-[1,0]<stdout>: 17179869184    4294967296     float     sum   251757   68.24  127.95    N/A   250681   68.53  128.50    N/A
+[1,0]<stdout>:        1024           256     float     sum    40.29    0.03    0.05    N/A    38.39    0.03    0.05    N/A
+[1,0]<stdout>:        2048           512     float     sum    41.88    0.05    0.09    N/A    41.53    0.05    0.09    N/A
+[1,0]<stdout>:        4096          1024     float     sum    44.82    0.09    0.17    N/A    44.23    0.09    0.17    N/A
+[1,0]<stdout>:        8192          2048     float     sum    47.90    0.17    0.32    N/A    46.73    0.18    0.33    N/A
+[1,0]<stdout>:       16384          4096     float     sum    59.24    0.28    0.52    N/A    58.76    0.28    0.52    N/A
+[1,0]<stdout>:       32768          8192     float     sum    80.60    0.41    0.76    N/A    81.08    0.40    0.76    N/A
+[1,0]<stdout>:       65536         16384     float     sum    125.3    0.52    0.98    N/A    121.0    0.54    1.02    N/A
+[1,0]<stdout>:      131072         32768     float     sum    141.2    0.93    1.74    N/A    140.8    0.93    1.75    N/A
+[1,0]<stdout>:      262144         65536     float     sum    273.2    0.96    1.80    N/A    272.5    0.96    1.80    N/A
+[1,0]<stdout>:      524288        131072     float     sum    442.3    1.19    2.22    N/A    446.2    1.17    2.20    N/A
+[1,0]<stdout>:     1048576        262144     float     sum    708.8    1.48    2.77    N/A    707.7    1.48    2.78    N/A
+[1,0]<stdout>:     2097152        524288     float     sum   1097.8    1.91    3.58    N/A   1105.3    1.90    3.56    N/A
+[1,0]<stdout>:     4194304       1048576     float     sum   2083.8    2.01    3.77    N/A   2074.1    2.02    3.79    N/A
+[1,0]<stdout>:     8388608       2097152     float     sum   2119.4    3.96    7.42    N/A   2111.2    3.97    7.45    N/A
+[1,0]<stdout>:    16777216       4194304     float     sum   3990.6    4.20    7.88    N/A   3995.1    4.20    7.87    N/A
+[1,0]<stdout>:    33554432       8388608     float     sum   7895.7    4.25    7.97    N/A   7885.7    4.26    7.98    N/A
+[1,0]<stdout>:    67108864      16777216     float     sum    15124    4.44    8.32    N/A    15116    4.44    8.32    N/A
+[1,0]<stdout>:   134217728      33554432     float     sum    29748    4.51    8.46    N/A    29771    4.51    8.45    N/A
+[1,0]<stdout>:   268435456      67108864     float     sum    59176    4.54    8.51    N/A    59142    4.54    8.51    N/A
+[1,0]<stdout>:   536870912     134217728     float     sum   117854    4.56    8.54    N/A   117828    4.56    8.54    N/A
+[1,0]<stdout>:  1073741824     268435456     float     sum   235275    4.56    8.56    N/A   235138    4.57    8.56    N/A
+[1,0]<stdout>:  2147483648     536870912     float     sum   470143    4.57    8.56    N/A   470137    4.57    8.56    N/A
+[1,0]<stdout>:  4294967296    1073741824     float     sum   940065    4.57    8.57    N/A   939700    4.57    8.57    N/A
 [1,0]<stdout>:# Out of bounds values : 0 OK
-[1,0]<stdout>:# Avg bus bandwidth    : 60.5716 
+[1,0]<stdout>:# Avg bus bandwidth    : 4.41784 
 [1,0]<stdout>:#
