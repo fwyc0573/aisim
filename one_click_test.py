@@ -53,7 +53,7 @@ parser.add_argument('--skip-op',
                     help='skip testing the op')
 
 
-nccl_meta_command = '/nccl-tests-master/build/all_reduce_perf -b 8 -e 1024M -f 2 -g {} > nccl_{}.log'
+nccl_meta_command = '/nccl-tests/build/all_reduce_perf -b 8 -e 1024M -f 2 -g {} > nccl_{}.log'
 ddp_meta_command = 'python3 -m torch.distributed.launch --nproc_per_node {} \
     --nnodes 1 \
     --node_rank 0 \
@@ -176,20 +176,20 @@ def one_click_test(args, config):
     if not args.skip_nccl:
         nccl_test(args, config)
 
-    # baseline test
-    if not args.skip_baseline:
-        baseline_test(args, config)
+    # # baseline test
+    # if not args.skip_baseline:
+    #     baseline_test(args, config)
 
-    # TorchGraph test
-    if not args.skip_graph:
-        TorchGraph_test(args, config)
+    # # TorchGraph test
+    # if not args.skip_graph:
+    #     TorchGraph_test(args, config)
 
-    # ddpgraph test
-    if not args.skip_ddpgraph:
-        ddpgraph_test(args, config)
+    # # ddpgraph test
+    # if not args.skip_ddpgraph:
+    #     ddpgraph_test(args, config)
 
-    if not args.skip_op:
-        op_test(args, config)
+    # if not args.skip_op:
+    #     op_test(args, config)
 
 if __name__ == '__main__':
     args = parser.parse_args()
@@ -208,10 +208,10 @@ if __name__ == '__main__':
 
     one_click_test(args, config)
 
-    benchmarktools = BenchmarkTools(args.model_list,
-                                    args.model_zoo,
-                                    args.skip_coverage,
-                                    args.skip_accuracy,
-                                    config)
-    benchmarktools.run()
+    # benchmarktools = BenchmarkTools(args.model_list,
+    #                                 args.model_zoo,
+    #                                 args.skip_coverage,
+    #                                 args.skip_accuracy,
+    #                                 config)
+    # benchmarktools.run()
 
